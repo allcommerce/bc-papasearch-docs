@@ -84,7 +84,7 @@ Before you begin, make sure you have:
 
 When you first launch the app, you'll see the **Dashboard** with several setup options.
 
-![Dashboard on first install](../assets/images/dashboard-first-install.jpg)
+![Dashboard on first install](assets/images/dashboard-first-install.jpg)
 
 ### 2.2 Channel Selection
 
@@ -93,7 +93,7 @@ When you first launch the app, you'll see the **Dashboard** with several setup o
    - Most stores only have one channel (your main storefront)
    - Click the dropdown to see available channels
 
-![Channel selection dropdown](../assets/images/select-channel.jpg)
+![Channel selection dropdown](assets/images/select-channel.jpg)
 
 2. **Confirm channel selection**
    - Choose your primary sales channel
@@ -111,7 +111,7 @@ This step is important - you need to index your products before installing the s
 
 On the Dashboard, look for and click the **"Index products"** button:
 
-![Index products button](../assets/images/index-products-button.jpg)
+![Index products button](assets/images/index-products-button.jpg)
 
 **2. Wait for indexing to complete**
 
@@ -121,13 +121,13 @@ After clicking the button, the indexing process will start automatically:
 - Depending on your catalog size, this may take 5-30 minutes
 - Wait until the process is completely finished
 
-![Index products progress](../assets/images/index-products-progress.jpg)
+![Index products progress](assets/images/index-products-progress.jpg)
 
 ### 3.2 Indexing Complete
 
 When finished, you'll see the number of indexed products and timestamp below the button. Additional features like Index Management, Customize Filters, Suggest Keywords, and Cache Management will also be unlocked.
 
-![dashboard-complete-indexing](../assets/images/dashboard-complete-index.jpg)
+![dashboard-complete-indexing](assets/images/dashboard-complete-index.jpg)
 
 ---
 
@@ -150,7 +150,7 @@ The frontend script enables:
 
 On the Dashboard, look for a button labeled **"Install Storefront Script"**
 
-![Install Storefront Script Button](../assets/images/install-storefront-script-button.jpg)
+![Install Storefront Script Button](assets/images/install-storefront-script-button.jpg)
 
 **Click Install Storefront Script**
 
@@ -173,7 +173,7 @@ After successful installation, you can verify the script status:
 - This confirms the script has been successfully installed on your storefront
 - The script is now active and enhancing your store's search functionality
 
-![Remove Storefront Script Button](../assets/images/remove-storefront-script-button.jpg)
+![Remove Storefront Script Button](assets/images/remove-storefront-script-button.jpg)
 
 ### 5.2 Test on Your Storefront
 
@@ -182,7 +182,7 @@ After successful installation, you can verify the script status:
   - Open your storefront in a new browser tab
   - Go to any product category page
 
-![Category page with filters](../assets/images/category-page-with-filters.jpg)
+![Category page with filters](assets/images/category-page-with-filters.jpg)
 
 **2. Test search functionality**
 
@@ -190,7 +190,7 @@ After successful installation, you can verify the script status:
    - You should see enhanced search results
    - Look for improved filtering options
 
-![Quick search popup](../assets/images/quick-search-popup.jpg)
+![Quick search popup](assets/images/quick-search-popup.jpg)
 
 **3. Test filters**
 

@@ -6,7 +6,7 @@ The Dashboard is the main control center of your PapaSearch app. This chapter wi
 
 When you first open the app, you'll see the Dashboard with several key sections:
 
-![dashboard-layout](../assets/images/dashboard-full.jpg)
+![dashboard-layout](assets/images/dashboard-full.jpg)
 
 ---
 
