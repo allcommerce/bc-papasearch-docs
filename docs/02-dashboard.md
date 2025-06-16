@@ -1,324 +1,201 @@
 # Chapter 2: Dashboard Overview
 
-The Dashboard is the main control center of your Semantic Search & Filters App. This chapter will explain every element, button, and feature you'll find on the Dashboard.
+The Dashboard is the main control center of your PapaSearch app. This chapter will explain every element, button, and feature you'll find on the Dashboard.
 
 ## Dashboard Layout
 
 When you first open the app, you'll see the Dashboard with several key sections:
 
-`[SCREENSHOT: Full dashboard view showing all sections and buttons]`
+![dashboard-layout](../assets/images/dashboard-full.jpg)
 
 ---
 
 ## Header Section
 
-### Store Information Display
+### App Navigation
 
 At the top of the Dashboard, you'll see:
 
 1. **App Title**: "PapaSearch" with the home icon
-2. **Navigation Links**: Documentation and Support links
-3. **Subscription Info**: Your current plan and wallet balance
-
-`[SCREENSHOT: Header section showing app title, navigation links, and subscription info]`
-
-#### Subscription Information Panel
-This section shows:
-- **Current Plan**: Your active subscription plan name
-- **Next Billing**: Date of your next payment
-- **Wallet Balance**: Available credits (shown in green if sufficient, red if low)
-- **Plans & Pricing**: Button to manage your subscription
-
-`[SCREENSHOT: Subscription panel with plan details and wallet balance highlighted]`
+2. **Navigation Links**: Documentation, Support links
+3. **Trial Info**: "Trial expires on Jun 27, 2025"
+4. **Plan Info**: "Starter AI" plan with wallet balance "$280.00"
+5. **Plans & Pricing**: Yellow button for subscription management
 
 ---
 
-## Channel Selection
+## Channel and Script Management
 
-### Channel Dropdown
+### Channel Selection
 
-Right below the header, you'll find the **Channel Selection** dropdown:
+Below the header, you'll find:
 
-1. **Purpose**: Choose which storefront/channel to manage
-2. **Location**: Center of the page, below the title
-3. **Default**: Usually set to your main storefront
-
-`[SCREENSHOT: Channel selection dropdown showing available channels]`
+1. **Channel Dropdown**: Shows current channel (e.g., "Test App")
+2. **Script Status Button**: "Remove Storefront Script" (blue button on the right)
 
 #### How to Change Channels:
-1. Click the dropdown arrow
+1. Click the "Channel:" dropdown
 2. Select the desired channel from the list
 3. The page will refresh to show data for that channel
+
+#### Script Management:
+- **Remove Storefront Script**: Click to uninstall the frontend script
+- **Install Storefront Script**: Appears when script is not installed
+
+---
+
+## Product Index Status
+
+Below the channel section, you'll see the current product sync status:
+
+**"1/1249 products indexed. Last synchronized: 6/16/2025, 4:30:43 PM"**
+
+This shows:
+
+- **Products Indexed**: How many products are currently searchable
+- **Total Products**: Total products in your BigCommerce store
+- **Last Sync**: When the product index was last updated
 
 ---
 
 ## Main Action Buttons
 
-The Dashboard contains several large, colorful buttons for core functions:
+The Dashboard contains two rows of large, colorful buttons organized by function:
 
-### Top Row - Core Product Management
+### Top Row - Core Features
 
-#### 1. Customize Filters Button
-- **Icon**: Filter list icon
-- **Color**: Blue
-- **Function**: Opens the filter customization page
-- **When to use**: To modify which filters appear on your storefront
-
-`[SCREENSHOT: Customize Filters button highlighted]`
-
-#### 2. Manage Indexes Button
-- **Icon**: Database icon
-- **Color**: Green
-- **Function**: Opens the product index management page
+#### 1. Manage Indexes
+- **Function**: Opens product index management page
 - **When to use**: To sync products and manage your search database
 
-`[SCREENSHOT: Manage Indexes button highlighted]`
+#### 2. Customize Filters
+- **Function**: Opens filter customization page
+- **When to use**: To modify which filters appear on your storefront
 
-#### 3. Suggested Keywords Button
-- **Icon**: Hashtag icon
-- **Color**: Orange
+#### 3. Suggested Keywords
 - **Function**: Opens keyword management for search suggestions
 - **When to use**: To add, remove, or manage search keywords
 
-`[SCREENSHOT: Suggested Keywords button highlighted]`
+#### 4. Search Keywords
+- **Function**: Shows customer search analytics and allows adding popular search terms to Suggested Keywords
+- **When to use**: To analyze what customers are searching for and add trending keywords as suggestions
 
-### Second Row - Analytics and User Data
-
-#### 4. User Search Keywords Button
-- **Icon**: User with hashtag icon
-- **Color**: Purple
-- **Function**: Shows what customers are actually searching for
-- **When to use**: To analyze customer search behavior
-
-`[SCREENSHOT: User Search Keywords button highlighted]`
-
-#### 5. Cache Manager Button
-- **Icon**: Gauge/speedometer icon
-- **Color**: Teal
+#### 5. Cache Manager
 - **Function**: Opens cache management for performance optimization
 - **When to use**: To clear cache or monitor performance
 
-`[SCREENSHOT: Cache Manager button highlighted]`
+### Bottom Row - Account Management
 
-### Bottom Row - Configuration and Account
-
-#### 6. Settings Button
-- **Icon**: Gear icon
-- **Color**: Gray
+#### 6. Settings
 - **Function**: Opens app configuration settings
 - **When to use**: To configure search behavior and theme integration
 
-`[SCREENSHOT: Settings button highlighted]`
-
-#### 7. Plans & Pricing Button
-- **Icon**: Receipt icon
-- **Color**: Yellow
+#### 7. Plans & Pricing
 - **Function**: Opens subscription and billing management
 - **When to use**: To upgrade plans or manage billing
 
-`[SCREENSHOT: Plans & Pricing button highlighted]`
-
-#### 8. Billing Info Button
-- **Icon**: User icon
-- **Color**: Blue
+#### 8. Billing Info
 - **Function**: Opens billing information form
 - **When to use**: To update payment and contact details
 
-`[SCREENSHOT: Billing Info button highlighted]`
-
-#### 9. Order History Button
-- **Icon**: Receipt icon
-- **Color**: Green
+#### 9. Order History
 - **Function**: Shows past transactions and invoices
 - **When to use**: To review payment history
 
-`[SCREENSHOT: Order History button highlighted]`
-
 ---
 
-## Status Indicators and Information Panels
+## Understanding Dashboard Features
 
-### Sync Status Section
+### Product Sync Management
 
-Below the main buttons, you'll see a sync status area:
+The product sync status shown above the main buttons tells you:
 
-`[SCREENSHOT: Sync status section showing current sync state]`
+- **Current Status**: How many products are indexed and searchable
+- **Last Update**: When the search database was last synchronized
+- **Total Products**: Complete product count in your BigCommerce store
 
-#### Elements in Sync Status:
-1. **Last Sync Information**: When your products were last indexed
-2. **Sync Progress Bar**: Shows current sync status if running
-3. **Product Count**: Total products indexed vs. total in store
-4. **Sync Actions**: Buttons to start new sync operations
-
-#### Sync Action Buttons:
-
-**Start Full Sync Button**
-- **Purpose**: Indexes all products from scratch
-- **When to use**: First setup or major catalog changes
-- **Time**: Can take 10-60 minutes depending on catalog size
-
-`[SCREENSHOT: Start Full Sync button]`
-
-**Sync New & Modified Button**
-- **Purpose**: Only syncs products that have changed
-- **When to use**: Regular updates after initial sync
-- **Time**: Usually takes 1-10 minutes
-
-`[SCREENSHOT: Sync New & Modified button]`
+#### When to Sync Products:
+- **New products added**: After adding products to BigCommerce
+- **Product changes**: When you modify existing product information
+- **Automatic sync**: Products sync automatically every 15, 30, or 60 minutes (configurable in Settings)
 
 ### Script Installation Status
 
-This section shows whether the frontend script is properly installed:
+The "Remove Storefront Script" button indicates the frontend script is currently installed. This script enables:
 
-`[SCREENSHOT: Script status section showing installed/not installed state]`
+- **Search functionality**: Powers the search bar on your storefront
+- **Filter functionality**: Enables product filtering capabilities
 
-#### Script Status Indicators:
-- **Green checkmark**: Script is installed and active
-- **Red X**: Script is not installed or inactive
-- **Install Script button**: Appears when script needs installation
-- **Remove Script button**: Appears when script is installed
+#### Script Management:
 
-#### Install Script Process:
-1. Click the **"Install Script"** button
-2. A modal will appear asking which channel to install to
-3. Click **"Install"** in the modal
-4. Wait for confirmation message
-5. Status should change to "Installed"
-
-`[SCREENSHOT: Install script modal dialog]`
+- **Remove Storefront Script**: Click to uninstall the frontend functionality
+- **Install Storefront Script**: Button appears when script needs to be installed
+- **Automatic Updates**: Script updates are handled automatically
 
 ---
 
-## Understanding Button States
+## Getting Started with Dashboard
 
-### Active vs. Disabled Buttons
+### First Time Setup
 
-Some buttons may appear disabled (grayed out) under certain conditions:
+After installing the app, here's what you should do:
 
-#### When Buttons are Disabled:
-- **No products synced yet**: Some features require initial sync
-- **Sync in progress**: Certain actions blocked during sync
-- **Plan limitations**: Some features require higher-tier plans
+1. **Install Storefront Script**: Click the "Install Storefront Script" button to activate search and filter functionality on your storefront
+2. **Verify Script Installation**: Check that the button changes to "Remove Storefront Script" (meaning script is successfully installed)
+3. **Review Product Count**: Check how many products are indexed vs total
+4. **Explore Features**: Click through each button to familiarize yourself with available tools
 
-`[SCREENSHOT: Example of disabled buttons with tooltip explanations]`
+### Common Dashboard Actions
 
-#### How to Enable Disabled Buttons:
-1. Complete required setup steps (like initial sync)
-2. Wait for current operations to finish
-3. Upgrade plan if features are plan-restricted
+#### Managing Products:
 
----
+- Click **"Manage Indexes"** to sync products when you add or modify items in BigCommerce
+- Monitor the product count status to ensure all products are indexed
 
-## Quick Actions and Shortcuts
+#### Customizing Search:
 
-### Keyboard Shortcuts (if available)
-- **Ctrl/Cmd + R**: Refresh dashboard data
-- **Esc**: Close any open modals
+- Use **"Customize Filters"** to control which filters appear on your storefront
+- Add search terms with **"Suggested Keywords"** to help customers find products
+- Monitor customer behavior with **"Search Keywords"** and add popular search terms to Suggested Keywords
 
-### Quick Status Checks
-- **Green indicators**: Everything working properly
-- **Yellow indicators**: Attention needed but not critical
-- **Red indicators**: Action required for proper function
+#### Performance & Settings:
 
----
-
-## Real-time Updates
-
-The Dashboard automatically updates:
-- **Sync progress**: Updates every few seconds during sync
-- **Product counts**: Refreshes when sync completes
-- **Status indicators**: Update in real-time
-
-### Manual Refresh
-If data seems outdated:
-1. Refresh your browser page
-2. Check internet connection
-3. Look for any error messages
+- Clear cache when needed using **"Cache Manager"**
+- Adjust app behavior through **"Settings"**
+- Manage billing and subscription via **"Plans & Pricing"**
 
 ---
 
-## Common Dashboard Tasks
+## Quick Troubleshooting
 
-### Daily Tasks
-1. **Check sync status**: Ensure products are up to date
-2. **Review any alerts**: Look for red or yellow indicators
-3. **Monitor performance**: Check if cache needs clearing
+### Common Issues:
 
-### Weekly Tasks
-1. **Run incremental sync**: Update changed products
-2. **Review user search data**: Check what customers are searching for
-3. **Update keywords**: Add new suggested keywords if needed
+**Script Not Working**: If search/filters don't work on storefront, check if script button shows "Install Storefront Script" instead of "Remove Storefront Script" - if so, click "Install Storefront Script" to activate the functionality.
 
-### Monthly Tasks
-1. **Full product sync**: Complete reindex of all products
-2. **Review analytics**: Analyze search trends
-3. **Plan evaluation**: Consider if current plan meets needs
+**Outdated Search Results**: If search results seem outdated, use "Manage Indexes" to sync your products.
+
+**Missing Features**: Some buttons may be disabled based on your subscription plan - check "Plans & Pricing" for upgrades.
+
+**Search Results Issues**: Use "Cache Manager" to clear cache if search results are not displaying correctly.
 
 ---
 
-## Troubleshooting Dashboard Issues
+## Dashboard Navigation
 
-### Common Problems and Solutions
+Each button on the dashboard takes you to a specific management area:
 
-**Problem**: Dashboard won't load
-- **Solution**: Check internet connection and refresh page
-- **Solution**: Clear browser cache and cookies
-- **Solution**: Try different browser
-
-**Problem**: Buttons don't respond
-- **Solution**: Wait for current operations to complete
-- **Solution**: Check if sync is running in background
-- **Solution**: Refresh the page
-
-**Problem**: Data looks outdated
-- **Solution**: Manually refresh the browser
-- **Solution**: Check if sync is needed
-- **Solution**: Verify store connection
-
-**Problem**: Can't see all features
-- **Solution**: Complete initial setup steps
-- **Solution**: Check plan limitations
-- **Solution**: Ensure script is installed
+- **Manage Indexes**: Product sync and search database management
+- **Customize Filters**: Filter configuration and display settings
+- **Suggested Keywords**: Search term management and suggestions
+- **Search Keywords**: Customer search analytics and ability to add popular terms to Suggested Keywords
+- **Cache Manager**: Performance optimization and cache control
+- **Settings**: App configuration and behavior settings
+- **Plans & Pricing**: Subscription management and billing
+- **Billing Info**: Payment method and contact information
+- **Order History**: Transaction history and invoices
 
 ---
 
-## Dashboard Best Practices
+**Dashboard Overview Complete!** 🎯
 
-### For New Users
-1. **Complete setup wizard**: Follow all initial setup steps
-2. **Install script first**: This enables frontend functionality
-3. **Run initial sync**: Index your products before testing
-4. **Test on storefront**: Verify everything works on your live store
-
-### For Regular Use
-1. **Monitor sync status**: Keep products updated
-2. **Check user searches**: Understand customer behavior
-3. **Maintain keywords**: Keep search suggestions relevant
-4. **Clear cache periodically**: Maintain performance
-
-### For Troubleshooting
-1. **Check status indicators**: Look for red or yellow warnings
-2. **Review sync logs**: Understand any sync issues
-3. **Test storefront**: Verify customer-facing functionality
-4. **Contact support**: Use in-app support for complex issues
-
----
-
-## Next Steps from Dashboard
-
-From the Dashboard, you can navigate to:
-
-1. **[Product Index Management](./03-product-indexes.md)** - Manage your product database
-2. **[Filter Customization](./04-customize-filters.md)** - Configure product filters
-3. **[App Settings](./09-settings.md)** - Configure app behavior
-4. **[Keyword Management](./06-keywords.md)** - Manage search suggestions
-
----
-
-**Dashboard Mastery Complete!** 🎯
-
-You now understand every element of the Dashboard and how to use it effectively to manage your search functionality.
-
----
-
-[← Back to Installation](./01-installation-setup.md) | [Next: Product Index Management →](./03-product-indexes.md)
+You now understand the dashboard layout and can navigate to any feature you need to manage your search functionality.

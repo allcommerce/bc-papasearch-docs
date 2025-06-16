@@ -4,22 +4,22 @@ The Product Index Management page is where you control which products are search
 
 ## Accessing Product Index Management
 
-From the Dashboard, click the **"Manage Indexes"** button (green button with database icon).
+From the Dashboard, click the **"Manage Indexes"** button (blue button with database icon).
 
-`[SCREENSHOT: Dashboard with Manage Indexes button highlighted]`
+![Dashboard with Manage Indexes button highlighted](assets/images/manage-indexes-button.jpg)
 
 ---
 
 ## Page Overview
 
-The Product Index Management page contains several key sections:
+![Product Index Management page](assets/images/manage-indexes-page.jpg)
 
-`[SCREENSHOT: Full Product Index Management page showing all sections]`
+### Key Features
 
-### Page Header
-- **Page title**: "Manage Indexes"
-- **Back to Dashboard button**: Returns you to the main dashboard
-- **Last sync information**: Shows when products were last updated
+- **Product search control**: Manage which products are searchable in your store
+- **Sync operations**: Keep product data updated in search index
+- **⚠️ Important**: Last sync information shows when products were updated - monitor this regularly
+- **Quick access**: Back to Dashboard button for easy navigation
 
 ---
 
@@ -27,191 +27,116 @@ The Product Index Management page contains several key sections:
 
 ### Top Action Bar
 
-`[SCREENSHOT: Top action bar with all main buttons]`
+![Product Indexes Top Action Bar](assets/images/product-indexes-top-action-bar.jpg)
 
 #### 1. Back to Dashboard Button
-- **Location**: Top left
-- **Icon**: Arrow back icon
+
 - **Function**: Returns to main dashboard
 - **When to use**: When you're done managing indexes
 
-#### 2. Delete All Products Button
-- **Location**: Top center
-- **Color**: Red
-- **Icon**: Trash icon
-- **Function**: Removes ALL products from the search index
-- **⚠️ Warning**: This action cannot be undone!
+#### 2. Delete All Button
 
-`[SCREENSHOT: Delete All Products button highlighted]`
+- **Function**: Removes ALL products from the search index (not from your BigCommerce store)
+- **Purpose**: Use this to exclude all products from search results
+- **⚠️ Warning**: Products will not appear in search until re-indexed
 
 **When to use Delete All:**
-- Starting fresh with a completely new catalog
+
+- Remove all products from search results temporarily
 - Troubleshooting search issues
-- Major store restructuring
+- Starting fresh with search index
 
 **How to use Delete All:**
-1. Click the "Delete All Products" button
-2. A confirmation dialog will appear
-3. Type "DELETE" in the confirmation box
-4. Click "Confirm Delete"
-5. Wait for the process to complete
 
-`[SCREENSHOT: Delete All confirmation dialog]`
+1. Click the "Delete All" button
+2. Confirm deletion in the dialog
+3. All products will be removed from search index
+4. Products remain in your BigCommerce store
+5. Re-index products to make them searchable again
 
-#### 3. Reindex All Products Button
-- **Location**: Top center-right
-- **Color**: Blue
-- **Icon**: Sync icon
+#### 3. Index new & modified products Button
+
+- **Function**: Only syncs products that have changed since last sync
+- **Time**: Depends on number of products to be indexed
+
+**When to use Index new & modified products:**
+
+- When products are not indexed correctly
+- When webhook is not enabled in Settings for automatic sync
+- After manually adding or editing products in BigCommerce
+- Regular maintenance if automatic sync is disabled
+
+**How to use Index new & modified products:**
+
+1. Click "Index new & modified products" button
+2. The indexing process starts immediately
+3. Monitor progress on the page
+
+#### 4. Re-index All Button
+
 - **Function**: Completely rebuilds the search index from scratch
-- **Time**: Can take 30-120 minutes for large catalogs
+- **Time**: Depends on total number of products in catalog
 
-`[SCREENSHOT: Reindex All button highlighted]`
 
-**When to use Reindex All:**
+**When to use Re-index All:**
+
 - First-time setup
 - After major product changes
 - If search results seem outdated
-- Monthly maintenance
-
-**How to use Reindex All:**
-1. Click "Reindex All Products"
-2. Choose sync options in the dialog
-3. Click "Start Reindex"
-4. Monitor progress on the page
-
-`[SCREENSHOT: Reindex All dialog with options]`
-
-#### 4. Sync New & Modified Button
-- **Location**: Top right
-- **Color**: Green
-- **Icon**: Refresh icon
-- **Function**: Only syncs products that have changed since last sync
-- **Time**: Usually 2-15 minutes
-
-`[SCREENSHOT: Sync New & Modified button highlighted]`
-
-**When to use Sync New & Modified:**
-- Daily/weekly updates
-- After adding new products
-- After editing existing products
-- Regular maintenance
 
 ---
 
 ## Search and Filter Controls
 
-### Product Search Bar
+You can search for specific products and adjust how the list is displayed:
 
-Located below the main buttons, you'll find search and filter controls:
+![Product Indexes Search and Filter Controls](assets/images/product-indexes-search.jpg)
 
-`[SCREENSHOT: Search and filter controls section]`
+### Search Products
 
-#### Search Input Field
-- **Purpose**: Find specific products in your index
-- **Location**: Left side of the search bar
-- **Placeholder**: "Search products..."
+- Type product name or SKU in the search box
+- Press Enter or click "Search" button to find products
+- Results will show immediately in the table below
 
-**How to search:**
-1. Type product name, SKU, or keyword
-2. Press Enter or click the search button
-3. Results will filter in the table below
+### Adjust Product Display
 
-#### Items Per Page Dropdown
-- **Purpose**: Control how many products show per page
-- **Options**: Usually 10, 25, 50, 100
-- **Default**: 25
-
-`[SCREENSHOT: Items per page dropdown showing options]`
-
-**How to change items per page:**
-1. Click the dropdown
-2. Select desired number
-3. Page will refresh with new results
+- Choose how many products to show per page (10, 25, 50, 100)
+- Page will automatically update with new results
+- Default shows 25 products per page
 
 ---
 
 ## Product Index Table
 
-The main table shows all your indexed products with detailed information:
+This table shows all products in your search index. You can see their current status and take actions on individual products or groups of products.
 
-`[SCREENSHOT: Product index table with sample products]`
+![Product Index Table](assets/images/product-indexes-table.jpg)
 
-### Table Columns
+### What You'll See in the Table
 
-#### 1. Checkbox Column
-- **Purpose**: Select multiple products for batch operations
-- **Location**: Far left column
-- **Function**: Check to select products
+**Checkbox**: Select products to perform bulk actions (first column)
 
-`[SCREENSHOT: Table with checkboxes highlighted]`
+**Name**: The product name exactly as it appears in your BigCommerce store. Click the header to sort alphabetically.
 
-#### 2. Product Name Column
-- **Content**: Full product name as it appears in BigCommerce
-- **Sortable**: Click header to sort alphabetically
-- **Searchable**: Included in search results
+**SKU**: Product identifier. Useful for finding specific products quickly.
 
-#### 3. SKU Column
-- **Content**: Product SKU/identifier
-- **Sortable**: Click header to sort
-- **Purpose**: Unique product identification
+**Price**: Current product price with currency symbol. Click header to sort by price.
 
-#### 4. Price Column
-- **Content**: Product price in store currency
-- **Sortable**: Click header to sort by price
-- **Format**: Displays with currency symbol
+**Status**: Shows whether the product is searchable or needs attention:
 
-#### 5. Status Column
-- **Content**: Current indexing status of the product
-- **Types**: Indexed, Not Indexed, Outdated, Indexing, Not in Channel
+- 🟢 **INDEXED** - Product is fully searchable
+- 🟡 **OUTDATED** - Product was changed and needs to be re-indexed
+- ⚪ **NOT IN CHANNEL** - Product not available in current sales channel
 
-`[SCREENSHOT: Status column showing different status types with color coding]`
+**Date Modified**: When the product was last updated in BigCommerce
 
-**Status Meanings:**
-- **🟢 Indexed**: Product is fully searchable
-- **🔴 Not Indexed**: Product not in search index
-- **🟡 Outdated**: Product changed since last index
-- **🔵 Indexing**: Currently being processed
-- **⚪ Not in Channel**: Product not available in current channel
+**Last Indexed**: When the product was last added to search index
 
-#### 6. Last Modified Column
-- **Content**: When the product was last updated in BigCommerce
-- **Format**: Date and time
-- **Purpose**: Shows if product might need reindexing
+**Actions**: Contains a "Re-index" button to update individual products
 
-#### 7. Date Indexed Column
-- **Content**: When the product was last indexed for search
-- **Format**: Date and time
-- **Purpose**: Compare with Last Modified to see if update needed
+### Working with Individual Products
 
-#### 8. Actions Column
-- **Content**: Individual product action buttons
-- **Functions**: Reindex single product, Delete single product
-
-`[SCREENSHOT: Actions column showing individual action buttons]`
-
-### Individual Product Actions
-
-#### Reindex Single Product Button
-- **Icon**: Sync icon
-- **Color**: Blue
-- **Function**: Reindexes just this one product
-- **When to use**: After editing a specific product
-
-**How to reindex single product:**
-1. Find the product in the table
-2. Click the blue sync icon in Actions column
-3. Wait for confirmation message
-
-#### Delete Single Product Button
-- **Icon**: Trash icon
-- **Color**: Red
-- **Function**: Removes just this product from search index
-- **When to use**: To remove discontinued products from search
-
-**How to delete single product:**
-1. Find the product in the table
-2. Click the red trash icon in Actions column
-3. Confirm deletion in popup dialog
+**Re-indexing a single product**: If you've updated a product in BigCommerce and want to make sure the changes appear in search results, click the "Re-index" button next to that product. You'll see a confirmation message when it's done.
 
 ---
 
@@ -225,251 +150,122 @@ To perform operations on multiple products:
 2. **Select all on page**: Check the header checkbox
 3. **Select all matching search**: Use "Select All" option if available
 
-`[SCREENSHOT: Multiple products selected with checkboxes]`
+![Multiple products selected with checkboxes](assets/images/product-indexes-select-items.jpg)
 
-### Bulk Action Buttons
+### Working with Multiple Products
 
-When products are selected, additional buttons appear:
+Once you select products with checkboxes, you'll see action buttons appear to work with all selected products at once:
 
-`[SCREENSHOT: Bulk action buttons appearing after product selection]`
+![Bulk action buttons appearing after product selection](assets/images/product-indexes-select-items-actions.jpg)
 
-#### Reindex Selected Button
-- **Appears**: When products are selected
-- **Color**: Blue
-- **Function**: Reindexes all selected products
-- **Time**: Depends on number of products selected
+**Reindex Selected**: Updates all selected products in the search index. Processing time depends on how many products you've selected.
 
-#### Delete Selected Button
-- **Appears**: When products are selected
-- **Color**: Red
-- **Function**: Removes selected products from index
-- **⚠️ Warning**: Cannot be undone
+**Delete Selected**: Removes selected products from search results (they stay in your BigCommerce store). ⚠️ This action removes products from search until you re-index them.
 
-**How to use bulk operations:**
-1. Select desired products using checkboxes
-2. Click the appropriate bulk action button
-3. Confirm action in dialog
-4. Wait for operation to complete
+**To use these features**: Simply check the products you want to work with, click the action button you need, confirm your choice, and wait for the process to finish.
 
 ---
 
 ## Pagination and Navigation
 
-### Pagination Controls
+Above the product table, you'll find controls to help you navigate through your product list:
 
-At the bottom of the product table:
+**Product count display**: Shows how many products you're viewing (like "1 - 25 of 1249 products")
 
-`[SCREENSHOT: Pagination controls at bottom of table]`
+**Page navigation**: Use the page numbers or arrow buttons to move between pages of products
 
-#### Elements:
-- **Page numbers**: Click to jump to specific page
-- **Previous/Next arrows**: Navigate one page at a time
-- **First/Last buttons**: Jump to beginning or end
-- **Page info**: Shows "Showing X to Y of Z products"
+**Items per page**: Choose how many products to display at once - select from options like 10, 25, 50, or 100 products per page
 
-#### How to navigate:
-1. Click page numbers to jump to specific pages
-2. Use arrow buttons for step-by-step navigation
-3. Change "Items per page" to see more/fewer products
+This makes it easy to browse through large product catalogs and find exactly what you're looking for.
 
 ---
 
-## Sync Progress Monitoring
+## Checking Product Index Status
 
-### Active Sync Indicator
+Products in the table have different statuses:
 
-When a sync operation is running, you'll see:
-
-`[SCREENSHOT: Active sync progress bar and status]`
-
-#### Progress Elements:
-- **Progress bar**: Shows percentage complete
-- **Status message**: Describes current sync step
-- **Product count**: Shows "X of Y products processed"
-- **Estimated time**: Remaining time (if available)
-- **Cancel button**: Option to stop sync if needed
-
-#### Sync Steps You Might See:
-1. **"Fetching products from BigCommerce"**
-2. **"Processing product data"**
-3. **"Updating search index"**
-4. **"Generating embeddings"** (for AI search)
-5. **"Sync complete"**
-
-### Completed Sync Information
-
-After sync completes:
-
-`[SCREENSHOT: Completed sync status showing results]`
-
-#### Completion Elements:
-- **Success message**: Confirms sync finished
-- **Products processed**: Total number updated
-- **Time taken**: How long sync took
-- **Last sync timestamp**: When this sync completed
-- **Errors encountered**: Any issues during sync
-
----
-
-## Understanding Product Status
-
-### Status Details and Actions
-
-#### 🟢 Indexed Products
-- **Meaning**: Fully searchable and up-to-date
-- **Action needed**: None
-- **Best practice**: Monitor for changes
-
-#### 🔴 Not Indexed Products
-- **Meaning**: Not in search database
-- **Possible reasons**: New product, sync failed, product disabled
-- **Action needed**: Run sync or check product settings
-
-#### 🟡 Outdated Products
-- **Meaning**: Product changed since last index
-- **Action needed**: Reindex to update search data
-- **How to fix**: Use "Sync New & Modified" or individual reindex
-
-#### 🔵 Indexing Products
-- **Meaning**: Currently being processed
-- **Action needed**: Wait for completion
-- **Time**: Usually 1-5 minutes per product
-
-#### ⚪ Not in Channel Products
-- **Meaning**: Product not available in selected channel
-- **Action needed**: Check product channel settings or switch channels
-- **How to fix**: Enable product for current channel in BigCommerce
+- 🟢 **INDEXED**: Product is searchable and up to date. No action needed.
+- 🟡 **OUTDATED**: Product was changed and needs to be re-indexed to update search results.
+- ⚪ **NOT IN CHANNEL**: Product isn't available in the current sales channel. Check your channel settings if needed.
 
 ---
 
 ## Troubleshooting Index Issues
 
-### Common Problems and Solutions
+Having trouble with your product index? Here are some common issues and quick solutions:
 
-#### Problem: Products not appearing in search
-**Possible causes:**
-- Product not indexed
+### 🔍 Products not appearing in search
+
+- Product not indexed (removed from search index)
 - Product disabled in BigCommerce
 - Search settings exclude product
 
-**Solutions:**
-1. Check product status in index table
-2. Reindex the specific product
-3. Verify product is enabled in BigCommerce
-4. Check search score settings
+**What to do:**
 
-#### Problem: Search results outdated
-**Possible causes:**
-- Product modified but not reindexed
-- Cache serving old results
+1. Check product status in the table
+2. Re-index the product if needed
+3. Make sure the product is enabled in BigCommerce
+4. Review your search settings
 
-**Solutions:**
-1. Run "Sync New & Modified"
-2. Clear cache from Cache Manager
-3. Check last sync timestamp
+### 🕒 Search results are outdated
 
-#### Problem: Sync fails or takes too long
-**Possible causes:**
+- Product was changed but not re-indexed
+- Cache is showing old results
+
+**What to do:**
+
+1. Run "Index new & modified products"
+2. Clear cache in Cache Manager
+3. Check the last sync time
+
+### 🐢 Sync is slow or fails
+
 - Large product catalog
-- Server issues
-- Network connectivity
+- Server or network issues
 
-**Solutions:**
-1. Try smaller batch sizes
-2. Check internet connection
-3. Contact support for large catalogs (>10k products)
+**What to do:**
+
+1. Try syncing fewer products at a time
+2. Check your internet connection
+3. Contact support if you have a very large catalog (>10k products)
 4. Try syncing during off-peak hours
 
-#### Problem: Some products missing from table
-**Possible causes:**
+### ❓ Some products missing from the table
+
 - Channel restrictions
 - Product visibility settings
 - Search filters applied
 
-**Solutions:**
-1. Check channel selection
-2. Clear any applied search filters
-3. Verify product visibility in BigCommerce
-4. Check pagination - product might be on another page
+**What to do:**
+
+1. Check your channel selection
+2. Clear any filters
+3. Make sure the product is visible in BigCommerce
+4. Check other pages in the table
 
 ---
 
-## Best Practices for Index Management
+## How to Use This Page
 
-### Regular Maintenance Schedule
-
-#### Daily (Automated if possible):
-- Sync new & modified products
-- Check for any failed products
-- Monitor sync status
-
-#### Weekly:
-- Review outdated products
-- Clean up discontinued products
-- Check sync performance
-
-#### Monthly:
-- Full reindex of all products
-- Review product performance in search
-- Optimize based on search analytics
-
-### Performance Optimization
-
-#### For Large Catalogs (>5,000 products):
-1. Schedule syncs during low-traffic hours
-2. Use incremental syncs instead of full reindex
-3. Monitor server resources during sync
-4. Consider breaking large operations into batches
-
-#### For Small Catalogs (<1,000 products):
-1. Full reindex is usually quick and safe
-2. Can sync more frequently
-3. Real-time updates are more feasible
-
-### Data Quality Tips
-
-1. **Keep BigCommerce data clean**: Accurate product info improves search
-2. **Use consistent naming**: Helps with search relevance
-3. **Maintain good SKUs**: Useful for tracking and debugging
-4. **Regular price updates**: Keep pricing current in search
-5. **Product descriptions**: Rich descriptions improve AI search quality
+- Use this page mainly to check if your products are indexed correctly for search.
+- If you have enabled automatic updates via webhook in Settings, you usually don't need to do anything here.
+- If you notice products are not indexed or search results are outdated, just use the re-index feature.
+- Outages (products not syncing correctly) are rare and usually only happen if there was an error during sync. In that case, re-index to fix.
 
 ---
 
-## Advanced Features
+## Automate Your Product Sync
 
-### Filter by Status
+To keep your product index up to date effortlessly, consider enabling automatic product sync in your settings. This feature allows your store to automatically check and index new or changed products.
 
-You can filter the product table by status:
+### Sync Frequency Options
 
-`[SCREENSHOT: Status filter dropdown in table]`
+- Set the frequency of automatic checks to suit your needs:
+  - Every 15 minutes
+  - Every 30 minutes
+  - Every 1 hour
 
-1. Click the status filter dropdown
-2. Select desired status (Indexed, Not Indexed, etc.)
-3. Table will show only products with that status
-4. Use "All" to remove filter
-
-### Export Product Data
-
-Some implementations may include export functionality:
-
-`[SCREENSHOT: Export button if available]`
-
-1. Select products (or use filters)
-2. Click "Export" button
-3. Choose export format (CSV, Excel)
-4. Download file with product index data
-
-### Sync Scheduling
-
-Advanced users may have access to scheduled sync options:
-
-`[SCREENSHOT: Scheduled sync settings if available]`
-
-1. Set regular sync intervals
-2. Choose optimal times for sync
-3. Configure automatic retry on failure
-4. Set notification preferences
+By automating this process, you ensure that your product data is always current, saving you time and reducing manual effort.
 
 ---
 
@@ -478,15 +274,18 @@ Advanced users may have access to scheduled sync options:
 ### Relationship to Other Pages
 
 #### Filter Customization:
+
 - Products must be indexed to appear in filters
 - Changes to products may affect filter options
 - Reindexing updates filter data
 
 #### Keyword Management:
+
 - Search keywords work better with fully indexed products
 - Product names and descriptions feed into keyword suggestions
 
 #### Analytics:
+
 - Search analytics depend on indexed products
 - Product performance tracking requires current index
 
@@ -495,7 +294,3 @@ Advanced users may have access to scheduled sync options:
 **Product Index Mastery Complete!** 📊
 
 You now understand how to manage your product search index effectively, ensuring customers can find exactly what they're looking for.
-
----
-
-[← Back to Dashboard](./02-dashboard.md) | [Next: Filter Customization →](./04-customize-filters.md)

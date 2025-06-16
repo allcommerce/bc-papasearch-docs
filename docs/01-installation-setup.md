@@ -1,10 +1,11 @@
 # Chapter 1: App Installation & Setup
 
-This chapter will guide you through installing the BigCommerce Semantic Search & Filters App and getting it properly configured on your store.
+This chapter will guide you through installing the PapaSearch - Search & Filter App for BigCommerce and getting it properly configured on your store.
 
 ## Prerequisites
 
 Before you begin, make sure you have:
+
 - **Store admin access** to your BigCommerce store
 - **Store owner or staff** permissions
 - An **active BigCommerce subscription** (Starter, Standard, Plus, Pro, or Enterprise)
@@ -36,7 +37,7 @@ Before you begin, make sure you have:
    `[SCREENSHOT: App Marketplace search bar with "Semantic Search" typed in]`
 
 2. **Locate the app**
-   - Look for **"BigCommerce Semantic Search & Filters"** in the search results
+   - Look for **"PapaSearch - Search & Filter App for BigCommerce"** in the search results
    - The app should show the PapaThemes logo and description
 
    `[SCREENSHOT: Search results showing the Semantic Search app with logo and description visible]`
@@ -83,30 +84,16 @@ Before you begin, make sure you have:
 
 When you first launch the app, you'll see the **Dashboard** with several setup options.
 
-`[SCREENSHOT: Dashboard on first launch showing setup wizard or initial state]`
+![Dashboard on first install](../assets/images/dashboard-first-install.jpg)
 
-### 2.2 Store Verification
-
-1. **Automatic store verification**
-   - The app will automatically verify your store connection
-   - You should see a green checkmark or "Connected" status
-   - Your store information will be displayed
-
-   `[SCREENSHOT: Store verification section showing connected status and store details]`
-
-2. **If verification fails**
-   - Check your internet connection
-   - Refresh the page
-   - Contact support if the issue persists
-
-### 2.3 Channel Selection
+### 2.2 Channel Selection
 
 1. **Select your storefront channel**
    - If you have multiple channels, select the one you want to enable search for
    - Most stores only have one channel (your main storefront)
    - Click the dropdown to see available channels
 
-   `[SCREENSHOT: Channel selection dropdown showing available channels]`
+![Channel selection dropdown](../assets/images/select-channel.jpg)
 
 2. **Confirm channel selection**
    - Choose your primary sales channel
@@ -114,174 +101,147 @@ When you first launch the app, you'll see the **Dashboard** with several setup o
 
 ---
 
-## Step 3: Install the Frontend Script
+## Step 3: Initial Product Indexing
 
-This is the most important step - installing the script that powers the search functionality on your actual storefront.
+This step is important - you need to index your products before installing the script so that filters will work properly.
 
-### 3.1 Understanding the Script
+### 3.1 Start Product Indexing
+
+**1. Click Index Products button**
+
+On the Dashboard, look for and click the **"Index products"** button:
+
+![Index products button](../assets/images/index-products-button.jpg)
+
+**2. Wait for indexing to complete**
+
+After clicking the button, the indexing process will start automatically:
+
+- You'll see a progress indicator showing indexing status
+- Depending on your catalog size, this may take 5-30 minutes
+- Wait until the process is completely finished
+
+![Index products progress](../assets/images/index-products-progress.jpg)
+
+### 3.2 Indexing Complete
+
+When finished, you'll see the number of indexed products and timestamp below the button. Additional features like Index Management, Customize Filters, Suggest Keywords, and Cache Management will also be unlocked.
+
+![dashboard-complete-indexing](../assets/images/dashboard-complete-index.jpg)
+
+---
+
+## Step 4: Install the Frontend Script
+
+Now that your products are indexed, you can install the script that powers the search functionality on your actual storefront.
+
+### 4.1 Understanding the Script
 
 The frontend script enables:
+
 - Enhanced search functionality in your theme
 - Product filtering capabilities
 - Real-time search suggestions
 - Improved search results display
 
-### 3.2 Automatic Script Installation
+### 4.2 Automatic Script Installation
 
-1. **Locate the Install Script button**
-   - On the Dashboard, look for a button labeled **"Install Script"**
-   - This button has a wrench (🔧) icon and is usually blue
+**Locate the Install Script button**
 
-   `[SCREENSHOT: Dashboard with Install Script button highlighted]`
+On the Dashboard, look for a button labeled **"Install Storefront Script"**
 
-2. **Click Install Script**
-   - A modal dialog will appear
-   - This dialog shows script installation options
+![Install Storefront Script Button](../assets/images/install-storefront-script-button.jpg)
 
-   `[SCREENSHOT: Install Script modal dialog showing options]`
+**Click Install Storefront Script**
 
-3. **Select installation target**
-   - Choose the **channel/storefront** where you want to install the script
-   - Most users should select their main storefront
-   - Click **"Install"**
-
-   `[SCREENSHOT: Script installation dialog with channel selection and install button]`
-
-4. **Wait for installation**
-   - The installation process takes 5-15 seconds
-   - You'll see a progress indicator
-   - A success message will appear when complete
-
-   `[SCREENSHOT: Script installation success message]`
-
-### 3.3 Manual Script Installation (Advanced Users Only)
-
-If automatic installation doesn't work with your theme, you may need manual installation:
-
-1. **Get the script code**
-   - Go to **Settings** in the app
-   - Scroll to **"Theme Integration"** section
-   - Copy the provided script code
-
-   `[SCREENSHOT: Settings page showing script code to copy]`
-
-2. **Add to theme manually**
-   - Go to **Storefront → Script Manager** in BigCommerce
-   - Click **"Create a Script"**
-   - Paste the code and save
-
-   `[SCREENSHOT: BigCommerce Script Manager with create script interface]`
+   - Click the **"Install Storefront Script"** button
+   - Wait a few seconds for the installation to complete
+   - The button will automatically change to **"Remove Storefront Script"**
+   - A popup notification will appear confirming the script has been installed successfully
 
 ---
 
-## Step 4: Verify Installation
+## Step 5: Verify Installation
 
-### 4.1 Check Script Status
+### 5.1 Check Script Status
 
-1. **Verify in the app**
-   - Return to the app Dashboard
-   - Look for **"Script Status"** section
-   - You should see a green checkmark and "Installed" status
+**Verify script installation in the app**
 
-   `[SCREENSHOT: Dashboard showing script status as installed]`
+After successful installation, you can verify the script status:
 
-2. **Check BigCommerce Script Manager**
-   - Go to **Storefront → Script Manager** in BigCommerce admin
-   - Look for **"PapaThemes Semantic Search"** script
-   - Status should be **"Active"**
+- The **"Install Storefront Script"** button has changed to **"Remove Storefront Script"**
+- This confirms the script has been successfully installed on your storefront
+- The script is now active and enhancing your store's search functionality
 
-   `[SCREENSHOT: BigCommerce Script Manager showing the active semantic search script]`
+![Remove Storefront Script Button](../assets/images/remove-storefront-script-button.jpg)
 
-### 4.2 Test on Your Storefront
+### 5.2 Test on Your Storefront
 
-1. **Visit your store**
-   - Open your storefront in a new browser tab
-   - Go to any product category page
+**1. Visit your store**
 
-   `[SCREENSHOT: Storefront category page with enhanced search and filters visible]`
+  - Open your storefront in a new browser tab
+  - Go to any product category page
 
-2. **Test search functionality**
+![Category page with filters](../assets/images/category-page-with-filters.jpg)
+
+**2. Test search functionality**
+
    - Use the search bar to search for a product
    - You should see enhanced search results
    - Look for improved filtering options
 
-   `[SCREENSHOT: Search results page showing enhanced layout and filters]`
+![Quick search popup](../assets/images/quick-search-popup.jpg)
 
-3. **Test filters**
+**3. Test filters**
+
    - On a category page, look for filter options in the sidebar
    - Try selecting different filters
    - Products should update automatically
-
-   `[SCREENSHOT: Category page with filters highlighted and product results showing]`
-
----
-
-## Step 5: Initial Product Indexing
-
-### 5.1 Start First Sync
-
-1. **Access the sync function**
-   - In the app Dashboard, look for **"Sync Products"** or **"Start Indexing"** button
-   - This button may have a sync (⟲) icon
-
-   `[SCREENSHOT: Dashboard with sync button highlighted]`
-
-2. **Begin product sync**
-   - Click the sync button
-   - Choose **"Full Sync"** for the first time
-   - This will index all your products for search
-
-   `[SCREENSHOT: Sync options dialog showing full sync selected]`
-
-3. **Monitor sync progress**
-   - You'll see a progress bar showing indexing status
-   - Depending on your catalog size, this may take 5-30 minutes
-   - You can leave the page and return later
-
-   `[SCREENSHOT: Sync progress bar showing percentage and estimated time]`
-
-### 5.2 Verify Sync Completion
-
-1. **Check sync status**
-   - When complete, you'll see **"Sync Complete"** message
-   - The Dashboard will show total indexed products
-
-   `[SCREENSHOT: Dashboard showing sync complete status with product count]`
-
-2. **Test search with your products**
-   - Go to your storefront
-   - Search for specific products from your catalog
-   - Results should appear quickly and accurately
-
-   `[SCREENSHOT: Search results showing your actual products with enhanced display]`
 
 ---
 
 ## Troubleshooting Installation Issues
 
+### App Installation Problems
+
+**Problem**: Cannot find the app in BigCommerce Marketplace
+
+- **Solution**: Search for "PapaSearch" or "PapaThemes"
+- **Solution**: Contact support for direct installation link
+
+**Problem**: App fails to launch after installation
+
+- **Solution**: Refresh your browser and try again
+- **Solution**: Clear browser cache and cookies
+- **Contact Support**: If the issue persists
+
+### Product Indexing Issues
+
+**Problem**: Indexing process fails or gets stuck
+
+- **Solution**: Refresh the page and try again
+- **Solution**: Check your internet connection
+- **Contact Support**: For large catalogs (>10,000 products)
+
+**Problem**: Indexing shows zero products
+
+- **Solution**: Verify products are published and visible in BigCommerce
+- **Solution**: Check that products have prices and are in stock
+- **Solution**: Try indexing again after a few minutes
+
 ### Script Installation Problems
 
-**Problem**: Script installation fails
-- **Solution**: Try refreshing the page and installing again
-- **Alternative**: Use manual script installation method
-- **Contact Support**: If issues persist
+**Problem**: "Install Storefront Script" button doesn't work
 
-**Problem**: Search doesn't work on storefront
-- **Solution**: Check that script is active in BigCommerce Script Manager
-- **Solution**: Clear your browser cache and try again
-- **Solution**: Verify your theme is compatible
+- **Solution**: Refresh the page and try again
+- **Solution**: Ensure you've completed product indexing first
+- **Contact Support**: If button remains unresponsive
 
-### Sync Issues
+**Problem**: Script installed but search/filters don't work on storefront
 
-**Problem**: Product sync fails or takes too long
-- **Solution**: Try syncing in smaller batches
-- **Solution**: Check your internet connection
-- **Solution**: Contact support for large catalogs (>10,000 products)
-
-**Problem**: Some products don't appear in search
-- **Solution**: Wait for sync to complete fully
-- **Solution**: Check product visibility settings in BigCommerce
-- **Solution**: Re-run the sync process
+- **Solution**: Clear your browser cache completely
+- **Solution**: Wait 5-10 minutes for script to fully activate
+- **Solution**: Test in an incognito/private browser window
 
 ---
 
@@ -297,8 +257,4 @@ Once installation is complete, you should:
 
 **Installation Complete!** 🎉
 
-Your BigCommerce Semantic Search & Filters App is now installed and ready to enhance your customers' shopping experience.
-
----
-
-[← Back to Table of Contents](./index.md) | [Next: Dashboard Overview →](./02-dashboard.md)
+Your PapaSearch - Search & Filter App for BigCommerce is now installed and ready to enhance your customers' shopping experience.

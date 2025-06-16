@@ -1,535 +1,256 @@
-# Chapter 4: Filter Customization
+# Chapter 4: Customize Filters
 
-The Filter Customization page allows you to control which product filters appear on your storefront and how they behave. This chapter covers every aspect of managing your store's filtering system.
+Control which filters appear on your store and how they work. This page lets you show or hide filters to help customers find products easier.
 
-## Accessing Filter Customization
+## Getting to Customize Filters
 
-From the Dashboard, click the **"Customize Filters"** button (blue button with filter icon).
+From your Dashboard, click the **"Customize Filters"** button (the blue button with a filter icon).
 
-`[SCREENSHOT: Dashboard with Customize Filters button highlighted]`
-
----
-
-## Page Overview
-
-The Filter Customization page is divided into several key sections:
-
-`[SCREENSHOT: Full Filter Customization page showing all sections]`
-
-### Main Components:
-1. **Page header** with navigation and settings
-2. **Category selection** dropdown
-3. **Filter status controls**
-4. **Filters table** with all available filters
-5. **Bulk action controls**
+![Customize Filters Button](assets/images/customize-filters-button.jpg)
 
 ---
 
-## Page Header Section
+## Page Layout
 
-### Navigation and Controls
+![Customize Filters Page](assets/images/custom-filters-page.jpg)
 
-`[SCREENSHOT: Page header with back button and title]`
+The page has these main parts:
 
-#### Back to Dashboard Button
-- **Location**: Top left corner
-- **Icon**: Arrow back icon
-- **Function**: Returns to main dashboard
-- **When to use**: When finished customizing filters
-
-#### Page Title
-- **Text**: "Customize Filters"
-- **Purpose**: Confirms current page location
+- **Back to Dashboard** button (top left)
+- **Category selector** to choose which category to work with
+- **Enable/Disable** switches for the whole category
+- **Filters table** showing all your available filters
 
 ---
 
-## Category Selection
+## Choosing a Category
 
-### Category Dropdown
+Use the dropdown to pick which category you want to customize filters for:
 
-The category selector determines which category's filters you're managing:
+![Category Selection](assets/images/customize-filters-select-category.jpg)
 
-`[SCREENSHOT: Category selection dropdown showing category options]`
+### Category Options
 
-#### Key Features:
-- **Purpose**: Choose which category to configure filters for
-- **Location**: Below the page header
-- **Options**: All categories in your store
-- **Default**: Usually set to "All Categories" or root category
+**Test App (All Categories)** - This is your current channel/store
 
-#### How to Change Categories:
-1. Click the category dropdown
-2. Browse through your category tree
-3. Select the desired category
-4. Page will refresh showing filters for that category
+- This represents the currently selected channel in your BigCommerce setup
+- Changes here apply to all categories in this channel unless overridden by specific categories
+- Good for setting up basic filters that work across your entire store
 
-#### Category Types:
-- **Root Category**: Affects all products store-wide
-- **Parent Categories**: Affects products in that category and subcategories
-- **Specific Categories**: Affects only products in that exact category
+**Specific Categories** - Individual categories in your store
 
-`[SCREENSHOT: Category dropdown expanded showing category tree structure]`
+- Only affects that specific category and its subcategories
+- Can override settings inherited from parent categories
+- Allows you to customize filters for different category types
 
----
+### How Category Selection Works
 
-## Filter Status Controls
+When you select a different category:
 
-### Global Filter Settings
+1. The page refreshes to show filters relevant to that category
+2. You'll see which filters are available for that category and its subcategories
+3. The filter count and product numbers update accordingly
 
-These controls affect the overall filtering behavior for the selected category:
+### Category Hierarchy
 
-`[SCREENSHOT: Filter status control section]`
+Categories work in a parent-child relationship:
 
-#### Enable/Disable Toggle
-- **Purpose**: Turn filtering on/off for this category
-- **Location**: Top of the settings section
-- **States**: Enabled (green) / Disabled (gray)
+- **Parent Category**: "Electronics"
+- **Child Categories**: "Phones", "Laptops", "Tablets"
 
-**When Enabled:**
-- Filters appear on category pages
-- Customers can filter products
-- Filter data is processed and cached
-
-**When Disabled:**
-- No filters shown on storefront
-- Faster page loading (no filter processing)
-- Useful for categories that don't need filtering
-
-#### Inherit from Parent Toggle
-- **Purpose**: Use parent category's filter settings
-- **When to use**: To maintain consistency across category tree
-- **Effect**: Overrides individual filter settings when enabled
-
-`[SCREENSHOT: Enable/Disable and Inherit toggles highlighted]`
-
-### Status Indicator
-
-The status indicator shows the calculated state:
-
-#### Status Types:
-- **🟢 Enabled**: Filters are active for this category
-- **🔴 Disabled**: Filters are turned off for this category
-- **🟡 Inherited**: Using parent category's settings
+Changes to a parent category can affect all its child categories, unless the child has its own specific settings.
 
 ---
 
-## Filters Table
+## Enable or Disable Filters
 
-The main table displays all available filters for the selected category:
+![Enable Disable Buttons](assets/images/customize-filters-disable-button.jpg)
 
-`[SCREENSHOT: Complete filters table with sample data]`
+### Filter Status Controls
 
-### Table Structure
+**Enabled** (green button)
 
-#### Table Headers:
-1. **Checkbox**: For bulk selection
-2. **Filter Name**: Display name of the filter
-3. **Type**: Filter type (Brand, Price, Custom Field, etc.)
-4. **Products**: Number of products that have this filter option
-5. **Visibility**: Current visibility status
-6. **Sort Order**: Position in filter list
-7. **Actions**: Individual filter actions
+- Filters show up on your store pages
+- Customers can use them to narrow down products
+- Filter data is processed and cached for better performance
 
-### Filter Information Columns
+**Disabled** (red button)
 
-#### 1. Filter Name Column
-- **Content**: The name customers see on the storefront
-- **Editable**: Can be customized for better UX
-- **Examples**: "Brand", "Color", "Size", "Price Range"
+- No filters appear on store pages
+- Pages load faster since no filtering happens
+- Good for categories that don't need filters (like single-product categories)
 
-`[SCREENSHOT: Filter name column with various filter names]`
+### How to Enable/Disable Filters
 
-#### 2. Type Column
-- **Content**: Technical filter type
-- **Examples**:
-  - **Brand**: Product brands
-  - **Category**: Product categories
-  - **Price Range**: Price filtering
-  - **Rating**: Customer ratings
-  - **Stock**: In stock/out of stock
-  - **Custom Field**: Custom product attributes
-  - **Option**: Product options (size, color, etc.)
+Click the Enable/Disable button next to the category name to toggle filters on/off. Changes take effect immediately.
 
-`[SCREENSHOT: Type column showing different filter types with icons]`
+### Inheritance Feature
 
-#### 3. Products Column
-- **Content**: Number of products that use this filter
-- **Purpose**: Shows filter relevance
-- **Format**: Number (e.g., "245 products")
+![Inheritance Checkbox](assets/images/customize-filters-inherit-checkbox.jpg)
 
-#### 4. Visibility Column
-- **Content**: Whether filter appears on storefront
-- **States**:
-  - **👁️ Visible**: Shows on storefront
-  - **🚫 Hidden**: Not shown to customers
-- **Interactive**: Click to toggle visibility
+**What is Inheritance?**
 
-`[SCREENSHOT: Visibility column showing toggle buttons]`
+Inheritance means a child category automatically uses the same filter settings as its parent category.
 
-#### 5. Sort Order Column
-- **Content**: Display order on storefront
-- **Format**: Numbers (1, 2, 3, etc.)
-- **Purpose**: Controls filter arrangement
-- **Editable**: Can be changed by dragging rows
+**How It Works:**
 
-#### 6. Actions Column
-- **Content**: Individual filter actions
-- **Buttons**: Edit, Reset, More options
+- If you enable inheritance on a subcategory, it will copy all filter settings from its parent
+- Any changes you make to the parent category will automatically apply to child categories with inheritance enabled
+- Child categories can override inheritance by setting their own specific filter configurations
 
-`[SCREENSHOT: Actions column with individual action buttons]`
+**When to Use Inheritance:**
+
+- **Enable inheritance** when you want consistent filtering across related categories
+- **Disable inheritance** when a category needs unique filters different from its parent
+
+**Example:**
+
+- Parent category: "Clothing" (has Size, Color, Brand filters enabled)
+- Child category: "T-Shirts" (inherits Size, Color, Brand automatically)
+- Child category: "Accessories" (disables inheritance, uses only Brand and Price filters)
+
+### Setting Up Inheritance
+
+1. Choose the child category from the dropdown
+2. Look for inheritance controls (usually near the Enable/Disable buttons)
+3. Enable inheritance to copy parent settings, or disable to set custom filters
+4. Make your changes and they'll save automatically
 
 ---
 
-## Filter Management Actions
+## Your Filters Table
 
-### Individual Filter Actions
+The table shows all filters available for your selected category:
 
-#### Edit Filter Button
-- **Icon**: Pencil icon
-- **Function**: Opens detailed filter editor
-- **Purpose**: Customize filter behavior and appearance
+### What Each Column Means
 
-`[SCREENSHOT: Edit button highlighted in actions column]`
+- **Display name** - What customers see on your store
+- **Original name** - The technical name from your product data
+- **Code name** - Internal system name
+- **Type** - What kind of filter it is (Brand, Price Range, etc.)
+- **Values** - The actual filter options (like specific brand names)
+- **Products** - How many products use this filter
+- **Visible** - Whether it shows on your store (✅ = visible, ❌ = hidden)
+- **Edit** - Button to change filter settings
 
-**What you can edit:**
-- Filter display name
-- Maximum number of options shown
-- Display type (list, checkboxes, etc.)
-- Value ordering and visibility
+### Filter Types You'll See
 
-#### Reset Filter Button
-- **Icon**: Reset/undo icon
-- **Function**: Restores filter to default settings
-- **When to use**: When filter customizations cause issues
-
-#### Visibility Toggle
-- **Icon**: Eye icon (visible) or crossed eye (hidden)
-- **Function**: Quick show/hide filter
-- **Immediate effect**: Changes apply instantly
-
-### Bulk Actions
-
-When you select multiple filters using checkboxes, bulk action options appear:
-
-`[SCREENSHOT: Bulk action controls visible after selecting filters]`
-
-#### Bulk Selection:
-1. **Individual selection**: Check boxes next to specific filters
-2. **Select all on page**: Check the header checkbox
-3. **Select by type**: Filter by type first, then select all
-
-#### Available Bulk Actions:
-
-**Show Selected Filters**
-- **Purpose**: Make multiple filters visible at once
-- **Time**: Instant application
-- **Effect**: All selected filters appear on storefront
-
-**Hide Selected Filters**
-- **Purpose**: Hide multiple filters at once
-- **Time**: Instant application
-- **Effect**: Selected filters disappear from storefront
-
-**Reset Selected Filters**
-- **Purpose**: Restore multiple filters to defaults
-- **Warning**: Removes all customizations
-- **Confirmation**: Requires confirmation dialog
-
-`[SCREENSHOT: Bulk action buttons highlighted]`
-
-### Drag and Drop Reordering
-
-You can change filter order by dragging table rows:
-
-`[SCREENSHOT: Drag and drop reordering in action]`
-
-#### How to reorder filters:
-1. Hover over a filter row
-2. Look for the drag handle (usually on the left)
-3. Click and drag the row to desired position
-4. Release to drop in new position
-5. Changes save automatically
-
-#### Best Practices for Filter Order:
-1. **Most used filters first**: Brand, Price, Size
-2. **Broad to specific**: Categories before detailed attributes
-3. **User-friendly sequence**: Logical filtering progression
+- **Categories** - Filter by product categories
+- **Brands** - Filter by manufacturer or brand name
+- **Price Range** - Filter by price brackets
+- **Rating** - Filter by customer review stars
+- **Stock** - Filter by in stock/out of stock
+- **Custom Fields** - Filter by product custom fields you've added in products.
+- **Product Modifiers** - Custom attributes like color, size, material
+- **Product Options** - Variants like size and color choices
 
 ---
 
-## Understanding Filter Types
+## Managing Individual Filters
 
-### Common Filter Types and Their Uses
+### Show or Hide Filters
 
-#### Brand Filters
-- **Purpose**: Filter by product manufacturer/brand
-- **Best for**: Stores with multiple brands
-- **Display**: Usually as list or checkboxes
-- **Example**: "Apple", "Samsung", "Nike"
+Click the **Visible** column to toggle:
 
-`[SCREENSHOT: Brand filter example on storefront]`
+- **✅ Green checkmark** = Filter appears on your store
+- **❌ Red X** = Filter is hidden from customers
 
-#### Price Range Filters
-- **Purpose**: Filter by price ranges
-- **Display options**: Slider, preset ranges, or input fields
-- **Automatic**: Often generated based on actual product prices
-- **Example**: "$0-$50", "$50-$100", "$100+"
+### Edit a Filter
 
-#### Category Filters
-- **Purpose**: Filter by product categories
-- **Hierarchy**: Can show subcategories
-- **Display**: Tree structure or flat list
-- **Example**: "Electronics > Computers > Laptops"
+Click the blue **Edit** button to:
+- Change what the filter is called
+- Control how many options show at once
+- Reorder the filter options
+- Set other display preferences
 
-#### Custom Field Filters
-- **Purpose**: Filter by custom product attributes
-- **Examples**: "Material", "Warranty", "Country of Origin"
-- **Setup**: Requires custom fields in BigCommerce
-- **Flexibility**: Most customizable filter type
+### Reset a Filter
 
-#### Stock Status Filters
-- **Purpose**: Filter by availability
-- **Options**: "In Stock", "Out of Stock", "Pre-order"
-- **Real-time**: Updates based on current inventory
-- **Useful for**: Hiding unavailable products
-
-#### Rating Filters
-- **Purpose**: Filter by customer review ratings
-- **Display**: Star ratings (5-star, 4-star and up, etc.)
-- **Requirement**: Products must have reviews
-- **Format**: Visual stars or text
-
-`[SCREENSHOT: Different filter types displayed on storefront]`
+Use reset options to restore a filter back to its original settings if you've made changes that aren't working well.
 
 ---
 
-## Filter Visibility and Behavior
+## Bulk Actions
 
-### Visibility Settings Explained
+Select multiple filters using the checkboxes to:
 
-#### Visible Filters
-- **Appear on**: Category pages, search results
-- **Customer interaction**: Can be used to narrow results
-- **Performance impact**: Minimal for most filter types
-- **SEO benefit**: May help with search engine optimization
-
-#### Hidden Filters
-- **Not displayed**: Customers cannot see or use them
-- **Background processing**: May still be calculated for performance
-- **Use cases**: Filters with insufficient data, testing new filters
-- **Temporary**: Can be enabled when ready
-
-### Advanced Visibility Options
-
-Some filters may have additional visibility options:
-
-#### Conditional Visibility
-- **Based on**: Number of products, user groups, or other criteria
-- **Example**: Only show "Size" filter if products have size options
-- **Smart hiding**: Automatically hide filters with only one option
-
-#### Channel-Specific Visibility
-- **Purpose**: Different filters for different sales channels
-- **Use case**: B2B vs B2C filtering needs
-- **Management**: Set per channel in advanced settings
+- **Enable selected filters** - Make several filters visible at once
+- **Disable selected filters** - Hide multiple filters
+- **Reset selected filters** - Restore several filters to defaults
 
 ---
 
-## Filter Performance and Optimization
+## Managing Filter Order
 
-### Understanding Filter Impact
+Drag and drop table rows to change the order filters appear on your store. Put the most useful filters first since customers see those first.
 
-#### Performance Considerations:
-- **More filters**: Slightly slower page loading
-- **Complex filters**: Custom fields may load slower than simple ones
-- **Large catalogs**: Filter calculation takes more time
-- **Cache benefits**: Filters are cached for better performance
+**Good filter order:**
 
-#### Optimization Tips:
-1. **Show relevant filters only**: Hide unused filters
-2. **Logical order**: Put popular filters first
-3. **Reasonable limits**: Don't show too many options at once
-4. **Regular cleanup**: Remove filters with no products
-
-### Filter Loading States
-
-#### Initial Page Load:
-- **Basic filters**: Load immediately
-- **Dynamic filters**: May load slightly after page
-- **User feedback**: Loading indicators show progress
-
-#### After Filter Selection:
-- **Product updates**: Results refresh automatically
-- **URL updates**: Filter state saved in browser
-- **History**: Back button works correctly
-
-`[SCREENSHOT: Filter loading states and user feedback]`
+1. Price Range (most people filter by price)
+2. Brand (if you have multiple brands)
+3. Category (helps narrow down product types)
+4. Other specific attributes (size, color, etc.)
 
 ---
 
-## Troubleshooting Filter Issues
+## Tips for Better Filters
 
-### Common Problems and Solutions
+### Choose the Right Filters
 
-#### Problem: Filter not appearing on storefront
-**Possible causes:**
-- Filter is set to hidden
-- Category filters disabled
-- No products have this attribute
-- Cache needs clearing
+- Only show filters that actually help customers
+- Hide filters that have just one option (not useful)
+- Focus on what customers actually search for
 
-**Solutions:**
-1. Check filter visibility setting
-2. Verify category filter status is enabled
-3. Confirm products have the required attributes
-4. Clear cache from Cache Manager
+### Using Custom Fields Effectively
 
-#### Problem: Filter shows no options
-**Possible causes:**
-- No products in category have this attribute
-- Products need reindexing
-- Attribute values not properly set
+Custom fields are powerful filters you can create for unique product attributes:
 
-**Solutions:**
-1. Check product data in BigCommerce
-2. Reindex products
-3. Verify attribute configuration
+**Examples of useful custom fields:**
 
-#### Problem: Filter order not saved
-**Possible causes:**
-- Browser issues
-- Conflicting operations
-- Permission problems
+- Material (Leather, Cotton, Polyester)
+- Warranty Period (1 Year, 2 Years, Lifetime)
+- Country of Origin (Made in USA, Made in China)
+- Certification (Organic, Fair Trade, FDA Approved)
 
-**Solutions:**
-1. Refresh page and try again
-2. Check if other users are editing simultaneously
-3. Clear browser cache
+**Setting up custom fields:**
 
-#### Problem: Too many filter options
-**Possible causes:**
-- Custom fields with many unique values
-- Inconsistent data entry
-- No limits set on filter values
+1. First, add custom fields to your products in BigCommerce admin
+2. Make sure the custom field values are consistent across products
+3. Return to PapaSearch to see the new custom field filters appear
+4. Enable visibility for the custom fields you want customers to use
 
-**Solutions:**
-1. Edit filter to limit displayed options
-2. Clean up product data
-3. Group similar values together
+### Keep It Simple
+
+- Use clear, simple names customers understand
+- Don't show too many filters at once
+- Group related filters together
+
+### Regular Maintenance
+
+- Check monthly for filters with no products
+- Hide or remove unused filters
+- Update filter names if they're confusing customers
 
 ---
 
-## Best Practices for Filter Management
+## Common Issues
 
-### Strategic Filter Planning
+**Filter not showing up?**
 
-#### Essential Filters (Always Include):
-1. **Brand**: If you sell multiple brands
-2. **Price Range**: Universal shopping behavior
-3. **Category**: Navigation aid
-4. **Availability**: Show in-stock items
+- Check if it's set to visible (✅ green checkmark)
+- Make sure the category has filters enabled
+- Verify products actually have that attribute
 
-#### Consider Your Customers:
-- **B2B stores**: Technical specifications, bulk pricing
-- **Fashion stores**: Size, color, material, style
-- **Electronics**: Brand, price, specifications, ratings
-- **General retail**: Price, brand, ratings, availability
+**No options in a filter?**
 
-### User Experience Guidelines
+- Products might not have that attribute set
+- Try reindexing your products
+- Check your product data in BigCommerce
 
-#### Filter Naming:
-- **Clear labels**: Use terms customers understand
-- **Consistent naming**: Same terms across categories
-- **Action-oriented**: "Filter by Brand" vs just "Brand"
-- **Localization**: Translate for international stores
+**Filter showing too many options?**
 
-#### Filter Organization:
-- **Logical grouping**: Related filters near each other
-- **Progressive disclosure**: Basic filters first, advanced options later
-- **Visual hierarchy**: Most important filters most prominent
-
-### Maintenance Schedule
-
-#### Weekly:
-- Review new products and their filter needs
-- Check for filters with no products
-- Monitor customer usage patterns
-
-#### Monthly:
-- Analyze filter usage in analytics
-- Optimize based on customer behavior
-- Clean up unused or irrelevant filters
-
-#### Quarterly:
-- Full review of filter strategy
-- Update filter names and organization
-- Consider new filter types for new product lines
+- Edit the filter to limit how many options display
+- Clean up duplicate or similar values in your product data
 
 ---
 
-## Integration with Other Features
-
-### Relationship to Search
-
-#### Search Enhancement:
-- Filters complement search results
-- Filter selections refine search queries
-- Combined search + filter provides powerful product finding
-
-#### AI Search Integration:
-- Semantic search works with filter selections
-- Natural language queries can trigger filters
-- Filter data enhances search relevance
-
-### Category Management
-
-#### Category-Specific Filters:
-- Different categories can have different filter sets
-- Inheritance allows consistent filter experience
-- Override options provide flexibility
-
-#### Product Attributes:
-- Filters are based on product attributes in BigCommerce
-- Changes to product data affect filter options
-- Regular synchronization keeps filters current
-
----
-
-## Advanced Customization
-
-### Filter Appearance Customization
-
-Some advanced users may have access to:
-
-#### Display Type Options:
-- **List view**: Simple vertical list
-- **Checkbox grid**: Multiple selections
-- **Dropdown**: Space-saving option
-- **Slider**: For ranges like price
-- **Color swatches**: Visual color selection
-
-`[SCREENSHOT: Different filter display types if available]`
-
-#### Custom CSS Classes:
-- **Purpose**: Advanced styling control
-- **Requirement**: CSS knowledge
-- **Application**: Theme customization
-
-### API Integration
-
-For developers or advanced users:
-
-#### Filter Data API:
-- **Access**: Programmatic filter management
-- **Use cases**: Bulk updates, integration with other systems
-- **Documentation**: Available in developer resources
-
----
-
-**Filter Customization Mastery Complete!** 🎛️
-
-You now have complete control over your store's filtering system, enabling customers to find products efficiently and improving their shopping experience.
-
----
-
-[← Back to Product Indexes](./03-product-indexes.md) | [Next: Individual Filter Editing →](./05-edit-filters.md)
+**You're now ready to customize filters!** Your customers will have an easier time finding exactly what they're looking for.

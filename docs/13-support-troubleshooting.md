@@ -1,6 +1,6 @@
 # Chapter 13: Support & Troubleshooting
 
-This comprehensive troubleshooting guide helps you resolve common issues, understand error messages, and get the most out of your BigCommerce Semantic Search & Filters app. When you need additional help, we'll show you how to contact our support team effectively.
+This comprehensive troubleshooting guide helps you resolve common issues, understand error messages, and get the most out of your PapaSearch - Search & Filter App for BigCommerce. When you need additional help, we'll show you how to contact our support team effectively.
 
 ## 13.1 Getting Support
 

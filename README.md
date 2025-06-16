@@ -1,6 +1,6 @@
-# BigCommerce Semantic Search & Filters - Tài liệu hướng dẫn
+# PapaSearch - Search & Filter App for BigCommerce - Tài liệu hướng dẫn
 
-Thư mục này chứa tài liệu hướng dẫn đầy đủ cho ứng dụng BigCommerce Semantic Search & Filters, được xây dựng bằng [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+Thư mục này chứa tài liệu hướng dẫn đầy đủ cho ứng dụng PapaSearch - Search & Filter App for BigCommerce, được xây dựng bằng [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## 🚀 Bắt đầu nhanh
 
@@ -203,7 +203,7 @@ Thiết lập GitHub Actions để tự động deploy khi push lên nhánh main
 
 ## 📄 Giấy phép
 
-Tài liệu này là một phần của ứng dụng BigCommerce Semantic Search & Filters.
+Tài liệu này là một phần của ứng dụng PapaSearch - Search & Filter App for BigCommerce.
 
 ---
 

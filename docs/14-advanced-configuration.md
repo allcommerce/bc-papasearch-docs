@@ -1,6 +1,6 @@
 # Chapter 14: Advanced Configuration
 
-This chapter covers advanced configuration options, technical settings, and enterprise features for users who need deeper customization of their BigCommerce Semantic Search & Filters app. These settings require technical knowledge and should be configured carefully.
+This chapter covers advanced configuration options, technical settings, and enterprise features for users who need deeper customization of their PapaSearch - Search & Filter App for BigCommerce. These settings require technical knowledge and should be configured carefully.
 
 ## 14.1 Advanced Settings Overview
 

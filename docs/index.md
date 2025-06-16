@@ -1,10 +1,10 @@
-# BigCommerce Semantic Search & Filters - User Guide
+# PapaSearch - Search & Filter App for BigCommerce - User Guide
 
-Welcome to the comprehensive user guide for the **BigCommerce Semantic Search & Filters** app. This documentation will help you get the most out of your search and filtering capabilities, from basic installation to advanced configuration.
+Welcome to the comprehensive user guide for the **PapaSearch - Search & Filter App for BigCommerce**. This documentation will help you get the most out of your search and filtering capabilities, from basic installation to advanced configuration.
 
-## What is BigCommerce Semantic Search & Filters?
+## What is PapaSearch - Search & Filter App for BigCommerce?
 
-The BigCommerce Semantic Search & Filters app is a powerful tool that enhances your store's search functionality with AI-powered semantic search and advanced filtering capabilities. It helps customers find products more easily and improves your store's conversion rates.
+PapaSearch - Search & Filter App for BigCommerce is a powerful tool that enhances your store's search functionality with AI-powered semantic search and advanced filtering capabilities. It helps customers find products more easily and improves your store's conversion rates.
 
 ### Key Features
 
@@ -76,13 +76,13 @@ Get help when you need it.
 ### Before You Start
 
 !!! warning "Prerequisites"
-    - Active BigCommerce store (Pro plan or higher recommended)
+    - Active BigCommerce store
     - Store admin access
     - Basic familiarity with BigCommerce admin panel
 
 ### System Requirements
 
-- **BigCommerce Plan**: Any plan (some features require Pro or higher)
+- **BigCommerce Plan**: Any plan
 - **Browser**: Modern browser with JavaScript enabled
 - **Products**: At least 10 products recommended for optimal AI training
 - **Theme**: Compatible with most BigCommerce themes
