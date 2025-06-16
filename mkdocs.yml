@@ -1,0 +1,183 @@
+site_name: BigCommerce Semantic Search & Filters - User Guide
+site_description: Complete user guide for BigCommerce Semantic Search & Filters app
+site_author: PapaThemes
+site_url: https://docs.search.papathemes.com/
+
+# Repository
+repo_name: bc-papasearch-docs
+repo_url: https://github.com/allcommerce/bc-papasearch-docs
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 PapaThemes
+
+# Development server settings
+dev_addr: '127.0.0.1:8000'
+
+# Configuration - sử dụng environment variables cho specific settings
+strict: false
+use_directory_urls: true
+
+# Configuration
+theme:
+  name: material
+  language: en
+
+  # Color scheme
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Features
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+  # Logo and favicon
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+
+  # Font
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Plugins - chỉ những plugin cần thiết sẽ được enable
+plugins:
+  - search
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: ''
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/papathemes
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/papathemes
+      name: Twitter
+    - icon: fontawesome/solid/globe
+      link: https://papathemes.com
+      name: Website
+    - icon: fontawesome/solid/envelope
+      link: https://papathemes.com/contact-us/
+      name: Contact
+  version:
+    provider: mike
+    default: 'latest'
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: papathemes
+      repo: bc-semantic-search
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation & Setup: 01-installation-setup.md
+    - Dashboard Overview: 02-dashboard.md
+  - Core Features:
+    - Product Index Management: 03-product-indexes.md
+    - Filter Customization: 04-customize-filters.md
+    - Edit Filters: 05-edit-filters.md
+    - Keywords Management: 06-keywords.md
+    - User Search Analytics: 07-user-search-keywords.md
+    - Cache Manager: 08-cache-manager.md
+  - Configuration:
+    - Settings: 09-settings.md
+    - Advanced Configuration: 14-advanced-configuration.md
+  - Billing & Account:
+    - Plans & Pricing: 10-plans-pricing.md
+    - Billing Information: 11-billing-information.md
+    - Order History: 12-order-history.md
+  - Support:
+    - Troubleshooting: 13-support-troubleshooting.md
+
+# Custom CSS
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - assets/javascripts/extra.js

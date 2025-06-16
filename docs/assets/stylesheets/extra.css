@@ -1,0 +1,348 @@
+/* Custom styles for BigCommerce Semantic Search & Filters Documentation */
+
+/* Root variables for consistent theming */
+:root {
+  --bc-primary: #0066cc;
+  --bc-primary-dark: #004499;
+  --bc-accent: #ff6b35;
+  --bc-success: #28a745;
+  --bc-warning: #ffc107;
+  --bc-danger: #dc3545;
+  --bc-info: #17a2b8;
+  --bc-light: #f8f9fa;
+  --bc-dark: #343a40;
+  --bc-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bc-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --bc-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced header styling */
+.md-header {
+  background: var(--bc-gradient);
+  box-shadow: var(--bc-shadow);
+}
+
+.md-header__title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Navigation enhancements */
+.md-nav__title {
+  font-weight: 600;
+  color: var(--bc-primary);
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--bc-primary);
+  font-weight: 600;
+}
+
+.md-nav__link:hover {
+  color: var(--bc-primary-dark);
+}
+
+/* Content area improvements */
+.md-content {
+  max-width: none;
+}
+
+.md-content__inner {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Typography enhancements */
+.md-typeset h1 {
+  color: var(--bc-primary);
+  font-weight: 700;
+  border-bottom: 3px solid var(--bc-accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.md-typeset h2 {
+  color: var(--bc-primary-dark);
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1.5rem;
+  background: var(--bc-accent);
+  border-radius: 2px;
+}
+
+.md-typeset h3 {
+  color: var(--bc-primary);
+  font-weight: 600;
+}
+
+/* Enhanced admonitions */
+.md-typeset .admonition {
+  border-radius: 8px;
+  box-shadow: var(--bc-shadow);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.md-typeset .admonition.tip {
+  border-left: 4px solid var(--bc-success);
+}
+
+.md-typeset .admonition.warning {
+  border-left: 4px solid var(--bc-warning);
+}
+
+.md-typeset .admonition.danger {
+  border-left: 4px solid var(--bc-danger);
+}
+
+.md-typeset .admonition.info {
+  border-left: 4px solid var(--bc-info);
+}
+
+.md-typeset .admonition.question {
+  border-left: 4px solid var(--bc-primary);
+}
+
+/* Code blocks styling */
+.md-typeset .highlight {
+  border-radius: 8px;
+  box-shadow: var(--bc-shadow);
+  margin: 1.5rem 0;
+}
+
+.md-typeset code {
+  background-color: rgba(0, 102, 204, 0.1);
+  color: var(--bc-primary-dark);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Tables enhancement */
+.md-typeset table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--bc-shadow);
+  margin: 1.5rem 0;
+}
+
+.md-typeset table th {
+  background: var(--bc-gradient);
+  color: white;
+  font-weight: 600;
+}
+
+.md-typeset table tr:nth-child(even) {
+  background-color: rgba(0, 102, 204, 0.05);
+}
+
+/* Button-like links */
+.md-typeset a.button,
+.md-typeset .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--bc-gradient);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--bc-shadow);
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.md-typeset a.button:hover,
+.md-typeset .button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--bc-shadow-lg);
+}
+
+/* Feature cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--bc-shadow);
+  border-left: 4px solid var(--bc-accent);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--bc-shadow-lg);
+}
+
+.feature-card h3 {
+  color: var(--bc-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Step indicators */
+.step-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--bc-gradient);
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--bc-success);
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.status-badge.warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #856404;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.status-badge.danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--bc-danger);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.status-badge.info {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: var(--bc-info);
+  border: 1px solid rgba(23, 162, 184, 0.3);
+}
+
+/* Screenshot styling */
+.screenshot {
+  border-radius: 8px;
+  box-shadow: var(--bc-shadow-lg);
+  margin: 1.5rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.screenshot-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+  .md-typeset h2::before {
+    display: none;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset a.button,
+  .md-typeset .button {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Footer enhancements */
+.md-footer {
+  background: var(--bc-dark);
+}
+
+.md-footer-meta {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Search enhancements */
+.md-search__input {
+  border-radius: 6px;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tabs styling */
+.md-typeset .tabbed-set {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--bc-shadow);
+  margin: 1.5rem 0;
+}
+
+.md-typeset .tabbed-labels > label {
+  background: var(--bc-light);
+  color: var(--bc-primary);
+  font-weight: 600;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.md-typeset .tabbed-set input:checked + label {
+  background: var(--bc-primary);
+  color: white;
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-sidebar,
+  .md-footer {
+    display: none;
+  }
+
+  .md-content {
+    margin: 0;
+    max-width: none;
+  }
+
+  .md-typeset .admonition {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}
