@@ -1,0 +1,1675 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete user guide for BigCommerce Semantic Search & Filters app">
+      
+      
+        <meta name="author" content="PapaThemes">
+      
+      
+        <link rel="canonical" href="https://docs.search.papathemes.com/13-support-troubleshooting/">
+      
+      
+        <link rel="prev" href="../12-order-history/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Troubleshooting - BigCommerce Semantic Search & Filters - User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-13-support-troubleshooting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BigCommerce Semantic Search &amp; Filters - User Guide" class="md-header__button md-logo" aria-label="BigCommerce Semantic Search & Filters - User Guide" data-md-component="logo">
+      
+  <img src="../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BigCommerce Semantic Search & Filters - User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/allcommerce/bc-papasearch-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bc-papasearch-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../01-installation-setup/" class="md-tabs__link">
+          
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../03-product-indexes/" class="md-tabs__link">
+          
+  
+    
+  
+  Core Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-settings/" class="md-tabs__link">
+          
+  
+    
+  
+  Configuration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../10-plans-pricing/" class="md-tabs__link">
+          
+  
+    
+  
+  Billing & Account
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BigCommerce Semantic Search &amp; Filters - User Guide" class="md-nav__button md-logo" aria-label="BigCommerce Semantic Search & Filters - User Guide" data-md-component="logo">
+      
+  <img src="../assets/images/logo.svg" alt="logo">
+
+    </a>
+    BigCommerce Semantic Search & Filters - User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/allcommerce/bc-papasearch-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bc-papasearch-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-installation-setup/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-product-indexes/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Core Features
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-settings/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-plans-pricing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Billing & Account
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-getting-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.1 Getting Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.1 Getting Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#support-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support Channels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-contacting-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before Contacting Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-common-installation-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.2 Common Installation Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.2 Common Installation Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-installation-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script Installation Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-dashboard-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.3 Dashboard Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.3 Dashboard Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sync-and-indexing-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sync and Indexing Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#channel-selection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Selection Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-search-performance-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.4 Search Performance Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.4 Search Performance Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-not-returning-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search Not Returning Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-search-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Search Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-filter-configuration-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.5 Filter Configuration Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.5 Filter Configuration Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters-not-displaying" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filters Not Displaying
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-subscription-and-billing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.6 Subscription and Billing Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.6 Subscription and Billing Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payment-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payment Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-and-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage and Limits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-cache-and-performance-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.7 Cache and Performance Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.7 Cache and Performance Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cache-management-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cache Management Problems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-data-import-and-export-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.8 Data Import and Export Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.8 Data Import and Export Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keyword-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keyword Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings and Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#139-browser-and-compatibility-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.9 Browser and Compatibility Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.9 Browser and Compatibility Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browser-specific-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Browser-Specific Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-and-responsive-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile and Responsive Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1310-error-messages-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.10 Error Messages Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.10 Error Messages Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Error Codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-and-integration-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      API and Integration Errors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1311-performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.11 Performance Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.11 Performance Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1312-contacting-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      13.12 Contacting Support
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.12 Contacting Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-contact-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Contact Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information-to-provide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information to Provide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#support-response-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Support Response Times
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/allcommerce/bc-papasearch-docs/edit/main/docs/13-support-troubleshooting.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/allcommerce/bc-papasearch-docs/raw/main/docs/13-support-troubleshooting.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="chapter-13-support-troubleshooting">Chapter 13: Support &amp; Troubleshooting<a class="headerlink" href="#chapter-13-support-troubleshooting" title="Permanent link">&para;</a></h1>
+<p>This comprehensive troubleshooting guide helps you resolve common issues, understand error messages, and get the most out of your BigCommerce Semantic Search &amp; Filters app. When you need additional help, we'll show you how to contact our support team effectively.</p>
+<h2 id="131-getting-support">13.1 Getting Support<a class="headerlink" href="#131-getting-support" title="Permanent link">&para;</a></h2>
+<h3 id="support-channels">Support Channels<a class="headerlink" href="#support-channels" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Documentation:</strong> Complete user guide (this document)</li>
+<li><strong>Online Support:</strong> <a href="https://papathemes.com/contact-us/">https://papathemes.com/contact-us/</a></li>
+<li><strong>Email Support:</strong> Direct support ticket system</li>
+<li><strong>Live Chat:</strong> Real-time assistance during business hours</li>
+</ul>
+<h3 id="before-contacting-support">Before Contacting Support<a class="headerlink" href="#before-contacting-support" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Check this guide:</strong> Review relevant chapters for your issue</li>
+<li><strong>Note error messages:</strong> Copy exact error text</li>
+<li><strong>Gather information:</strong> Store details, browser version, steps taken</li>
+<li><strong>Try basic fixes:</strong> Clear cache, refresh browser, try different browser</li>
+</ol>
+<p><strong>Screenshot Description:</strong> <em>Support links in the app header showing "Documentation" and "Support" buttons that link to external help resources.</em></p>
+<h2 id="132-common-installation-issues">13.2 Common Installation Issues<a class="headerlink" href="#132-common-installation-issues" title="Permanent link">&para;</a></h2>
+<h3 id="script-installation-problems">Script Installation Problems<a class="headerlink" href="#script-installation-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Script not appearing on frontend</strong>
+- <strong>Cause:</strong> JavaScript not properly installed or cached
+- <strong>Solution:</strong>
+  1. Verify script installation from dashboard
+  2. Clear BigCommerce cache
+  3. Check browser console for JavaScript errors
+  4. Re-install script if necessary</p>
+<p><strong>Issue: Search not working after installation</strong>
+- <strong>Cause:</strong> Products not indexed or script conflicts
+- <strong>Solution:</strong>
+  1. Check product index status
+  2. Run "Sync New &amp; Modified Products"
+  3. Wait for indexing to complete
+  4. Test with simple search terms</p>
+<p><strong>Issue: Filters not displaying</strong>
+- <strong>Cause:</strong> Category filters disabled or no products in category
+- <strong>Solution:</strong>
+  1. Check filter status in Customize Filters
+  2. Ensure category has products
+  3. Enable filters for category
+  4. Clear cache and refresh</p>
+<h3 id="installation-verification">Installation Verification<a class="headerlink" href="#installation-verification" title="Permanent link">&para;</a></h3>
+<p><strong>Check Installation Status:</strong>
+1. Dashboard shows "Script Installed" indicator
+2. Frontend search box appears on category pages
+3. Filter sidebar displays on category pages
+4. Search returns relevant results</p>
+<p><strong>Common Installation Errors:</strong>
+- <strong>"Installation failed"</strong> - Check BigCommerce API permissions
+- <strong>"Script conflict detected"</strong> - Disable conflicting apps temporarily
+- <strong>"Theme not supported"</strong> - Contact support for theme compatibility</p>
+<h2 id="133-dashboard-issues">13.3 Dashboard Issues<a class="headerlink" href="#133-dashboard-issues" title="Permanent link">&para;</a></h2>
+<h3 id="sync-and-indexing-problems">Sync and Indexing Problems<a class="headerlink" href="#sync-and-indexing-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Sync stuck or taking too long</strong>
+- <strong>Cause:</strong> Large product catalog or server load
+- <strong>Solution:</strong>
+  1. Wait for current sync to complete (can take hours)
+  2. Don't start multiple syncs simultaneously
+  3. Check sync progress regularly
+  4. Contact support if stuck for &gt;24 hours</p>
+<p><strong>Issue: Products showing "Not Indexed" status</strong>
+- <strong>Cause:</strong> Failed indexing or recent product changes
+- <strong>Solution:</strong>
+  1. Select products and click "Reindex Selected"
+  2. For bulk issues, use "Reindex All"
+  3. Check if products are in selected channel
+  4. Verify products are published and visible</p>
+<p><strong>Issue: Sync fails with error message</strong>
+- <strong>Cause:</strong> API rate limits or data issues
+- <strong>Solution:</strong>
+  1. Note exact error message
+  2. Wait 30 minutes and retry
+  3. Check product data for special characters
+  4. Contact support with error details</p>
+<h3 id="channel-selection-issues">Channel Selection Issues<a class="headerlink" href="#channel-selection-issues" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Wrong channel selected</strong>
+- <strong>Cause:</strong> Multiple channels in store
+- <strong>Solution:</strong>
+  1. Check channel dropdown in dashboard header
+  2. Select correct channel for your storefront
+  3. Product counts will update automatically
+  4. Filters are channel-specific</p>
+<p><strong>Issue: No channels available</strong>
+- <strong>Cause:</strong> Store configuration or API issues
+- <strong>Solution:</strong>
+  1. Verify store has published channels
+  2. Check BigCommerce API permissions
+  3. Re-install app if necessary
+  4. Contact support for channel issues</p>
+<h2 id="134-search-performance-issues">13.4 Search Performance Issues<a class="headerlink" href="#134-search-performance-issues" title="Permanent link">&para;</a></h2>
+<h3 id="search-not-returning-results">Search Not Returning Results<a class="headerlink" href="#search-not-returning-results" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Search returns no results for valid terms</strong>
+- <strong>Cause:</strong> Products not indexed or search settings
+- <strong>Solution:</strong>
+  1. Check if products are indexed
+  2. Review search settings (lowest score threshold)
+  3. Try broader search terms
+  4. Verify product names and descriptions</p>
+<p><strong>Issue: Search returns irrelevant results</strong>
+- <strong>Cause:</strong> Search algorithm needs optimization
+- <strong>Solution:</strong>
+  1. Adjust search lowest score in settings
+  2. Check product data quality
+  3. Use AI search features if available
+  4. Report specific examples to support</p>
+<p><strong>Issue: Search is too slow</strong>
+- <strong>Cause:</strong> Large product catalog or server load
+- <strong>Solution:</strong>
+  1. Enable search cache in settings
+  2. Reduce products per page limit
+  3. Optimize product data
+  4. Consider plan upgrade for larger catalogs</p>
+<h3 id="ai-search-issues">AI Search Issues<a class="headerlink" href="#ai-search-issues" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Semantic search not working</strong>
+- <strong>Cause:</strong> AI features not enabled or insufficient data
+- <strong>Solution:</strong>
+  1. Check if AI search is enabled in settings
+  2. Ensure sufficient product data for training
+  3. Allow time for AI model training
+  4. Verify plan includes AI features</p>
+<p><strong>Issue: Search suggestions not appearing</strong>
+- <strong>Cause:</strong> Insufficient search data or feature disabled
+- <strong>Solution:</strong>
+  1. Enable search suggestions in settings
+  2. Ensure users have performed searches
+  3. Check keyword extraction status
+  4. Wait for data accumulation</p>
+<h2 id="135-filter-configuration-issues">13.5 Filter Configuration Issues<a class="headerlink" href="#135-filter-configuration-issues" title="Permanent link">&para;</a></h2>
+<h3 id="filters-not-displaying">Filters Not Displaying<a class="headerlink" href="#filters-not-displaying" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: No filters showing on category pages</strong>
+- <strong>Cause:</strong> Filters disabled for category or no filterable products
+- <strong>Solution:</strong>
+  1. Check category filter status in Customize Filters
+  2. Enable filters for specific categories
+  3. Ensure products have filterable attributes
+  4. Check filter visibility settings</p>
+<p><strong>Issue: Wrong filters appearing</strong>
+- <strong>Cause:</strong> Inherited settings or category misconfiguration
+- <strong>Solution:</strong>
+  1. Check category hierarchy and inheritance
+  2. Set category-specific filter configurations
+  3. Clear filter cache
+  4. Verify product attributes match filter types</p>
+<p><strong>Issue: Filter values missing or incorrect</strong>
+- <strong>Cause:</strong> Product data issues or cache problems
+- <strong>Solution:</strong>
+  1. Check product attribute data in BigCommerce
+  2. Clear filter cache
+  3. Re-sync products with updated data
+  4. Verify filter type matches product attributes</p>
+<h3 id="performance-issues">Performance Issues<a class="headerlink" href="#performance-issues" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Filters loading slowly</strong>
+- <strong>Cause:</strong> Large product catalogs or inefficient queries
+- <strong>Solution:</strong>
+  1. Enable filter caching
+  2. Limit number of visible filters
+  3. Optimize product attribute structure
+  4. Consider upgrading plan for better performance</p>
+<p><strong>Issue: Filter interactions causing errors</strong>
+- <strong>Cause:</strong> JavaScript conflicts or theme issues
+- <strong>Solution:</strong>
+  1. Check browser console for JavaScript errors
+  2. Test with different browsers
+  3. Disable other apps temporarily
+  4. Contact support for theme compatibility</p>
+<h2 id="136-subscription-and-billing-issues">13.6 Subscription and Billing Issues<a class="headerlink" href="#136-subscription-and-billing-issues" title="Permanent link">&para;</a></h2>
+<h3 id="payment-problems">Payment Problems<a class="headerlink" href="#payment-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Payment failed during plan upgrade</strong>
+- <strong>Cause:</strong> Insufficient wallet balance or PayPal issues
+- <strong>Solution:</strong>
+  1. Check wallet balance and top up if needed
+  2. Verify PayPal account is active
+  3. Try payment again
+  4. Contact support if payments continue failing</p>
+<p><strong>Issue: Plan change not reflected</strong>
+- <strong>Cause:</strong> Changes take effect on next billing cycle
+- <strong>Solution:</strong>
+  1. Check "Next Plan" indicators in subscription info
+  2. Plan downgrades usually take effect on next cycle
+  3. Upgrades typically apply immediately
+  4. Contact support if status seems incorrect</p>
+<p><strong>Issue: Wallet top-up failing</strong>
+- <strong>Cause:</strong> PayPal payment issues or validation errors
+- <strong>Solution:</strong>
+  1. Check amount is between <span class="arithmatex">\(5-\)</span>1000 in $5 increments
+  2. Verify PayPal account has sufficient funds
+  3. Try smaller amounts if large payments fail
+  4. Contact PayPal support for payment issues</p>
+<h3 id="usage-and-limits">Usage and Limits<a class="headerlink" href="#usage-and-limits" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Features disabled due to plan limits</strong>
+- <strong>Cause:</strong> Exceeded plan limits or usage caps
+- <strong>Solution:</strong>
+  1. Check current plan limits in Plans &amp; Pricing
+  2. Upgrade plan if consistently hitting limits
+  3. Optimize usage patterns
+  4. Set appropriate add-on limits</p>
+<p><strong>Issue: Add-on charges higher than expected</strong>
+- <strong>Cause:</strong> High usage or unlimited spending caps
+- <strong>Solution:</strong>
+  1. Set monthly spending limits on add-ons
+  2. Monitor usage regularly
+  3. Optimize search and indexing patterns
+  4. Consider plan upgrade for better rates</p>
+<h2 id="137-cache-and-performance-issues">13.7 Cache and Performance Issues<a class="headerlink" href="#137-cache-and-performance-issues" title="Permanent link">&para;</a></h2>
+<h3 id="cache-management-problems">Cache Management Problems<a class="headerlink" href="#cache-management-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Changes not appearing on frontend</strong>
+- <strong>Cause:</strong> Cache not cleared after configuration changes
+- <strong>Solution:</strong>
+  1. Clear app cache using Cache Manager
+  2. Clear BigCommerce template cache
+  3. Clear browser cache
+  4. Wait a few minutes for changes to propagate</p>
+<p><strong>Issue: Cache Manager showing errors</strong>
+- <strong>Cause:</strong> Cache server issues or connectivity problems
+- <strong>Solution:</strong>
+  1. Refresh Cache Manager page
+  2. Try clearing specific cache types
+  3. Wait and retry if server is busy
+  4. Contact support for persistent cache issues</p>
+<p><strong>Issue: Poor performance despite caching</strong>
+- <strong>Cause:</strong> Cache configuration or server capacity
+- <strong>Solution:</strong>
+  1. Check cache hit rates in Cache Manager
+  2. Optimize cache settings
+  3. Clear outdated cache data
+  4. Consider plan upgrade for better performance</p>
+<h2 id="138-data-import-and-export-issues">13.8 Data Import and Export Issues<a class="headerlink" href="#138-data-import-and-export-issues" title="Permanent link">&para;</a></h2>
+<h3 id="keyword-management">Keyword Management<a class="headerlink" href="#keyword-management" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Keywords not extracting from products</strong>
+- <strong>Cause:</strong> Insufficient product data or extraction task errors
+- <strong>Solution:</strong>
+  1. Ensure products have detailed descriptions
+  2. Check extraction task status
+  3. Manually add important keywords
+  4. Wait for extraction process to complete</p>
+<p><strong>Issue: User search keywords not tracking</strong>
+- <strong>Cause:</strong> Frontend script issues or settings disabled
+- <strong>Solution:</strong>
+  1. Verify script is properly installed
+  2. Check tracking settings are enabled
+  3. Test search functionality
+  4. Wait for search data to accumulate</p>
+<h3 id="settings-and-configuration">Settings and Configuration<a class="headerlink" href="#settings-and-configuration" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: Settings changes not saving</strong>
+- <strong>Cause:</strong> Validation errors or permission issues
+- <strong>Solution:</strong>
+  1. Check for form validation errors
+  2. Ensure all required fields are completed
+  3. Try saving sections individually
+  4. Check browser console for errors</p>
+<p><strong>Issue: Settings reset to defaults</strong>
+- <strong>Cause:</strong> App update or data corruption
+- <strong>Solution:</strong>
+  1. Re-configure settings to preferred values
+  2. Save settings immediately after changes
+  3. Export settings as backup if feature available
+  4. Contact support if settings continue resetting</p>
+<h2 id="139-browser-and-compatibility-issues">13.9 Browser and Compatibility Issues<a class="headerlink" href="#139-browser-and-compatibility-issues" title="Permanent link">&para;</a></h2>
+<h3 id="browser-specific-problems">Browser-Specific Problems<a class="headerlink" href="#browser-specific-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: App not working in specific browser</strong>
+- <strong>Cause:</strong> Browser compatibility or JavaScript disabled
+- <strong>Solution:</strong>
+  1. Enable JavaScript in browser settings
+  2. Clear browser cache and cookies
+  3. Try in incognito/private mode
+  4. Update browser to latest version</p>
+<p><strong>Issue: Interface elements not displaying correctly</strong>
+- <strong>Cause:</strong> CSS conflicts or browser compatibility
+- <strong>Solution:</strong>
+  1. Try different browser to isolate issue
+  2. Disable browser extensions temporarily
+  3. Check browser zoom level (100% recommended)
+  4. Contact support with browser details</p>
+<h3 id="mobile-and-responsive-issues">Mobile and Responsive Issues<a class="headerlink" href="#mobile-and-responsive-issues" title="Permanent link">&para;</a></h3>
+<p><strong>Issue: App not working on mobile devices</strong>
+- <strong>Cause:</strong> Responsive design issues or mobile browser limitations
+- <strong>Solution:</strong>
+  1. Use desktop/laptop for app administration
+  2. Check if issue is with frontend or backend
+  3. Test with different mobile browsers
+  4. Contact support for mobile-specific issues</p>
+<h2 id="1310-error-messages-reference">13.10 Error Messages Reference<a class="headerlink" href="#1310-error-messages-reference" title="Permanent link">&para;</a></h2>
+<h3 id="common-error-codes">Common Error Codes<a class="headerlink" href="#common-error-codes" title="Permanent link">&para;</a></h3>
+<p><strong>"Authentication failed"</strong>
+- <strong>Meaning:</strong> Invalid or expired authentication token
+- <strong>Solution:</strong> Refresh page or re-install app</p>
+<p><strong>"Rate limit exceeded"</strong>
+- <strong>Meaning:</strong> Too many API requests in short time
+- <strong>Solution:</strong> Wait 30-60 minutes and retry</p>
+<p><strong>"Product not found"</strong>
+- <strong>Meaning:</strong> Product was deleted or made private
+- <strong>Solution:</strong> Remove from index or check product status</p>
+<p><strong>"Insufficient permissions"</strong>
+- <strong>Meaning:</strong> App lacks required BigCommerce permissions
+- <strong>Solution:</strong> Re-install app or check store user permissions</p>
+<p><strong>"Server error (500)"</strong>
+- <strong>Meaning:</strong> Internal server error
+- <strong>Solution:</strong> Try again later or contact support</p>
+<p><strong>"Validation failed"</strong>
+- <strong>Meaning:</strong> Input data doesn't meet requirements
+- <strong>Solution:</strong> Check form inputs and correct errors</p>
+<h3 id="api-and-integration-errors">API and Integration Errors<a class="headerlink" href="#api-and-integration-errors" title="Permanent link">&para;</a></h3>
+<p><strong>"BigCommerce API error"</strong>
+- <strong>Meaning:</strong> Issue communicating with BigCommerce
+- <strong>Solution:</strong> Check BigCommerce store status and retry</p>
+<p><strong>"PayPal payment failed"</strong>
+- <strong>Meaning:</strong> Payment processing issue
+- <strong>Solution:</strong> Check PayPal account and payment method</p>
+<p><strong>"Cache operation failed"</strong>
+- <strong>Meaning:</strong> Unable to clear or access cache
+- <strong>Solution:</strong> Retry operation or contact support</p>
+<h2 id="1311-performance-optimization">13.11 Performance Optimization<a class="headerlink" href="#1311-performance-optimization" title="Permanent link">&para;</a></h2>
+<h3 id="best-practices-for-performance">Best Practices for Performance<a class="headerlink" href="#best-practices-for-performance" title="Permanent link">&para;</a></h3>
+<p><strong>For Large Product Catalogs:</strong>
+1. <strong>Batch Operations:</strong> Use bulk actions for efficiency
+2. <strong>Scheduled Syncs:</strong> Run major updates during off-peak hours
+3. <strong>Cache Management:</strong> Regularly clear outdated cache data
+4. <strong>Plan Selection:</strong> Choose appropriate plan for catalog size</p>
+<p><strong>For High Traffic Stores:</strong>
+1. <strong>Enable Caching:</strong> Use all available cache options
+2. <strong>Optimize Filters:</strong> Limit number of visible filters
+3. <strong>Monitor Usage:</strong> Track search and index operations
+4. <strong>Plan Upgrades:</strong> Consider higher-tier plans</p>
+<p><strong>For Better Search Results:</strong>
+1. <strong>Product Data Quality:</strong> Ensure complete product information
+2. <strong>Keyword Optimization:</strong> Use relevant product descriptions
+3. <strong>Regular Updates:</strong> Keep product data current
+4. <strong>AI Features:</strong> Enable semantic search for better relevance</p>
+<h2 id="1312-contacting-support">13.12 Contacting Support<a class="headerlink" href="#1312-contacting-support" title="Permanent link">&para;</a></h2>
+<h3 id="when-to-contact-support">When to Contact Support<a class="headerlink" href="#when-to-contact-support" title="Permanent link">&para;</a></h3>
+<p><strong>Immediate Support Needed:</strong>
+- App completely non-functional
+- Data loss or corruption
+- Payment/billing issues
+- Security concerns</p>
+<p><strong>Standard Support Requests:</strong>
+- Configuration questions
+- Performance optimization
+- Feature requests
+- Training needs</p>
+<h3 id="information-to-provide">Information to Provide<a class="headerlink" href="#information-to-provide" title="Permanent link">&para;</a></h3>
+<p><strong>Always Include:</strong>
+1. <strong>Store URL:</strong> Your BigCommerce store domain
+2. <strong>Error Messages:</strong> Exact text of any errors
+3. <strong>Browser Details:</strong> Browser type and version
+4. <strong>Steps to Reproduce:</strong> What you did when issue occurred
+5. <strong>Screenshots:</strong> Visual evidence of the problem</p>
+<p><strong>For Technical Issues:</strong>
+- <strong>Console Errors:</strong> JavaScript errors from browser console
+- <strong>Network Errors:</strong> Failed requests from browser developer tools
+- <strong>Timing:</strong> When issue started occurring
+- <strong>Frequency:</strong> How often issue occurs</p>
+<h3 id="support-response-times">Support Response Times<a class="headerlink" href="#support-response-times" title="Permanent link">&para;</a></h3>
+<p><strong>Priority Levels:</strong>
+- <strong>Critical:</strong> 4-8 hours (business days)
+- <strong>High:</strong> 24-48 hours
+- <strong>Normal:</strong> 2-5 business days
+- <strong>Low:</strong> 5-10 business days</p>
+<p><strong>Business Hours:</strong>
+- Monday-Friday, 9 AM - 5 PM EST
+- Emergency support available for critical issues
+- Response times may be longer during holidays</p>
+<p>Remember: The more detailed information you provide, the faster we can resolve your issue!</p>
+<p><strong>Screenshot Description:</strong> <em>Support contact form showing fields for store URL, issue category, detailed description, and file upload for screenshots, with priority level selection options.</em></p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../12-order-history/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Order History">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Order History
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 PapaThemes
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/papathemes" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/papathemes" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://papathemes.com" target="_blank" rel="noopener" title="Website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://papathemes.com/contact-us/" target="_blank" rel="noopener" title="Contact" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../assets/javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

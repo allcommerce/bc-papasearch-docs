@@ -1,0 +1,1770 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Complete user guide for BigCommerce Semantic Search & Filters app">
+      
+      
+        <meta name="author" content="PapaThemes">
+      
+      
+        <link rel="canonical" href="https://docs.search.papathemes.com/02-dashboard/">
+      
+      
+        <link rel="prev" href="../01-installation-setup/">
+      
+      
+        <link rel="next" href="../03-product-indexes/">
+      
+      
+      <link rel="icon" href="../assets/images/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Dashboard Overview - BigCommerce Semantic Search & Filters - User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-2-dashboard-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BigCommerce Semantic Search &amp; Filters - User Guide" class="md-header__button md-logo" aria-label="BigCommerce Semantic Search & Filters - User Guide" data-md-component="logo">
+      
+  <img src="../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BigCommerce Semantic Search & Filters - User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dashboard Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/allcommerce/bc-papasearch-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bc-papasearch-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-installation-setup/" class="md-tabs__link">
+          
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../03-product-indexes/" class="md-tabs__link">
+          
+  
+    
+  
+  Core Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-settings/" class="md-tabs__link">
+          
+  
+    
+  
+  Configuration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../10-plans-pricing/" class="md-tabs__link">
+          
+  
+    
+  
+  Billing & Account
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../13-support-troubleshooting/" class="md-tabs__link">
+          
+  
+    
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BigCommerce Semantic Search &amp; Filters - User Guide" class="md-nav__button md-logo" aria-label="BigCommerce Semantic Search & Filters - User Guide" data-md-component="logo">
+      
+  <img src="../assets/images/logo.svg" alt="logo">
+
+    </a>
+    BigCommerce Semantic Search & Filters - User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/allcommerce/bc-papasearch-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bc-papasearch-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-installation-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation & Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Dashboard Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard Overview
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Layout
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#header-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Header Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Header Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#store-information-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Store Information Display
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Store Information Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subscription-information-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subscription Information Panel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channel-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Selection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Channel Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#channel-dropdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Dropdown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Channel Dropdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-change-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Change Channels:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-action-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Action Buttons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Action Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#top-row-core-product-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Top Row - Core Product Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Top Row - Core Product Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-customize-filters-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Customize Filters Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-manage-indexes-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Manage Indexes Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-suggested-keywords-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Suggested Keywords Button
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second-row-analytics-and-user-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Second Row - Analytics and User Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Row - Analytics and User Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-user-search-keywords-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. User Search Keywords Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-cache-manager-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Cache Manager Button
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bottom-row-configuration-and-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottom Row - Configuration and Account
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bottom Row - Configuration and Account">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-settings-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Settings Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-plans-pricing-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Plans &amp; Pricing Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-billing-info-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Billing Info Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-order-history-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Order History Button
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-indicators-and-information-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Indicators and Information Panels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Status Indicators and Information Panels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sync-status-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sync Status Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sync Status Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elements-in-sync-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elements in Sync Status:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-action-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sync Action Buttons:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#script-installation-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script Installation Status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Script Installation Status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script-status-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script Status Indicators:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-script-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Script Process:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-button-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Button States
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Button States">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-vs-disabled-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active vs. Disabled Buttons
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Active vs. Disabled Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-buttons-are-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Buttons are Disabled:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-enable-disabled-buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Enable Disabled Buttons:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-actions-and-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Actions and Shortcuts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Actions and Shortcuts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keyboard-shortcuts-if-available" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keyboard Shortcuts (if available)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-status-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Status Checks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-time-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-time Updates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-time Updates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-refresh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Refresh
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-dashboard-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Dashboard Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Dashboard Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#daily-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monthly Tasks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-dashboard-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Dashboard Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Dashboard Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-problems-and-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Problems and Solutions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dashboard Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-new-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      For New Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-regular-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Regular Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Troubleshooting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps-from-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps from Dashboard
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-product-indexes/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Core Features
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-settings/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Configuration
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-plans-pricing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Billing & Account
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../13-support-troubleshooting/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Support
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/allcommerce/bc-papasearch-docs/edit/main/docs/02-dashboard.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/allcommerce/bc-papasearch-docs/raw/main/docs/02-dashboard.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="chapter-2-dashboard-overview">Chapter 2: Dashboard Overview<a class="headerlink" href="#chapter-2-dashboard-overview" title="Permanent link">&para;</a></h1>
+<p>The Dashboard is the main control center of your Semantic Search &amp; Filters App. This chapter will explain every element, button, and feature you'll find on the Dashboard.</p>
+<h2 id="dashboard-layout">Dashboard Layout<a class="headerlink" href="#dashboard-layout" title="Permanent link">&para;</a></h2>
+<p>When you first open the app, you'll see the Dashboard with several key sections:</p>
+<p><code>[SCREENSHOT: Full dashboard view showing all sections and buttons]</code></p>
+<hr />
+<h2 id="header-section">Header Section<a class="headerlink" href="#header-section" title="Permanent link">&para;</a></h2>
+<h3 id="store-information-display">Store Information Display<a class="headerlink" href="#store-information-display" title="Permanent link">&para;</a></h3>
+<p>At the top of the Dashboard, you'll see:</p>
+<ol>
+<li><strong>App Title</strong>: "PapaSearch" with the home icon</li>
+<li><strong>Navigation Links</strong>: Documentation and Support links</li>
+<li><strong>Subscription Info</strong>: Your current plan and wallet balance</li>
+</ol>
+<p><code>[SCREENSHOT: Header section showing app title, navigation links, and subscription info]</code></p>
+<h4 id="subscription-information-panel">Subscription Information Panel<a class="headerlink" href="#subscription-information-panel" title="Permanent link">&para;</a></h4>
+<p>This section shows:
+- <strong>Current Plan</strong>: Your active subscription plan name
+- <strong>Next Billing</strong>: Date of your next payment
+- <strong>Wallet Balance</strong>: Available credits (shown in green if sufficient, red if low)
+- <strong>Plans &amp; Pricing</strong>: Button to manage your subscription</p>
+<p><code>[SCREENSHOT: Subscription panel with plan details and wallet balance highlighted]</code></p>
+<hr />
+<h2 id="channel-selection">Channel Selection<a class="headerlink" href="#channel-selection" title="Permanent link">&para;</a></h2>
+<h3 id="channel-dropdown">Channel Dropdown<a class="headerlink" href="#channel-dropdown" title="Permanent link">&para;</a></h3>
+<p>Right below the header, you'll find the <strong>Channel Selection</strong> dropdown:</p>
+<ol>
+<li><strong>Purpose</strong>: Choose which storefront/channel to manage</li>
+<li><strong>Location</strong>: Center of the page, below the title</li>
+<li><strong>Default</strong>: Usually set to your main storefront</li>
+</ol>
+<p><code>[SCREENSHOT: Channel selection dropdown showing available channels]</code></p>
+<h4 id="how-to-change-channels">How to Change Channels:<a class="headerlink" href="#how-to-change-channels" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Click the dropdown arrow</li>
+<li>Select the desired channel from the list</li>
+<li>The page will refresh to show data for that channel</li>
+</ol>
+<hr />
+<h2 id="main-action-buttons">Main Action Buttons<a class="headerlink" href="#main-action-buttons" title="Permanent link">&para;</a></h2>
+<p>The Dashboard contains several large, colorful buttons for core functions:</p>
+<h3 id="top-row-core-product-management">Top Row - Core Product Management<a class="headerlink" href="#top-row-core-product-management" title="Permanent link">&para;</a></h3>
+<h4 id="1-customize-filters-button">1. Customize Filters Button<a class="headerlink" href="#1-customize-filters-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Filter list icon</li>
+<li><strong>Color</strong>: Blue</li>
+<li><strong>Function</strong>: Opens the filter customization page</li>
+<li><strong>When to use</strong>: To modify which filters appear on your storefront</li>
+</ul>
+<p><code>[SCREENSHOT: Customize Filters button highlighted]</code></p>
+<h4 id="2-manage-indexes-button">2. Manage Indexes Button<a class="headerlink" href="#2-manage-indexes-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Database icon</li>
+<li><strong>Color</strong>: Green</li>
+<li><strong>Function</strong>: Opens the product index management page</li>
+<li><strong>When to use</strong>: To sync products and manage your search database</li>
+</ul>
+<p><code>[SCREENSHOT: Manage Indexes button highlighted]</code></p>
+<h4 id="3-suggested-keywords-button">3. Suggested Keywords Button<a class="headerlink" href="#3-suggested-keywords-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Hashtag icon</li>
+<li><strong>Color</strong>: Orange</li>
+<li><strong>Function</strong>: Opens keyword management for search suggestions</li>
+<li><strong>When to use</strong>: To add, remove, or manage search keywords</li>
+</ul>
+<p><code>[SCREENSHOT: Suggested Keywords button highlighted]</code></p>
+<h3 id="second-row-analytics-and-user-data">Second Row - Analytics and User Data<a class="headerlink" href="#second-row-analytics-and-user-data" title="Permanent link">&para;</a></h3>
+<h4 id="4-user-search-keywords-button">4. User Search Keywords Button<a class="headerlink" href="#4-user-search-keywords-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: User with hashtag icon</li>
+<li><strong>Color</strong>: Purple</li>
+<li><strong>Function</strong>: Shows what customers are actually searching for</li>
+<li><strong>When to use</strong>: To analyze customer search behavior</li>
+</ul>
+<p><code>[SCREENSHOT: User Search Keywords button highlighted]</code></p>
+<h4 id="5-cache-manager-button">5. Cache Manager Button<a class="headerlink" href="#5-cache-manager-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Gauge/speedometer icon</li>
+<li><strong>Color</strong>: Teal</li>
+<li><strong>Function</strong>: Opens cache management for performance optimization</li>
+<li><strong>When to use</strong>: To clear cache or monitor performance</li>
+</ul>
+<p><code>[SCREENSHOT: Cache Manager button highlighted]</code></p>
+<h3 id="bottom-row-configuration-and-account">Bottom Row - Configuration and Account<a class="headerlink" href="#bottom-row-configuration-and-account" title="Permanent link">&para;</a></h3>
+<h4 id="6-settings-button">6. Settings Button<a class="headerlink" href="#6-settings-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Gear icon</li>
+<li><strong>Color</strong>: Gray</li>
+<li><strong>Function</strong>: Opens app configuration settings</li>
+<li><strong>When to use</strong>: To configure search behavior and theme integration</li>
+</ul>
+<p><code>[SCREENSHOT: Settings button highlighted]</code></p>
+<h4 id="7-plans-pricing-button">7. Plans &amp; Pricing Button<a class="headerlink" href="#7-plans-pricing-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Receipt icon</li>
+<li><strong>Color</strong>: Yellow</li>
+<li><strong>Function</strong>: Opens subscription and billing management</li>
+<li><strong>When to use</strong>: To upgrade plans or manage billing</li>
+</ul>
+<p><code>[SCREENSHOT: Plans &amp; Pricing button highlighted]</code></p>
+<h4 id="8-billing-info-button">8. Billing Info Button<a class="headerlink" href="#8-billing-info-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: User icon</li>
+<li><strong>Color</strong>: Blue</li>
+<li><strong>Function</strong>: Opens billing information form</li>
+<li><strong>When to use</strong>: To update payment and contact details</li>
+</ul>
+<p><code>[SCREENSHOT: Billing Info button highlighted]</code></p>
+<h4 id="9-order-history-button">9. Order History Button<a class="headerlink" href="#9-order-history-button" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Icon</strong>: Receipt icon</li>
+<li><strong>Color</strong>: Green</li>
+<li><strong>Function</strong>: Shows past transactions and invoices</li>
+<li><strong>When to use</strong>: To review payment history</li>
+</ul>
+<p><code>[SCREENSHOT: Order History button highlighted]</code></p>
+<hr />
+<h2 id="status-indicators-and-information-panels">Status Indicators and Information Panels<a class="headerlink" href="#status-indicators-and-information-panels" title="Permanent link">&para;</a></h2>
+<h3 id="sync-status-section">Sync Status Section<a class="headerlink" href="#sync-status-section" title="Permanent link">&para;</a></h3>
+<p>Below the main buttons, you'll see a sync status area:</p>
+<p><code>[SCREENSHOT: Sync status section showing current sync state]</code></p>
+<h4 id="elements-in-sync-status">Elements in Sync Status:<a class="headerlink" href="#elements-in-sync-status" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Last Sync Information</strong>: When your products were last indexed</li>
+<li><strong>Sync Progress Bar</strong>: Shows current sync status if running</li>
+<li><strong>Product Count</strong>: Total products indexed vs. total in store</li>
+<li><strong>Sync Actions</strong>: Buttons to start new sync operations</li>
+</ol>
+<h4 id="sync-action-buttons">Sync Action Buttons:<a class="headerlink" href="#sync-action-buttons" title="Permanent link">&para;</a></h4>
+<p><strong>Start Full Sync Button</strong>
+- <strong>Purpose</strong>: Indexes all products from scratch
+- <strong>When to use</strong>: First setup or major catalog changes
+- <strong>Time</strong>: Can take 10-60 minutes depending on catalog size</p>
+<p><code>[SCREENSHOT: Start Full Sync button]</code></p>
+<p><strong>Sync New &amp; Modified Button</strong>
+- <strong>Purpose</strong>: Only syncs products that have changed
+- <strong>When to use</strong>: Regular updates after initial sync
+- <strong>Time</strong>: Usually takes 1-10 minutes</p>
+<p><code>[SCREENSHOT: Sync New &amp; Modified button]</code></p>
+<h3 id="script-installation-status">Script Installation Status<a class="headerlink" href="#script-installation-status" title="Permanent link">&para;</a></h3>
+<p>This section shows whether the frontend script is properly installed:</p>
+<p><code>[SCREENSHOT: Script status section showing installed/not installed state]</code></p>
+<h4 id="script-status-indicators">Script Status Indicators:<a class="headerlink" href="#script-status-indicators" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Green checkmark</strong>: Script is installed and active</li>
+<li><strong>Red X</strong>: Script is not installed or inactive</li>
+<li><strong>Install Script button</strong>: Appears when script needs installation</li>
+<li><strong>Remove Script button</strong>: Appears when script is installed</li>
+</ul>
+<h4 id="install-script-process">Install Script Process:<a class="headerlink" href="#install-script-process" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Click the <strong>"Install Script"</strong> button</li>
+<li>A modal will appear asking which channel to install to</li>
+<li>Click <strong>"Install"</strong> in the modal</li>
+<li>Wait for confirmation message</li>
+<li>Status should change to "Installed"</li>
+</ol>
+<p><code>[SCREENSHOT: Install script modal dialog]</code></p>
+<hr />
+<h2 id="understanding-button-states">Understanding Button States<a class="headerlink" href="#understanding-button-states" title="Permanent link">&para;</a></h2>
+<h3 id="active-vs-disabled-buttons">Active vs. Disabled Buttons<a class="headerlink" href="#active-vs-disabled-buttons" title="Permanent link">&para;</a></h3>
+<p>Some buttons may appear disabled (grayed out) under certain conditions:</p>
+<h4 id="when-buttons-are-disabled">When Buttons are Disabled:<a class="headerlink" href="#when-buttons-are-disabled" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>No products synced yet</strong>: Some features require initial sync</li>
+<li><strong>Sync in progress</strong>: Certain actions blocked during sync</li>
+<li><strong>Plan limitations</strong>: Some features require higher-tier plans</li>
+</ul>
+<p><code>[SCREENSHOT: Example of disabled buttons with tooltip explanations]</code></p>
+<h4 id="how-to-enable-disabled-buttons">How to Enable Disabled Buttons:<a class="headerlink" href="#how-to-enable-disabled-buttons" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Complete required setup steps (like initial sync)</li>
+<li>Wait for current operations to finish</li>
+<li>Upgrade plan if features are plan-restricted</li>
+</ol>
+<hr />
+<h2 id="quick-actions-and-shortcuts">Quick Actions and Shortcuts<a class="headerlink" href="#quick-actions-and-shortcuts" title="Permanent link">&para;</a></h2>
+<h3 id="keyboard-shortcuts-if-available">Keyboard Shortcuts (if available)<a class="headerlink" href="#keyboard-shortcuts-if-available" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ctrl/Cmd + R</strong>: Refresh dashboard data</li>
+<li><strong>Esc</strong>: Close any open modals</li>
+</ul>
+<h3 id="quick-status-checks">Quick Status Checks<a class="headerlink" href="#quick-status-checks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Green indicators</strong>: Everything working properly</li>
+<li><strong>Yellow indicators</strong>: Attention needed but not critical</li>
+<li><strong>Red indicators</strong>: Action required for proper function</li>
+</ul>
+<hr />
+<h2 id="real-time-updates">Real-time Updates<a class="headerlink" href="#real-time-updates" title="Permanent link">&para;</a></h2>
+<p>The Dashboard automatically updates:
+- <strong>Sync progress</strong>: Updates every few seconds during sync
+- <strong>Product counts</strong>: Refreshes when sync completes
+- <strong>Status indicators</strong>: Update in real-time</p>
+<h3 id="manual-refresh">Manual Refresh<a class="headerlink" href="#manual-refresh" title="Permanent link">&para;</a></h3>
+<p>If data seems outdated:
+1. Refresh your browser page
+2. Check internet connection
+3. Look for any error messages</p>
+<hr />
+<h2 id="common-dashboard-tasks">Common Dashboard Tasks<a class="headerlink" href="#common-dashboard-tasks" title="Permanent link">&para;</a></h2>
+<h3 id="daily-tasks">Daily Tasks<a class="headerlink" href="#daily-tasks" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Check sync status</strong>: Ensure products are up to date</li>
+<li><strong>Review any alerts</strong>: Look for red or yellow indicators</li>
+<li><strong>Monitor performance</strong>: Check if cache needs clearing</li>
+</ol>
+<h3 id="weekly-tasks">Weekly Tasks<a class="headerlink" href="#weekly-tasks" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Run incremental sync</strong>: Update changed products</li>
+<li><strong>Review user search data</strong>: Check what customers are searching for</li>
+<li><strong>Update keywords</strong>: Add new suggested keywords if needed</li>
+</ol>
+<h3 id="monthly-tasks">Monthly Tasks<a class="headerlink" href="#monthly-tasks" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Full product sync</strong>: Complete reindex of all products</li>
+<li><strong>Review analytics</strong>: Analyze search trends</li>
+<li><strong>Plan evaluation</strong>: Consider if current plan meets needs</li>
+</ol>
+<hr />
+<h2 id="troubleshooting-dashboard-issues">Troubleshooting Dashboard Issues<a class="headerlink" href="#troubleshooting-dashboard-issues" title="Permanent link">&para;</a></h2>
+<h3 id="common-problems-and-solutions">Common Problems and Solutions<a class="headerlink" href="#common-problems-and-solutions" title="Permanent link">&para;</a></h3>
+<p><strong>Problem</strong>: Dashboard won't load
+- <strong>Solution</strong>: Check internet connection and refresh page
+- <strong>Solution</strong>: Clear browser cache and cookies
+- <strong>Solution</strong>: Try different browser</p>
+<p><strong>Problem</strong>: Buttons don't respond
+- <strong>Solution</strong>: Wait for current operations to complete
+- <strong>Solution</strong>: Check if sync is running in background
+- <strong>Solution</strong>: Refresh the page</p>
+<p><strong>Problem</strong>: Data looks outdated
+- <strong>Solution</strong>: Manually refresh the browser
+- <strong>Solution</strong>: Check if sync is needed
+- <strong>Solution</strong>: Verify store connection</p>
+<p><strong>Problem</strong>: Can't see all features
+- <strong>Solution</strong>: Complete initial setup steps
+- <strong>Solution</strong>: Check plan limitations
+- <strong>Solution</strong>: Ensure script is installed</p>
+<hr />
+<h2 id="dashboard-best-practices">Dashboard Best Practices<a class="headerlink" href="#dashboard-best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="for-new-users">For New Users<a class="headerlink" href="#for-new-users" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Complete setup wizard</strong>: Follow all initial setup steps</li>
+<li><strong>Install script first</strong>: This enables frontend functionality</li>
+<li><strong>Run initial sync</strong>: Index your products before testing</li>
+<li><strong>Test on storefront</strong>: Verify everything works on your live store</li>
+</ol>
+<h3 id="for-regular-use">For Regular Use<a class="headerlink" href="#for-regular-use" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Monitor sync status</strong>: Keep products updated</li>
+<li><strong>Check user searches</strong>: Understand customer behavior</li>
+<li><strong>Maintain keywords</strong>: Keep search suggestions relevant</li>
+<li><strong>Clear cache periodically</strong>: Maintain performance</li>
+</ol>
+<h3 id="for-troubleshooting">For Troubleshooting<a class="headerlink" href="#for-troubleshooting" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Check status indicators</strong>: Look for red or yellow warnings</li>
+<li><strong>Review sync logs</strong>: Understand any sync issues</li>
+<li><strong>Test storefront</strong>: Verify customer-facing functionality</li>
+<li><strong>Contact support</strong>: Use in-app support for complex issues</li>
+</ol>
+<hr />
+<h2 id="next-steps-from-dashboard">Next Steps from Dashboard<a class="headerlink" href="#next-steps-from-dashboard" title="Permanent link">&para;</a></h2>
+<p>From the Dashboard, you can navigate to:</p>
+<ol>
+<li><strong><a href="../03-product-indexes/">Product Index Management</a></strong> - Manage your product database</li>
+<li><strong><a href="../04-customize-filters/">Filter Customization</a></strong> - Configure product filters</li>
+<li><strong><a href="../09-settings/">App Settings</a></strong> - Configure app behavior</li>
+<li><strong><a href="../06-keywords/">Keyword Management</a></strong> - Manage search suggestions</li>
+</ol>
+<hr />
+<p><strong>Dashboard Mastery Complete!</strong> 🎯</p>
+<p>You now understand every element of the Dashboard and how to use it effectively to manage your search functionality.</p>
+<hr />
+<p><a href="../01-installation-setup/">← Back to Installation</a> | <a href="../03-product-indexes/">Next: Product Index Management →</a></p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-installation-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation &amp; Setup">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Installation & Setup
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-product-indexes/" class="md-footer__link md-footer__link--next" aria-label="Next: Product Index Management">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Product Index Management
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 PapaThemes
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/papathemes" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/papathemes" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://papathemes.com" target="_blank" rel="noopener" title="Website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://papathemes.com/contact-us/" target="_blank" rel="noopener" title="Contact" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../assets/javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
