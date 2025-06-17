@@ -2,7 +2,7 @@
 
 Update your billing details for accurate invoicing, tax compliance, and account verification.
 
-![Billing Information Interface](../assets/images/billing-page.jpg)
+![Billing Information Interface](assets/images/billing-page.jpg)
 
 ---
 

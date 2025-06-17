@@ -52,7 +52,7 @@ Learn how to use the main features of the app.
 Advanced settings and customization options.
 
 - [**Settings**](09-settings.md) - Comprehensive app configuration
-- [**Advanced Configuration**](14-advanced-configuration.md) - Technical settings for developers and power users
+
 
 ### 💳 Billing & Account
 Manage your subscription and billing information.

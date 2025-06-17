@@ -2,7 +2,7 @@
 
 Manage your subscription, billing, and add-ons to optimize costs and ensure uninterrupted service.
 
-![Plans & Pricing Interface](../assets/images/pricing-page.jpg)
+![Plans & Pricing Interface](assets/images/pricing-page.jpg)
 
 ---
 
@@ -83,7 +83,7 @@ The Pricing & Billing page helps you manage your subscription plan, monitor add-
 
 ## Pricing Plans
 
-![Pricing Plans Interface](../assets/images/pricing-page-plans.jpg)
+![Pricing Plans Interface](assets/images/pricing-page-plans.jpg)
 
 ### Billing Toggle
 
@@ -138,7 +138,7 @@ The Pricing & Billing page helps you manage your subscription plan, monitor add-
 
 ## Add-ons Management
 
-![Add-ons Management Interface](../assets/images/pricing-page-addons.jpg)
+![Add-ons Management Interface](assets/images/pricing-page-addons.jpg)
 
 ### Add-ons Configuration Table
 

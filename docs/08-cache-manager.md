@@ -2,7 +2,7 @@
 
 Manage cache entries for search, filters, and categories to optimize store performance.
 
-![Cache Manager Interface](../assets/images/cache-manager.jpg)
+![Cache Manager Interface](assets/images/cache-manager.jpg)
 
 ---
 

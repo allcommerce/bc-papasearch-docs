@@ -2,7 +2,7 @@
 
 Configure your app settings and preferences to optimize search functionality.
 
-![Settings Interface](../assets/images/app-settings.jpg)
+![Settings Interface](assets/images/app-settings.jpg)
 
 ---
 

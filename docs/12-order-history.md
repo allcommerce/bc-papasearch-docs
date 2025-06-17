@@ -2,7 +2,7 @@
 
 View your PayPal wallet top-up transactions and download payment receipts.
 
-![Order History Interface](../assets/images/order-history.jpg)
+![Order History Interface](assets/images/order-history.jpg)
 
 ---
 
