@@ -1,521 +1,252 @@
 # Chapter 6: Keyword Management
 
-Keyword management is crucial for optimizing your store's search experience. This chapter covers how to manage suggested keywords that appear as customers type, helping them find products more easily and improving your search conversion rates.
-
----
-
-## Understanding Keywords in Search
-
-### What Are Suggested Keywords?
-
-Suggested keywords are search terms that appear as customers type in your search box, helping them:
-- Find products faster with autocomplete suggestions
-- Discover related products they might not have considered
-- Reduce typos and search errors
-- Navigate your catalog more efficiently
-
-`[SCREENSHOT: Search box showing suggested keywords dropdown]`
-
-### Types of Keywords
-
-The app manages three types of keywords:
-
-1. **Popular Keywords**: Most frequently searched terms by customers
-2. **Manual Keywords**: Keywords you add manually for strategic purposes
-3. **Auto-Generated Keywords**: Keywords extracted from your product data
+Manage suggested keywords that appear when customers type in your search box to improve search experience and help customers find products faster.
 
 ---
 
 ## Accessing Keyword Management
 
-### From Dashboard
-1. Click **Dashboard** in the main navigation
-2. Click the **"Suggested Keywords"** button (hashtag icon)
-3. You'll see the main keyword management interface
+1. Navigate to **Dashboard** → **Suggest Keywords** (hashtag icon)
+2. The page shows all your current keywords with management options
 
-`[SCREENSHOT: Dashboard with Suggested Keywords button highlighted]`
-
-### Direct Navigation
-- Use the left sidebar menu to access **Keywords** section
-- Page loads with current keyword data and management tools
+![Suggest Keywords interface](assets/images/suggested-keywords.jpg)
 
 ---
 
 ## Keyword Management Interface
 
-### Overview Section
-
-The top of the page shows key statistics:
-
-`[SCREENSHOT: Keyword statistics overview section]`
-
-#### Key Metrics:
-- **Total Keywords**: Number of active keywords in your system
-- **Manual Keywords**: Keywords you've added manually
-- **Auto Keywords**: Keywords generated from product data
-- **Popular Keywords**: Most searched terms by customers
-- **Last Updated**: When keyword data was last refreshed
-
 ### Main Action Buttons
 
-Located at the top of the keyword table:
-
-`[SCREENSHOT: Main keyword action buttons]`
+Located at the top of the page:
 
 #### Add Manual Keywords
-- **Purpose**: Add specific keywords you want to promote
-- **Use case**: Seasonal terms, brand names, product categories
-- **Best practice**: Add 10-20 high-value keywords initially
 
-#### Extract Keywords
-- **Purpose**: Automatically generate keywords from your product catalog
-- **Source**: Product names, descriptions, categories, and brands
-- **Recommendation**: Run monthly to capture new products
+Add specific keywords you want to promote in search suggestions.
 
-#### Delete Tracking Keywords
-- **Purpose**: Remove low-quality or irrelevant search terms
-- **Target**: Misspellings, inappropriate searches, or outdated terms
-- **Caution**: Use carefully to avoid removing valuable data
+#### Delete User Search
+
+Delete keywords to prevent them from appearing in search suggestions.
+
+#### Delete All
+
+Clear all keywords.
+
+#### Extract Keywords from Products
+
+Automatically generate keywords from your product catalog (names, descriptions, brands, etc.).
+
+---
+
+## Keyword Table Overview
+
+The table displays all keywords with the following information:
+
+### Table Columns:
+
+**Keyword**
+
+- The actual search term customers see
+
+**Products**
+
+- Number of products that match this keyword
+- Higher numbers indicate better keyword coverage
+
+**User Searches**
+
+- Number of times customers searched for this term before merging into this table
+- This count does not update after the keyword is added to the table
+
+**Manual**
+
+- Used to adjust priority level of this keyword
+- Click ✏️ (pencil icon) to edit manual count
+
+**Total**
+
+- Combined total from all sources
+- Overall relevance score for the keyword
+
+**Source**
+
+- Shows how the keyword was created:
+    - **PRODUCT ANALYSIS**: Auto-generated from product data
+    - **MANUAL**: Added manually by you
+    - **USER SEARCH**: Merged from User Search Keywords into Suggested Keywords
+
+**Last Updated**
+
+- When the keyword was last modified
+- Helps track recent changes
+
+**Actions**
+
+- 🗑️ Delete button to remove individual keywords
 
 ---
 
 ## Adding Manual Keywords
 
-### Step-by-Step Process
-
 1. Click **"Add Manual Keywords"** button
-2. A modal dialog appears for keyword entry
-3. Enter keywords and configure settings
-4. Save to activate immediately
+2. The Add Manual Keywords dialog appears with options:
 
-`[SCREENSHOT: Add Manual Keywords dialog box]`
+![Add Manual Keywords dialog](assets/images/add-manual-keywords.jpg)
 
-### Keyword Entry Methods
+### Single Keyword Method:
 
-#### Single Keyword Addition
-- **Format**: Enter one keyword per line
-- **Example**:
-  - "wireless headphones"
-  - "gaming laptop"
-  - "summer dresses"
+- Enter keyword in the **Keyword** field
+- Set **Count** value to specify importance (default: 1, higher = more important)
+- Click **"Add Keyword"** or **"Add Multiple (separated by lines)"**
 
-#### Bulk Keyword Import
-- **Format**: Paste multiple keywords separated by commas or new lines
-- **Example**: "iPhone case, Samsung phone, wireless charger, USB cable"
-- **Limit**: Up to 100 keywords per import
+### Multiple Keywords Method:
 
-#### CSV Import
-- **Format**: Upload CSV file with keywords and optional settings
-- **Columns**: Keyword, Weight, Category (optional)
-- **Use case**: Large keyword lists from external tools
+- Use the text area: **"Or enter multiple keywords (one per line, using count above)"**
+- Enter one keyword per line
+- All keywords will use the same Count value set above
+- Example format:
+  ```
+  wireless headphones
+  gaming laptop
+  summer dresses
+  ```
 
-### Keyword Configuration Options
+### Count/Importance Setting:
 
-#### Weight/Priority Setting
-- **Purpose**: Control how prominently keywords appear in suggestions
-- **Scale**: 1-10 (10 = highest priority)
-- **Default**: 5 (medium priority)
-- **Strategy**: Set 8-10 for your most important product categories
+- **Count**: Determines keyword priority in search suggestions
+- **Higher count**: Keyword appears higher in search suggestions
 
-`[SCREENSHOT: Keyword weight/priority slider]`
+3. Click **"Add 0 Keywords"** button to save (number updates based on keywords entered)
 
-#### Category Association
-- **Purpose**: Show keywords only for specific product categories
-- **Options**:
-  - All Categories (default)
-  - Specific category selection
-  - Multiple category selection
-- **Use case**: "running shoes" only for Sports category
+**Examples of good manual keywords:**
 
-#### Keyword Type Selection
-- **Manual**: Keywords you control completely
-- **Promoted**: Boost existing keywords from customer searches
-- **Seasonal**: Keywords active only during specific periods
+- Brand names: "apple", "samsung", "nike"
+- Product categories: "wireless headphones", "running shoes"
+- Seasonal terms: "christmas gifts", "back to school"
 
 ---
 
-## Automatic Keyword Extraction
+## Extract Keywords from Products
 
-### Extraction Process
+Use this feature to automatically generate keywords from your existing products:
 
-The app can automatically generate keywords from your existing product data:
+1. Click **"Extract Keywords from Products"** button
+2. The system analyzes your product catalog
+3. Keywords are extracted from:
+    - Product names
+    - Product descriptions
+    - Brand names
+    - Category names
+    - Custom fields
 
-`[SCREENSHOT: Keyword extraction configuration screen]`
+**Benefits:**
 
-### Data Sources for Extraction
-
-#### Product Names
-- **Extracts**: Individual words and phrases from product titles
-- **Example**: "Apple iPhone 13 Pro Max" → "Apple", "iPhone", "iPhone 13", "Pro Max"
-- **Benefits**: Captures exact product terminology customers use
-
-#### Product Descriptions
-- **Extracts**: Key phrases and descriptive terms
-- **Filters**: Common words (the, and, or) are excluded
-- **Example**: "Waterproof Bluetooth speaker" → "waterproof", "Bluetooth", "speaker"
-
-#### Category Names
-- **Extracts**: Category and subcategory names
-- **Hierarchy**: Includes parent and child category relationships
-- **Example**: "Electronics > Audio > Headphones" → all three terms
-
-#### Brand Names
-- **Extracts**: All brand names from your product catalog
-- **Automatic**: Updates when you add products with new brands
-- **Priority**: Brands typically get higher weights automatically
-
-#### Custom Fields
-- **Extracts**: Data from product custom fields
-- **Common fields**: Color, Size, Material, Style
-- **Configuration**: Choose which custom fields to include
-
-### Extraction Settings
-
-#### Minimum Frequency
-- **Purpose**: Only extract terms that appear multiple times
-- **Range**: 1-10 occurrences
-- **Recommendation**: Set to 2-3 for quality control
-- **Example**: Extract "wireless" only if it appears in 3+ products
-
-#### Keyword Length
-- **Minimum**: Exclude very short words (1-2 characters)
-- **Maximum**: Exclude very long phrases (50+ characters)
-- **Optimal**: 3-25 characters work best for most searches
-
-#### Language Filtering
-- **Purpose**: Extract keywords only in your store's primary language
-- **Auto-detection**: App identifies language automatically
-- **Manual override**: Specify language if auto-detection is incorrect
-
-### Running Extraction
-
-1. Click **"Extract Keywords"** button
-2. Configure extraction settings in the modal
-3. Select data sources (product names, descriptions, etc.)
-4. Set minimum frequency and length requirements
-5. Click **"Start Extraction"**
-6. Monitor progress with the progress bar
-7. Review extracted keywords before activating
-
-`[SCREENSHOT: Keyword extraction progress screen]`
+- Saves time on manual keyword entry
+- Ensures keywords match your actual products
+- Captures product terminology customers use
+- Updates automatically when you add new products
 
 ---
 
 ## Managing Existing Keywords
 
-### Keyword Table Interface
+### Search and Filter
 
-The main table shows all your keywords with management options:
-
-`[SCREENSHOT: Keyword management table with all columns]`
-
-#### Table Columns:
-
-**Keyword**
-- **Content**: The actual search term
-- **Clickable**: Click to edit keyword details
-- **Format**: Displays exactly as customers will see it
-
-**Type**
-- **Popular**: High-frequency customer searches
-- **Manual**: Keywords you added manually
-- **Auto**: Generated from product data
-- **Icons**: Visual indicators for each type
-
-**Search Count**
-- **Meaning**: Number of times customers searched for this term
-- **Period**: Usually last 30 days
-- **Trend**: Up/down arrows show if searches are increasing
-
-**Results Count**
-- **Meaning**: Number of products found for this keyword
-- **Zero results**: Red warning if no products match
-- **High results**: Green indicator for good keyword coverage
-
-**Weight/Priority**
-- **Scale**: 1-10 priority level
-- **Editable**: Click to change priority directly
-- **Visual**: Bar chart showing relative importance
-
-**Status**
-- **Active**: Keyword is live and appearing in suggestions
-- **Inactive**: Keyword is paused but settings preserved
-- **Pending**: Recently added, activation in progress
-
-**Actions**
-- **Edit**: Modify keyword settings
-- **Delete**: Remove keyword permanently
-- **View Results**: See products that match this keyword
+- Use the search box to find specific keywords
+- Filter by keyword type or source
+- Sort by any column (Products, User Searches, Total, etc.)
 
 ### Bulk Operations
 
-#### Select Multiple Keywords
-- **Method**: Use checkboxes to select multiple keywords
-- **Limit**: Up to 50 keywords per bulk operation
-- **Actions**: Delete, activate, deactivate, or change priority
+- Select multiple keywords using checkboxes
+- Use bulk actions to delete multiple keywords at once
+- Monitor the total count (e.g., "3852 Keywords" in the example)
 
-`[SCREENSHOT: Bulk keyword selection interface]`
+### Individual Keyword Management
 
-#### Bulk Actions Available:
-- **Activate All**: Turn on selected keywords
-- **Deactivate All**: Turn off selected keywords
-- **Delete Selected**: Remove multiple keywords at once
-- **Export**: Download selected keywords as CSV
-- **Change Priority**: Set same priority for multiple keywords
-
-### Filtering and Sorting
-
-#### Filter Options:
-- **By Type**: Show only Popular, Manual, or Auto keywords
-- **By Status**: Active, Inactive, or Pending keywords
-- **By Results**: Keywords with/without matching products
-- **By Search Count**: High-traffic vs low-traffic keywords
-
-#### Sort Options:
-- **Alphabetical**: A-Z or Z-A by keyword
-- **Popularity**: Most to least searched
-- **Results**: Most to least matching products
-- **Priority**: Highest to lowest weight
-- **Recent**: Most recently added or modified
+- **Edit Manual Count**: Click the ✏️ icon in the Manual column
+- **Delete Single Keyword**: Click the 🗑️ icon in Actions column
+- **View Details**: Click on any keyword to see more information
 
 ---
 
-## Keyword Analytics and Optimization
+## Keyword Sources Explained
 
-### Performance Metrics
+### PRODUCT ANALYSIS
 
-#### Search Analytics
-Track how your keywords are performing:
+Keywords automatically extracted from your product data:
 
-`[SCREENSHOT: Keyword analytics dashboard]`
+- High reliability since they match actual products
+- Updates when you add/modify products
+- Usually highest "Products" count
 
-**Key Performance Indicators:**
-- **Click-through Rate**: How often suggested keywords are clicked
-- **Conversion Rate**: Sales from keyword-driven searches
-- **Zero-Result Rate**: Percentage of keywords with no matching products
-- **Suggestion Frequency**: How often keywords appear in suggestions
+### MANUAL
 
-#### Popular vs Manual Keywords
-- **Popular keywords**: Based on actual customer behavior
-- **Manual keywords**: Your strategic additions
-- **Comparison**: Track which type performs better for your store
-- **Balance**: Aim for 70% popular, 30% manual keywords
+Keywords you've added specifically:
 
-### Optimization Strategies
+- Strategic keywords for important searches
+- Brand names or category terms
+- Seasonal or promotional keywords
 
-#### Identifying High-Value Keywords
+### USER SEARCH
 
-**High Search, High Results**
-- **Status**: Excellent keywords to promote
-- **Action**: Increase priority/weight
-- **Example**: "wireless headphones" with 500+ searches, 50+ products
+Keywords from actual customer searches:
 
-**High Search, Low Results**
-- **Status**: Opportunity to add more products
-- **Action**: Source products for these popular searches
-- **Example**: "blue running shoes" with 200 searches, 2 products
-
-**Low Search, High Results**
-- **Status**: Potential for growth
-- **Action**: Promote these keywords more prominently
-- **Example**: "ergonomic office chair" with 10 searches, 30+ products
-
-#### Seasonal Keyword Management
-
-**Adding Seasonal Keywords**
-- **Timing**: Add 2-4 weeks before peak season
-- **Examples**: "Christmas gifts", "back to school", "summer sale"
-- **Priority**: Set high priority during active season
-
-**Removing Outdated Keywords**
-- **Review**: Monthly review of keyword performance
-- **Criteria**: Remove keywords with no searches for 90+ days
-- **Archive**: Keep data for next year's seasonal planning
+- Shows real customer demand
+- High "User Searches" count indicates popular terms
+- Valuable for understanding customer language
 
 ---
 
-## Advanced Keyword Features
+## Best Practices
 
-### Keyword Synonyms and Variations
+### Adding Manual Keywords:
+- **Use strategic terms**: Add brand names, product categories, and seasonal keywords
+- **Set appropriate count**: Use higher count (5-10) for important keywords
+- **Customer language**: Use terms customers naturally search for
+- **Avoid duplicates**: Check existing keywords before adding new ones
 
-#### Synonym Management
-- **Purpose**: Handle different ways customers search for same products
-- **Example**: "sofa" = "couch" = "sectional"
-- **Setup**: Link related keywords to show same results
+### Managing Keyword Sources:
+- **PRODUCT ANALYSIS**: Let system auto-extract from your catalog regularly
+- **MANUAL**: Add strategic keywords you want to promote
+- **USER SEARCH**: Review and merge valuable customer search terms
 
-#### Spelling Variations
-- **Auto-handling**: App automatically handles common misspellings
-- **Manual additions**: Add specific misspellings common to your products
-- **Example**: "jewelery" → "jewelry", "recieve" → "receive"
+### Quality Control:
+- **Monitor "Products" column**: Remove keywords with zero matching products
+- **Check "User Searches"**: Focus on keywords with actual customer demand
+- **Use "Delete User Search"**: Remove irrelevant or poor quality search terms
+- **Balance keyword count**: Don't add too many keywords that dilute search quality
 
-### Multi-Language Support
-
-#### Language Detection
-- **Automatic**: App detects customer's language preference
-- **Manual**: Customers can select language in search interface
-- **Keywords**: Maintain keyword lists for each supported language
-
-#### Translation Integration
-- **Source**: Use product translations for keyword generation
-- **Consistency**: Ensure keywords match product language
-- **Maintenance**: Update translations when products change
-
----
-
-## Integration with Search Results
-
-### How Keywords Affect Search
-
-#### Search Suggestion Priority
-1. **Exact matches**: Keywords that exactly match typed text
-2. **Partial matches**: Keywords containing the typed text
-3. **Fuzzy matches**: Keywords similar to typed text
-4. **Weighted priority**: Higher weight keywords appear first
-
-#### Search Result Influence
-- **Boosting**: Products matching high-priority keywords rank higher
-- **Filtering**: Keywords can pre-filter results by category
-- **Personalization**: Keywords adapt based on customer history
-
-### Testing Keyword Effectiveness
-
-#### A/B Testing Keywords
-- **Method**: Test different keyword sets with different customer segments
-- **Metrics**: Track conversion rates, click-through rates, time on site
-- **Duration**: Run tests for at least 2 weeks for statistical significance
-
-#### Keyword Impact Analysis
-- **Before/After**: Compare search performance before and after keyword changes
-- **Segmentation**: Analyze keyword performance by customer type, device, time
-- **ROI**: Calculate revenue impact of keyword optimization efforts
+### Maintenance Schedule:
+- **Weekly**: Review User Search Keywords page and merge valuable terms
+- **Monthly**: Run "Extract Keywords from Products" for new items
+- **Quarterly**: Clean up keywords with zero products or low performance
+- **Seasonally**: Add seasonal terms before peak periods, remove after
 
 ---
 
-## Troubleshooting Keyword Issues
+## Troubleshooting
 
-### Common Problems
+### Keywords Not Appearing in Search Suggestions
+1. Check if keyword exists in the table
+2. Verify "Products" count is greater than 0
+3. Ensure you have products that match the keyword
+4. Clear cache if recently added
 
-#### Keywords Not Appearing in Suggestions
+### No Keywords Being Generated
+1. Verify your products have descriptions and titles
+2. Run "Extract Keywords from Products"
+3. Check if products are properly indexed
+4. Contact support if extraction fails
 
-**Possible Causes:**
-1. **Keyword is inactive** - Check status in keyword table
-2. **Weight too low** - Increase priority/weight setting
-3. **Cache issues** - Clear cache in Cache Manager
-4. **No matching products** - Verify products exist for keyword
-
-**Solution Steps:**
-1. Go to **Keywords** page
-2. Find the keyword in the table
-3. Check **Status** column (should be "Active")
-4. Verify **Results Count** is greater than 0
-5. Increase **Weight** to 7 or higher
-6. Clear cache and test
-
-#### Poor Search Results for Keywords
-
-**Possible Causes:**
-1. **Keyword too broad** - "shoes" returns too many unrelated results
-2. **Keyword too specific** - "red leather running shoes size 9" too narrow
-3. **Product data issues** - Products not properly tagged or categorized
-4. **Index outdated** - Products changed but search index not updated
-
-**Solution Steps:**
-1. Review product data for keyword matches
-2. Run product sync from **Manage Indexes**
-3. Adjust keyword specificity
-4. Consider adding category filters
-5. Test with different keyword variations
-
-#### Keyword Extraction Not Working
-
-**Possible Causes:**
-1. **No product data** - Products missing descriptions or titles
-2. **Language mismatch** - Extraction settings don't match product language
-3. **Frequency threshold too high** - Minimum occurrence set too high
-4. **Data source not selected** - Forgot to select product names/descriptions
-
-**Solution Steps:**
-1. Verify products have rich descriptions and titles
-2. Check extraction language settings
-3. Lower minimum frequency to 1-2
-4. Select all relevant data sources
-5. Run extraction again
+### Too Many Irrelevant Keywords
+1. Use "Delete User Search" to remove poor quality searches
+2. Focus on keywords with good "Products" to "User Searches" ratio
+3. Regularly clean up low-performing keywords
 
 ---
 
-## Best Practices for Keyword Management
-
-### Strategic Keyword Planning
-
-#### Research Customer Language
-- **Method**: Monitor customer support queries for product terminology
-- **Tools**: Use Google Analytics search data from your website
-- **Survey**: Ask customers how they would search for your products
-- **Competitor analysis**: See what keywords competitors target
-
-#### Keyword Hierarchy
-- **Broad keywords**: "electronics", "clothing", "home decor"
-- **Category keywords**: "smartphones", "dresses", "kitchen appliances"
-- **Specific keywords**: "iPhone 13 case", "summer maxi dress", "coffee maker"
-- **Balance**: Include all levels for comprehensive coverage
-
-### Maintenance Schedule
-
-#### Weekly Tasks:
-- ✅ Review new popular keywords from customer searches
-- ✅ Check for zero-result keywords and address issues
-- ✅ Monitor keyword performance metrics
-
-#### Monthly Tasks:
-- ✅ Run keyword extraction for new products
-- ✅ Review and update seasonal keywords
-- ✅ Analyze keyword conversion rates
-- ✅ Clean up low-performing keywords
-
-#### Quarterly Tasks:
-- ✅ Complete keyword strategy review
-- ✅ Benchmark against competitor keywords
-- ✅ Plan seasonal keyword campaigns
-- ✅ Review and update keyword weights
-
-### Quality Control
-
-#### Keyword Quality Checklist:
-- ✅ **Relevant**: Keywords match actual products in your store
-- ✅ **Customer-friendly**: Use language customers naturally use
-- ✅ **Specific enough**: Not too broad to be useful
-- ✅ **Current**: Remove outdated products or seasonal terms
-- ✅ **Balanced**: Mix of popular and strategic keywords
-
-#### Regular Audits:
-- **Zero-result keywords**: Review monthly and fix or remove
-- **Duplicate keywords**: Consolidate similar terms
-- **Inactive keywords**: Remove keywords with no recent searches
-- **Competitor keywords**: Ensure coverage of competitor brand names (where legal)
+**Next Steps**: After optimizing your keywords, move on to [Chapter 7: User Search Analytics](./07-user-search-keywords.md) to track how customers search in your store.
 
 ---
 
-## Integration with Other Features
-
-### Keywords and Filters
-- **Synergy**: Keywords work with filters to narrow search results
-- **Example**: "running shoes" keyword + "Size" filter + "Brand" filter
-- **Optimization**: Ensure popular keywords have relevant filter options
-
-### Keywords and Analytics
-- **Tracking**: Monitor which keywords drive the most sales
-- **Attribution**: Track customer journey from keyword to purchase
-- **ROI**: Calculate return on investment for keyword optimization efforts
-
-### Keywords and Cache
-- **Performance**: Popular keywords are cached for faster suggestions
-- **Updates**: Clear cache when making major keyword changes
-- **Monitoring**: Watch cache hit rates for keyword suggestions
-
----
-
-**Next Steps**: After optimizing your keywords, move on to [Chapter 7: User Search Analytics](./07-user-search-keywords.md) to understand how customers are actually searching in your store.
-
----
-
-*Need help with keyword strategy? Our support team can provide personalized keyword recommendations based on your product catalog and customer behavior.*
+*Need help with keyword strategy? Contact our support team for personalized recommendations.*

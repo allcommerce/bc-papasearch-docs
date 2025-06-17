@@ -1,531 +1,340 @@
-# Chapter 9: App Settings
+# Chapter 9: Settings
 
-The Settings page is the central control panel for configuring how your search functionality behaves. This chapter covers every setting available and how to optimize them for your store's specific needs.
+Configure your app settings and preferences to optimize search functionality.
 
----
-
-## Understanding App Settings
-
-### What Settings Control
-
-App settings determine:
-- **Search behavior**: How searches work and what results are returned
-- **Product display**: How products appear in search results
-- **Filter functionality**: How filters work and appear
-- **Performance options**: Caching, indexing, and optimization settings
-- **Theme integration**: How the app integrates with your storefront
-
-`[SCREENSHOT: Settings page overview showing all configuration sections]`
-
-### Settings Categories
-
-Settings are organized into logical groups:
-1. **Search Settings**: Core search functionality
-2. **Product Settings**: Product display and information
-3. **Filter Settings**: Filter behavior and appearance
-4. **Indexing Settings**: Background processing and sync
-5. **Customer Settings**: Customer-specific configurations
+![Settings Interface](../assets/images/app-settings.jpg)
 
 ---
 
-## Accessing Settings
+## Overview
 
-### From Dashboard
-1. Navigate to the main **Dashboard**
-2. Click the **"Settings"** button (gear icon)
-3. The Settings page opens with all configuration options
+The Settings page allows you to configure core search behavior, product display options, currency settings, customer groups, filters, and indexing preferences.
 
-`[SCREENSHOT: Dashboard with Settings button highlighted]`
+**Main Functions:**
 
-### Direct Navigation
-- Use the left sidebar menu to access **Settings**
-- Page loads with expandable sections for each settings category
+- Configure product display options and pricing
+- Manage currencies and exchange rates
+- Set up customer groups and guest access
+- Configure filter selectors and behavior
+- Adjust search parameters and sorting
+- Enable semantic search and automatic indexing
 
 ---
 
-## Search Settings
+## Interface Elements
 
-### Core Search Configuration
+### Header Section
 
-`[SCREENSHOT: Search Settings section expanded with all options]`
+**Navigation:**
 
-#### Enable Semantic Search
-- **Purpose**: Activates AI-powered search that understands meaning and context
-- **Default**: Enabled
-- **When to disable**: If you prefer traditional keyword-only search
-- **Impact**: Disabled = faster but less intelligent search results
+- **← Back to Dashboard** - Return to main dashboard
+- **🔄 Reset to Default** - Restore all settings to default values
+- **🔄 Sync from BigCommerce** - Update settings from BigCommerce store
+- **Save Settings** - Apply current configuration
 
-**How Semantic Search Works:**
-- **Traditional search**: Looks for exact keyword matches
-- **Semantic search**: Understands intent and context
-- **Example**: "phone case" also finds "mobile cover", "cell phone protection"
-- **Benefits**: Better results for natural language queries
+---
 
-#### Search Lowest Score
-- **Purpose**: Sets minimum relevance threshold for search results
-- **Format**: Decimal number between 0.0 and 2.0
-- **Default**: 1.0
-- **Lower values**: More results, potentially less relevant
-- **Higher values**: Fewer results, but more relevant
+## Products Section
 
-**Score Guidelines:**
-- **0.1-0.5**: Very permissive, includes loosely related products
-- **0.6-1.0**: Balanced approach, good for most stores
-- **1.1-1.5**: Strict relevance, only highly relevant products
-- **1.6-2.0**: Very strict, may exclude valid results
+### Product Display Settings
 
-**Optimization Tips:**
-- Start with default (1.0) and adjust based on customer feedback
-- Lower if customers complain about too few results
-- Raise if customers complain about irrelevant results
-- Test with your most common search terms
+**Checkbox Options:**
 
-#### Default Products Per Page
+- **✅ Original price included tax** - Show tax-inclusive prices
+- **✅ Show price including tax** - Display prices with tax included
+- **✅ Show both tax and non-tax price** - Display both tax-inclusive and tax-exclusive prices
+- **✅ Show retail price** - Display manufacturer's suggested retail price (MSRP)
+- **✅ Show out of stock badge** - Mark out-of-stock products with badges
+- **✅ Show add to cart button** - Include "Add to Cart" buttons in search results
+- **⬜ Show compare button** - Enable product comparison functionality
+- **⬜ Show quick view button** - Add quick preview buttons for products
+
+**Purpose:**
+
+- Control what product information appears in search results
+- Customize pricing display for different customer types
+- Enable or disable interactive buttons on product listings
+
+---
+
+## Currencies Section
+
+### Currency Settings
+
+**Add Currency Button:**
+
+- **+ Add Currency** - Add new currency support
+
+**Currency Table Columns:**
+
+- **Code** - Currency code (e.g., USD, GBP)
+- **Symbol** - Currency symbol ($, £)
+- **Position** - Symbol position (Left/Right)
+- **Decimal Point** - Decimal separator (. or ,)
+- **Thousands Sep** - Thousands separator (, or .)
+- **Decimal Places** - Number of decimal places (usually 2)
+- **Default** - Set as default currency (checkbox)
+- **Exchange Rate** - Conversion rate to base currency
+- **Actions** - 🗑️ Delete currency
+
+**Current Currencies:**
+
+- **USD - US** - Default currency ($, Left position, 1.000000000 rate)
+- **GBP - Pound** - Secondary currency (£, Right position, 0.828700000 rate)
+
+**Purpose:**
+
+- Support multiple currencies for international customers
+- Configure currency display format and positioning
+- Set exchange rates for accurate pricing conversion
+
+!!! info "💡 Sync Currency"
+    Use "**Sync from BigCommerce**" button to automatically import currencies already configured in your BigCommerce store settings.
+
+---
+
+## Customer & Customer Groups Section
+
+### Guest Customer Configuration
+
+**Guest Customer Group ID:**
+
+- **Field**: Numeric input (default: 0)
+- **Description**: Customer group ID for guest shoppers (default: 0)
+- **Purpose**: Define which customer group non-logged-in visitors belong to
+
+### Customer Groups Table
+
+**Synced from BigCommerce** indicator shows data source
+
+**Table Columns:**
+
+- **ID** - Customer group identifier (e.g., 0)
+- **Name** - Group name (e.g., "Guest")
+- **Default** - Whether this is the default group (-)
+- **Guest Group** - Marked as guest group (👤 Guest icon)
+
+**Info Note:**
+
+!!! info "💡 Sync Customer Groups"
+    Customer groups are managed in BigCommerce admin panel. Use "**Sync from BigCommerce**" button to update this list from your store settings.
+
+**Purpose:**
+
+- Configure customer group access and pricing
+- Set default group for guest customers
+- Sync customer group data from BigCommerce
+
+---
+
+## Filters Section
+
+### Filter Container Selectors
+
+**Filters container selector:**
+
+- **Field**: Text input with default values
+- **Value**: `#faceted-search-container, papasearch-sidebar`
+- **Purpose**: CSS selectors for where filters appear on storefront
+
+**Products container selector:**
+
+- **Field**: Text input with default values
+- **Value**: `#product-listing-container, papasearch-content`
+- **Purpose**: CSS selectors for where search results appear
+
+**⬜ Ajax category link:**
+
+- **Checkbox**: Enable AJAX category navigation
+- **Purpose**: Load category pages without full page reload when selecting category in filter
+- **Benefits**: Faster category browsing, maintains current page state
+- **Limitation**: Category descriptions and widgets may not update since the app only controls product display
+
+!!! note "📝 AJAX Category Navigation"
+    Enable this feature if you want category links in filters to load corresponding products without refreshing the entire page. However, category descriptions may not update because the app only controls product display, not widgets and other category-related sections.
+
+**Purpose:**
+
+- Define where filters and products display on your theme
+- Enable smooth category navigation without page refreshes
+- Integrate with existing theme structure
+
+---
+
+## Search Section
+
+### Search Configuration
+
+**Default products per page limit:**
+
+- **Field**: Numeric input (default: 24)
 - **Purpose**: Number of products shown per page in search results
-- **Range**: 12-60 products
-- **Default**: 24 products
-- **Mobile consideration**: Fewer products (12-18) work better on mobile
 
-**Performance Impact:**
-- **Fewer products**: Faster page loading, more pages to browse
-- **More products**: Slower loading, fewer clicks to find products
-- **Recommendation**: Match your category page settings
+**Default sort:**
 
-#### Default Sort Order
-- **Purpose**: How search results are ordered by default
-- **Options**:
-  - **Relevance**: Best match to search term (recommended)
-  - **Price: Low to High**: Cheapest products first
-  - **Price: High to Low**: Most expensive products first
-  - **Newest**: Most recently added products first
-  - **Name A-Z**: Alphabetical by product name
-  - **Name Z-A**: Reverse alphabetical order
+- **Dropdown**: Sort order options
+- **Selected**: "Relevance"
+- **Options**: Relevance, Price Low-High, Price High-Low, Newest, Name A-Z, Name Z-A
+- **Purpose**: Default sorting method for search results
 
-**Strategic Considerations:**
-- **Relevance**: Best for customer experience and conversions
-- **Price Low-High**: Good for budget-conscious customers
-- **Newest**: Highlights new inventory for fashion/tech stores
-- **Name**: Useful for stores with standard product naming
+**Search lowest score (only works when semantic search enabled):**
 
-#### Redirect to Search Page
-- **Purpose**: Controls where search results are displayed
-- **Options**:
-  - ✅ **Enabled**: Searches take customers to dedicated search results page
-  - ❌ **Disabled**: Searches display results in overlay/popup
+- **Field**: Numeric input (default: 1.5)
+- **Purpose**: Minimum relevance threshold for displaying results
+- **Range**: 0.0 (show all) to 2.0 (very strict)
 
-**When to Enable:**
-- You have a well-designed search results page
-- You want search results to have their own URL for sharing/bookmarking
-- You have many products and need full-page space for results
+**Checkbox Options:**
 
-**When to Disable:**
-- You prefer overlay/popup search for faster interaction
-- Your search results page design needs improvement
-- You want to keep customers on the current page
+- **⬜ Redirect search page** - When searching from quick search box, redirect to dedicated search results page instead of showing results via AJAX on current page
+- **⬜ Suggest products when searching** - Show instant search suggestions
 
-#### Suggest Products While Searching
-- **Purpose**: Shows instant search suggestions as customers type
-- **Default**: Enabled
-- **Benefits**: Faster product discovery, reduced typing
-- **Considerations**: Requires good keyword management for best results
+**Purpose:**
+
+- Control search result display and behavior
+- Set relevance filtering for semantic search
+- Enable additional search features like suggestions
 
 ---
 
-## Product Settings
+## Indexing Section
 
-### Product Display Configuration
+### Semantic Search
 
-`[SCREENSHOT: Product Settings section with all product display options]`
+**Enable semantic search:**
 
-#### Price Display Options
+- **✅ Checkbox**: Enable AI-powered semantic search
+- **Purpose**: Understand search intent and meaning, not just keywords
+- **Benefits**: Better results for natural language queries, multilingual support, spelling error tolerance
+- **Features**: Handles typos, synonyms, different languages, and contextual understanding
 
-**Show Price Including Tax**
-- **Purpose**: Display prices with tax included
-- **Default**: Follows your BigCommerce tax settings
-- **Benefit**: Transparency for customers about final price
-- **Consideration**: May make products appear more expensive
+!!! example "🤖 Semantic Search Examples"
+    - **Spelling Errors**: "laptp" → finds "laptop"
+    - **Synonyms**: "mobile phone" → finds "smartphone", "cell phone"
+    - **Multilingual**: "téléphone" (French) → finds "phone" products
+    - **Context**: "red dress for party" → understands style and occasion
 
-**Show Both Tax and Non-Tax Prices**
-- **Purpose**: Display both pre-tax and post-tax prices
-- **Format**: "$99.99 (Tax: $109.99)"
-- **Use case**: B2B stores where business customers see pre-tax prices
-- **Complexity**: More information may clutter product display
+### Webhook Management
 
-**Show Retail Price**
-- **Purpose**: Display manufacturer's suggested retail price (MSRP)
-- **Benefit**: Highlights savings when your price is lower
-- **Example**: "Our Price: $79.99 (Retail: $99.99)"
-- **Requirement**: Products must have retail price data in BigCommerce
+**Enable hooks to update when products/categories change:**
 
-#### Product Information Display
+- **⬜ Checkbox**: Automatic sync when BigCommerce data changes
+- **Description**: "Creates 15 webhooks: 5 for products (including inventory), 6 for categories (global + channel-specific), and 4 for product assignments. Click 'Save Settings' to install webhooks automatically."
 
-**Show Out of Stock Badge**
-- **Purpose**: Clearly mark products that are out of stock
-- **Default**: Enabled
-- **Appearance**: Usually red badge or overlay on product image
-- **Customer benefit**: Immediate visibility of availability
+**Webhook Status Tables:**
 
-**Show Add to Cart Button**
-- **Purpose**: Include "Add to Cart" button in search results
-- **Default**: Enabled
-- **Benefit**: Faster purchase process, fewer clicks to buy
-- **Alternative**: Link to product page for more details first
+**📦 Products** (0/5 (0%)):
 
-**Show Compare Button**
-- **Purpose**: Allow customers to compare products from search results
-- **Requirement**: BigCommerce product comparison feature must be enabled
-- **Use case**: Stores with similar products that benefit from comparison
+- `store/product/created` - Product created - ❌ Not installed
+- `store/product/updated` - Product updated - ❌ Not installed
+- `store/product/deleted` - Product deleted - ❌ Not installed
+- `store/product/inventory/updated` - Product inventory updated - ❌ Not installed
+- `store/product/inventory/order/updated` - Product inventory updated by order - ❌ Not installed
 
-**Show Quick View Button**
-- **Purpose**: Preview product details without leaving search results
-- **Default**: Usually enabled
-- **Benefit**: Fast product browsing, maintains search context
-- **Requirement**: Theme must support quick view functionality
+**📁 Categories** (0/6 (0%)):
 
-#### Product Data Inclusion
+- `store/category/created` - Category created (global) - ❌ Not installed
+- `store/category/updated` - Category updated (global) - ❌ Not installed
+- `store/category/deleted` - Category deleted (global) - ❌ Not installed
+- `store/channel/1/category/created` - Category created (channel 1) - ❌ Not installed
+- `store/channel/1/category/updated` - Category updated (channel 1) - ❌ Not installed
+- `store/channel/1/category/deleted` - Category deleted (channel 1) - ❌ Not installed
 
-**Fields to Index for Search**
-- **Product Name**: Always included (required)
-- **Description**: Include for more comprehensive search
-- **SKU**: Enable if customers search by SKU/model numbers
-- **Brand**: Include for brand-based searches
-- **Categories**: Include for category-based filtering
-- **Custom Fields**: Include relevant custom attributes
+**🔗 Product Assignments** (0/4 (0%)):
 
-**Optimization Strategy:**
-- **Include more fields**: Better search coverage, potentially slower indexing
-- **Include fewer fields**: Faster indexing, potentially missed search matches
-- **Balance**: Include fields customers actually search for
+- `store/channel/1/product/assigned` - Product assigned to channel 1 - ❌ Not installed
+- `store/channel/1/product/unassigned` - Product unassigned from channel 1 - ❌ Not installed
+- `store/channel/1/category/product/assigned` - Product assigned to category (channel 1) - ❌ Not installed
+- `store/channel/1/category/product/unassigned` - Product unassigned from category (channel 1) - ❌ Not installed
 
----
+### Auto Update Settings
 
-## Filter Settings
+**Auto check update interval:**
 
-### Filter Behavior Configuration
+- **Dropdown**: Update frequency options
+- **Selected**: "3 hours"
+- **Options**: Real-time, 5 minutes, 15 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours
+- **Purpose**: How often to check for product changes when webhooks are not available
 
-`[SCREENSHOT: Filter Settings section showing filter behavior options]`
+**Purpose:**
 
-#### Filter Container Selector
-- **Purpose**: CSS selector for where filters appear on your storefront
-- **Default**: Auto-detected based on your theme
-- **Common selectors**:
-  - `#sidebar-filters`
-  - `.filter-container`
-  - `[data-filters]`
-- **Customization**: Work with developer to customize placement
-
-#### Products Container Selector
-- **Purpose**: CSS selector for where search results appear
-- **Default**: Auto-detected based on your theme
-- **Common selectors**:
-  - `#product-listing`
-  - `.product-grid`
-  - `[data-products]`
-- **Impact**: Determines where filtered results are displayed
-
-#### AJAX Category Links
-- **Purpose**: Load category pages without full page refresh
-- **Default**: Enabled
-- **Benefits**: Faster browsing, maintains filter selections
-- **Requirements**: Theme must support AJAX category navigation
-
-### Filter Appearance Settings
-
-#### Default Filter State
-- **Purpose**: Whether filters start expanded or collapsed
-- **Options**:
-  - **Expanded**: All filter options visible immediately
-  - **Collapsed**: Filters show only titles, click to expand
-- **Mobile**: Usually collapsed to save screen space
-
-#### Filter Value Limits
-- **Purpose**: Maximum number of filter options to show at once
-- **Default**: 10-15 options per filter
-- **"Show More"**: Link to reveal additional options
-- **Performance**: Too many options can slow page loading
+- Enable automatic product and category synchronization
+- Monitor webhook installation status
+- Set fallback update intervals for data freshness
 
 ---
 
-## Indexing Settings
+## Settings Operations
 
-### Background Processing Configuration
+### Save Settings
 
-`[SCREENSHOT: Indexing Settings section with sync and processing options]`
+1. Configure desired options in each section
+2. Click **Save Settings** button in header
+3. Settings are applied immediately
+4. Webhooks are automatically installed if enabled
 
-#### Enable Hooks for Auto-Update
-- **Purpose**: Automatically sync when products change in BigCommerce
-- **Default**: Enabled
-- **How it works**: BigCommerce sends notifications when products are modified
-- **Benefits**: Always up-to-date search results without manual sync
+### Reset to Default
 
-**When to Disable:**
-- You prefer manual control over sync timing
-- You experience sync performance issues
-- You have very frequent product updates that cause excessive syncing
+1. Click **🔄 Reset to Default** button in header
+2. Confirm action in warning dialog
+3. All settings return to recommended defaults
+4. You will need to reconfigure custom settings
 
-#### Auto-Check Update Interval
-- **Purpose**: How often the app checks for product changes
-- **Options**:
-  - **Real-time**: Immediate updates (highest server load)
-  - **5 minutes**: Very frequent updates
-  - **15 minutes**: Frequent updates (recommended)
-  - **30 minutes**: Moderate updates
-  - **1 hour**: Infrequent updates (lowest server load)
+### Sync from BigCommerce
 
-**Choosing Interval:**
-- **High-change stores**: More frequent updates (5-15 minutes)
-- **Stable catalogs**: Less frequent updates (30-60 minutes)
-- **Performance priority**: Longer intervals reduce server load
+1. Click **🔄 Sync from BigCommerce** button in header
+2. Updates customer groups, currencies, and other BigCommerce data
+3. Ensures settings match your current BigCommerce configuration
 
-#### Semantic Search Processing
-- **Purpose**: Enable AI processing for semantic search
-- **Default**: Enabled if semantic search is enabled
-- **Impact**: Disabled = semantic search won't work properly
-- **Resource usage**: AI processing requires additional server resources
-
-### Sync Behavior Settings
-
-#### Product Sync Priority
-- **Purpose**: Which products to sync first during large updates
-- **Options**:
-  - **Newest first**: Recently added products get priority
-  - **Most popular**: High-traffic products get priority
-  - **Alphabetical**: Systematic A-Z processing
-  - **Category order**: Sync by category hierarchy
-
-#### Error Handling
-- **Purpose**: How to handle products that fail to sync
-- **Options**:
-  - **Retry automatically**: Attempt to sync failed products again
-  - **Skip and report**: Continue sync, log failed products for review
-  - **Stop on error**: Halt sync process if any product fails
-
-#### Batch Processing Size
-- **Purpose**: Number of products processed in each sync batch
-- **Range**: 10-100 products per batch
-- **Large batches**: Faster overall sync, more server memory usage
-- **Small batches**: Slower sync, less server impact
+!!! warning "⚠️ Important"
+    Changes are applied immediately. Review settings carefully before saving.
 
 ---
 
-## Customer Settings
+## Recommended Settings
 
-### Customer-Specific Configurations
+### New Store Setup:
+- **Enable semantic search**: ✅ For better search understanding
+- **Products per page**: 24 (good balance)
+- **Default sort**: Relevance
+- **Search lowest score**: 1.5 (balanced relevance)
+- **Enable webhooks**: ✅ For automatic updates
 
-`[SCREENSHOT: Customer Settings section with pricing and group options]`
+### High-Traffic Stores:
+- **Enable webhooks**: ✅ For real-time updates
+- **Auto check interval**: 1-3 hours
+- **Products per page**: 12-18 (faster loading)
+- **Search lowest score**: 1.0-1.2 (more results)
 
-#### Guest Customer Group
-- **Purpose**: Default customer group for non-logged-in visitors
-- **Impact**: Affects pricing and product visibility for guest shoppers
-- **Selection**: Choose from your BigCommerce customer groups
-- **Common choice**: "Guest" or default customer group
-
-#### Customer Group Pricing
-- **Purpose**: Show different prices based on customer group membership
-- **Default**: Enabled
-- **B2B benefit**: Different pricing for wholesale vs. retail customers
-- **Complexity**: Requires customer group setup in BigCommerce
-
-#### Currency Handling
-- **Purpose**: How to handle multiple currencies in search/filters
-- **Auto-detection**: Use customer's browser/location to determine currency
-- **Manual selection**: Let customers choose their preferred currency
-- **Search impact**: Prices and ranges adjust based on selected currency
+### B2B Stores:
+- **Show both tax and non-tax price**: ✅
+- **Customer groups**: Configure for wholesale vs retail
+- **Products per page**: 24-48 (comparison shopping)
+- **Default sort**: Relevance or Name A-Z
 
 ---
 
-## Advanced Settings
+## Troubleshooting
 
-### Performance Optimization
+### Webhooks Not Installing
+- **Problem**: Red "❌ Not installed" status after saving
+- **Solution**: Check BigCommerce API permissions, try saving settings again
+- **Alternative**: Use auto check update interval as fallback
 
-`[SCREENSHOT: Advanced Settings section with performance options]`
+### Search Results Not Updating
+- **Problem**: New products don't appear in search
+- **Solution**: Enable webhooks or reduce auto check update interval
+- **Check**: Verify semantic search is working properly
 
-#### Cache Configuration
-- **Purpose**: Control how search data is cached
-- **Cache lifetime**: How long to keep cached search results
-- **Cache size limits**: Maximum cache storage allowed
-- **Auto-cleanup**: Automatically remove old cache data
+### Filter Display Issues
+- **Problem**: Filters not appearing correctly
+- **Solution**: Update filter container selectors to match your theme
+- **Help**: Contact support for theme-specific selector assistance
 
-#### Search Timeout Settings
-- **Purpose**: Maximum time to wait for search results
-- **Default**: 30 seconds
-- **Too short**: May cut off complex searches
-- **Too long**: Customers may abandon slow searches
-
-#### Rate Limiting
-- **Purpose**: Prevent excessive API calls from single users
-- **Limits**: Number of searches per minute/hour
-- **Protection**: Prevents abuse and ensures fair usage
-- **Adjustment**: May need tuning for high-traffic stores
-
-### Integration Settings
-
-#### BigCommerce API Configuration
-- **Purpose**: Settings for communicating with BigCommerce
-- **API version**: Which BigCommerce API version to use
-- **Request limits**: How many API calls per hour
-- **Error handling**: How to handle BigCommerce API errors
-
-#### Webhook Configuration
-- **Purpose**: Settings for receiving BigCommerce notifications
-- **Event types**: Which BigCommerce events trigger app updates
-- **Retry policy**: How to handle failed webhook deliveries
-- **Security**: Webhook authentication and validation
+### Currency Conversion Problems
+- **Problem**: Incorrect pricing in different currencies
+- **Solution**: Update exchange rates, verify decimal places and separators
+- **Check**: Ensure BigCommerce currency settings match app settings
 
 ---
 
-## Settings Validation and Testing
-
-### Configuration Testing
-
-#### Search Functionality Test
-1. **Save settings** after making changes
-2. **Clear cache** to ensure fresh data
-3. **Test common searches** to verify behavior
-4. **Check different devices** (desktop, mobile, tablet)
-5. **Verify filter functionality** across categories
-
-#### Performance Impact Assessment
-- **Before/after comparisons**: Measure search speed before and after changes
-- **User experience testing**: Have team members test the search experience
-- **Analytics monitoring**: Watch for changes in search usage patterns
-- **Customer feedback**: Monitor for complaints or compliments
-
-### Rollback and Recovery
-
-#### Settings Backup
-- **Export settings**: Download current configuration before major changes
-- **Version history**: Keep record of previous working configurations
-- **Recovery plan**: Know how to quickly revert problematic changes
-
-#### Common Rollback Scenarios
-- **Performance degradation**: New settings cause slower search
-- **Reduced functionality**: Changes break existing features
-- **Customer complaints**: New behavior confuses or frustrates customers
-- **Technical issues**: Settings cause errors or crashes
-
----
-
-## Optimization Strategies
-
-### Store Type Recommendations
-
-#### Fashion/Apparel Stores
-- **Semantic search**: Enabled (helps with style/trend searches)
-- **Search score**: 0.8-1.0 (balanced relevance)
-- **Sort default**: Relevance or Newest
-- **Products per page**: 18-24 (good for visual browsing)
-- **Filters**: Emphasize Size, Color, Brand, Price
-
-#### Electronics Stores
-- **Semantic search**: Enabled (technical term understanding)
-- **Search score**: 1.0-1.2 (higher precision for tech specs)
-- **Sort default**: Relevance
-- **Products per page**: 12-18 (more detailed comparison needed)
-- **Filters**: Emphasize Brand, Price, Features, Ratings
-
-#### Home & Garden Stores
-- **Semantic search**: Enabled (lifestyle and use-case searches)
-- **Search score**: 0.8-1.0 (broad category coverage)
-- **Sort default**: Relevance
-- **Products per page**: 20-30 (browsing-heavy category)
-- **Filters**: Emphasize Category, Price, Brand, Material
-
-### Traffic Level Considerations
-
-#### High-Traffic Stores (1000+ daily visitors)
-- **Cache settings**: Longer cache times for better performance
-- **Sync intervals**: More frequent updates to handle high change volume
-- **Rate limiting**: Higher limits but with monitoring
-- **Performance priority**: Optimize for speed over feature richness
-
-#### Medium-Traffic Stores (100-1000 daily visitors)
-- **Balanced approach**: Standard settings work well
-- **Regular monitoring**: Weekly review of settings performance
-- **Gradual optimization**: Make incremental improvements
-- **Feature testing**: Good environment for testing new features
-
-#### Low-Traffic Stores (Under 100 daily visitors)
-- **Resource conservation**: Longer cache times, less frequent sync
-- **Feature focus**: Emphasize features over performance optimization
-- **Manual management**: More hands-on settings adjustment
-- **Cost efficiency**: Optimize for minimal resource usage
-
----
-
-## Troubleshooting Settings Issues
-
-### Common Problems
-
-#### Search Not Working After Settings Change
-
-**Symptoms:**
-- Search returns no results
-- Search page shows errors
-- Filters don't appear
-
-**Debugging Steps:**
-1. **Check recent changes**: Review what settings were modified
-2. **Clear cache**: Force fresh data with current settings
-3. **Test with default settings**: Temporarily revert to defaults
-4. **Check browser console**: Look for JavaScript errors
-5. **Verify theme integration**: Ensure selectors are correct
-
-#### Performance Degradation
-
-**Symptoms:**
-- Slower search results
-- Page loading delays
-- Increased server resource usage
-
-**Investigation:**
-1. **Review resource-intensive settings**: Semantic search, large batch sizes
-2. **Monitor cache hit rates**: Low cache efficiency indicates problems
-3. **Check sync frequency**: Too frequent syncing can impact performance
-4. **Analyze search patterns**: Identify which searches are slowest
-
-#### Customer Experience Issues
-
-**Symptoms:**
-- Customer complaints about search results
-- Reduced search usage in analytics
-- Lower conversion rates from search
-
-**Analysis:**
-1. **Review search analytics**: Look for patterns in customer behavior
-2. **Test customer journeys**: Try common search scenarios yourself
-3. **Adjust relevance settings**: Fine-tune search score thresholds
-4. **Monitor zero-result searches**: Identify failed search attempts
-
----
-
-## Best Practices Summary
-
-### Configuration Management
-- ✅ **Document changes**: Keep record of what settings were changed and why
-- ✅ **Test incrementally**: Make one change at a time to isolate impact
-- ✅ **Monitor performance**: Watch for impact on speed and user experience
-- ✅ **Backup settings**: Export configuration before major changes
-- ✅ **Schedule reviews**: Regular monthly review of settings effectiveness
-
-### Optimization Approach
-- ✅ **Start with defaults**: Begin with recommended settings
-- ✅ **Measure impact**: Use analytics to guide optimization decisions
-- ✅ **Customer feedback**: Listen to customer complaints and suggestions
-- ✅ **Seasonal adjustments**: Modify settings for peak seasons or events
-- ✅ **Continuous improvement**: Regularly refine based on new data
-
-### Integration Considerations
-- ✅ **Theme compatibility**: Ensure settings work with your theme
-- ✅ **BigCommerce updates**: Check settings after BigCommerce updates
-- ✅ **Third-party apps**: Consider impact on other installed apps
-- ✅ **Performance monitoring**: Track overall store performance impact
-- ✅ **Mobile optimization**: Test settings on mobile devices
-
----
-
-**Next Steps**: After configuring your app settings, move on to [Chapter 10: Plans & Pricing](./10-plans-pricing.md) to understand subscription options and manage your billing.
-
----
-
-*Need help optimizing your settings? Our support team can review your store's specific needs and recommend the best configuration for your business model and customer base.*
+**Next Chapter**: [Plans & Pricing](./10-plans-pricing.md) - Understand subscription options and manage billing.

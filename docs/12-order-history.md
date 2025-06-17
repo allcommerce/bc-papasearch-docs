@@ -1,283 +1,139 @@
 # Chapter 12: Order History
 
-The Order History page provides a comprehensive view of all your payment transactions, subscription charges, and wallet top-ups. This financial record helps you track expenses, download invoices, and manage your account's billing history.
+View your PayPal wallet top-up transactions and download payment receipts.
 
-## 12.1 Accessing Order History
+![Order History Interface](../assets/images/order-history.jpg)
 
-### From Dashboard
-1. Click the **"📋 Orders"** button on the main dashboard
-2. The system will load your complete order history
+---
 
-### From Plans & Pricing
-- Order history is linked to subscription management
-- Access after making plan changes or payments
-- View transaction confirmations
+## How to Access Order History
 
-**Screenshot Description:** *The dashboard showing the "📋 Orders" button with clipboard icon, positioned among the 9 main action buttons.*
+1. Click **📋 Orders** from Dashboard
+2. View your PayPal wallet top-up transactions in the Order Details table
 
-## 12.2 Page Layout
+---
 
-### Header Section
-- **Page Title:** "Order History"
-- **Back to Dashboard Button:** Returns to main dashboard
-- **Total Orders Count:** Number of transactions displayed
+## Understanding Order Details
 
-### Order List Layout
-The order history displays:
-1. **Order Information** - Transaction details
-2. **Payment Status** - Processing and completion status
-3. **Amount Details** - Transaction amounts and currency
-4. **Action Buttons** - Download invoices and view details
+### Order Information Display
 
-**Screenshot Description:** *The Order History page showing a table with multiple orders, including order IDs, dates, amounts, status badges, and download buttons.*
+**Order Table Columns:**
 
-## 12.3 Order Information Display
+- **Order ID**: Unique PayPal transaction identifier (e.g., "3Y035928Y8828743B")
+- **Date**: When you topped up your wallet (e.g., "6/13/2025")
+- **Status**: PayPal payment status with colored badges
+- **Amount**: Amount you added to wallet in USD
+- **Invoice**: Download button for PayPal payment receipts
 
-### Order Details
-Each order shows:
-- **Order ID:** Unique transaction identifier
-- **Transaction Date:** When the payment was processed
-- **Description:** What the payment was for
-- **Amount:** Total payment amount
-- **Status:** Current processing status
+### Status Types
 
-### Order Types
-Common order types include:
-- **Subscription Charges:** Monthly/annual plan fees
-- **Plan Upgrades:** Immediate charges for plan changes
-- **Wallet Top-ups:** PayPal payments to add funds
-- **Add-on Charges:** Usage-based billing
-- **One-time Fees:** Setup or special charges
+**COMPLETED** (Green Badge)
 
-### Status Indicators
-- **Completed:** Green badge - Payment successful
-- **Processing:** Yellow badge - Payment being processed
-- **Failed:** Red badge - Payment failed
-- **Refunded:** Blue badge - Payment refunded
+- PayPal payment successfully processed
+- Funds added to your wallet
+- Receipt available for download
 
-**Screenshot Description:** *Order list showing different order types with varying status badges, amounts, and descriptions for subscription charges, wallet top-ups, and plan upgrades.*
+---
 
-## 12.4 Order Details
+## How to Download Payment Receipts
 
-### Transaction Information
-Detailed view includes:
-- **PayPal Transaction ID:** External payment reference
-- **Purchase Units:** Itemized breakdown of charges
-- **Payment Method:** How payment was processed
-- **Billing Address:** Address used for billing
-- **Tax Information:** Applied taxes and rates
+1. **Locate your wallet top-up** in the Order Details table
+2. **Click Download Invoice** button (📥 icon)
+3. **PDF receipt downloads** automatically to your device
+4. **Save the file** for your records
 
-### Payment Breakdown
-For complex orders:
-- **Subtotal:** Base amount before taxes
-- **Tax Amount:** Applied tax charges
-- **Total Amount:** Final payment amount
-- **Currency:** Payment currency used
+**All completed PayPal payments show "Download Invoice" button for receipts.**
 
-### Timing Information
-- **Order Created:** When order was initiated
-- **Payment Processed:** When payment completed
-- **Last Updated:** Most recent status change
+---
 
-**Screenshot Description:** *Detailed order view showing expanded information including PayPal transaction ID, itemized charges, tax breakdown, and complete payment timeline.*
+## Wallet Top-up Amounts
 
-## 12.5 Invoice Management
+### Common Top-up Amounts
 
-### Downloading Invoices
-1. Locate the desired order in the list
-2. Click the **"Download Invoice"** button
-3. PDF invoice will download automatically
-4. Save the file to your preferred location
+**PayPal Wallet Top-ups:**
 
-### Invoice Contents
-PDF invoices include:
-- **Company Information:** Your billing details
-- **Invoice Number:** Unique invoice identifier
-- **Issue Date:** When invoice was generated
-- **Payment Details:** Transaction information
-- **Tax Breakdown:** Itemized tax calculations
-- **Total Amount:** Final payment amount
+- **$10.00 USD**: Small wallet top-up
+- **$65.00 USD**: Medium wallet top-up
+- **$114.00 USD**: Large wallet top-up
+- **$19.00 USD**: Custom wallet top-up
 
-### Invoice Status
-- **Available:** Green download button active
-- **Processing:** Gray button while generating
-- **Unavailable:** Red text if invoice cannot be generated
-- **Error:** Error message if download fails
+### Payment Source
 
-**Screenshot Description:** *Order row showing a green "Download Invoice" button, with a sample PDF invoice preview showing company details, itemized charges, and tax information.*
+- **PayPal Only**: All transactions are PayPal payments to add funds to your wallet
+- **Note**: Order History only shows PayPal top-up transactions, not service charges or subscription fees
 
-## 12.6 Filtering and Search
+---
 
-### Date Range Filtering
-- **All Time:** View complete order history
-- **Last 30 Days:** Recent transactions
-- **Last 6 Months:** Medium-term history
-- **Custom Range:** Specify exact date range
+## Managing Your Wallet Top-up History
 
-### Order Type Filtering
-- **All Orders:** Complete transaction history
-- **Subscriptions:** Recurring plan charges only
-- **Wallet Top-ups:** PayPal payments only
-- **Plan Changes:** Upgrade/downgrade transactions
-- **Add-ons:** Usage-based charges
+### Reviewing Transactions
 
-### Status Filtering
-- **All Statuses:** Complete order list
-- **Completed Only:** Successful payments
-- **Failed Only:** Failed transactions
-- **Processing Only:** Pending payments
+- **Check regularly**: Monitor your wallet top-up payments
+- **Verify amounts**: Ensure PayPal charges match your top-ups
+- **Download receipts**: Keep records for accounting
+- **Report issues**: Contact support for discrepancies
 
-**Screenshot Description:** *Filter controls at the top of the order list showing dropdown menus for date range, order type, and status filtering options.*
+### Record Keeping
 
-## 12.7 Payment Methods
+- **Business expenses**: Download receipts for tax purposes
+- **Payment tracking**: Monitor wallet funding transactions
+- **PayPal verification**: Confirm successful wallet top-ups
 
-### PayPal Integration
-- **Primary Payment Method:** PayPal checkout
-- **Transaction Security:** PayPal's secure processing
-- **Payment Confirmation:** Immediate confirmation
-- **Dispute Resolution:** PayPal's buyer protection
+---
 
-### Wallet Payments
-- **Prepaid Balance:** Using wallet funds
-- **Automatic Deduction:** For subscription renewals
-- **Top-up Tracking:** Records of wallet additions
-- **Balance Management:** Real-time balance updates
+## When to Check Order History
 
-### Mixed Payments
-- **Wallet + PayPal:** Partial wallet, remaining via PayPal
-- **Insufficient Funds:** Automatic PayPal fallback
-- **Payment Priority:** Wallet funds used first
-- **Transaction Splitting:** Detailed breakdown provided
+### Regular Reviews
 
-**Screenshot Description:** *Payment method indicators showing PayPal logo for external payments and wallet icon for internal fund usage, with mixed payment breakdowns.*
+- **After wallet top-ups**: Verify PayPal payments processed successfully
+- **Before low balance**: Check when you last added funds
+- **Before tax season**: Gather wallet funding records
+- **Payment issues**: Check PayPal transaction status
 
-## 12.8 Subscription Management
+### Before Contacting Support
 
-### Recurring Charges
-- **Monthly Billing:** Automatic monthly charges
-- **Annual Billing:** Yearly subscription fees
-- **Proration:** Partial charges for mid-cycle changes
-- **Failed Payments:** Retry attempts and notifications
+- **Find Order ID**: Locate specific PayPal transaction reference
+- **Check payment status**: Verify if wallet top-up completed
+- **Download receipts**: Gather PayPal payment documentation
 
-### Plan Change History
-- **Upgrade Records:** When plans were upgraded
-- **Downgrade Records:** Plan reduction transactions
-- **Billing Cycle Changes:** Monthly to annual conversions
-- **Effective Dates:** When changes took effect
+---
 
-### Add-on Billing
-- **Usage Charges:** Based on consumption
-- **Monthly Limits:** Spending cap charges
-- **Overage Protection:** Service stops at limit
-- **Limit Adjustments:** Mid-cycle limit changes
+## Troubleshooting Common Issues
 
-**Screenshot Description:** *Subscription section of order history showing recurring monthly charges, plan upgrade transactions, and add-on usage billing with dates and amounts.*
+### If Download Invoice Fails
 
-## 12.9 Financial Reporting
+1. **Check browser settings**: Allow pop-ups and downloads
+2. **Try different browser**: Use Chrome, Firefox, or Safari
+3. **Clear browser cache**: Remove temporary files
+4. **Contact support**: Provide Order ID if issues persist
 
-### Export Options
-- **CSV Export:** Spreadsheet-compatible format
-- **PDF Summary:** Professional financial report
-- **Date Range Export:** Custom period reports
-- **Tax Year Export:** Annual tax preparation
+### If Order Missing
 
-### Reporting Categories
-- **Total Spending:** Sum of all payments
-- **Subscription Costs:** Recurring plan charges
-- **Add-on Costs:** Usage-based expenses
-- **Tax Paid:** Total tax amounts
-- **By Payment Method:** Breakdown by payment type
+- **Check date range**: Orders may be from different time period
+- **Verify account**: Ensure you're logged into correct account
+- **Wait for processing**: Recent payments may take a few minutes to appear
 
-### Business Use
-- **Expense Tracking:** For business accounting
-- **Tax Preparation:** Annual tax filing support
-- **Budget Planning:** Historical spending analysis
-- **Cost Optimization:** Identify savings opportunities
+### If Amount Incorrect
 
-**Screenshot Description:** *Export and reporting options showing download buttons for CSV and PDF formats, with a sample financial summary showing spending categories and totals.*
+- **Review PayPal receipt**: Check the amount you actually paid through PayPal
+- **Consider PayPal fees**: Amounts may include PayPal processing fees
+- **Check wallet balance**: Verify funds were added to your wallet
+- **Contact support**: Provide Order ID for investigation
 
-## 12.10 Troubleshooting
+---
 
-### Common Issues
+## Data and Privacy
 
-**Missing Orders**
-- **Cause:** Payment processed outside app or delayed sync
-- **Solution:** Check PayPal account and contact support
-- **Timeline:** Orders typically appear within 5 minutes
+### Payment Record Retention
 
-**Download Fails**
-- **Cause:** PDF generation error or browser blocking
-- **Solution:** Try different browser or disable pop-up blockers
-- **Alternative:** Contact support for manual invoice delivery
+- **Permanent storage**: PayPal top-up history kept indefinitely
+- **Legal compliance**: Payment records maintained for tax and audit purposes
+- **Receipt access**: Download PayPal payment receipts anytime
 
-**Incorrect Amount**
-- **Cause:** Tax calculation or currency conversion
-- **Solution:** Review order details and contact support
-- **Documentation:** Provide order ID for investigation
+### Security
 
-### Error Messages
+- **Encrypted data**: All PayPal payment information secured
+- **Access control**: Only account owners can view wallet top-up history
+- **Secure downloads**: Receipt PDFs protected during transfer
 
-**"Invoice not available"**
-- Payment may still be processing
-- Wait for payment completion
-- Contact support if payment is completed
-
-**"Download failed"**
-- Check browser pop-up settings
-- Try downloading again
-- Use different browser if issue persists
-
-**"Order not found"**
-- Verify order ID is correct
-- Check if looking at correct account
-- Contact support with payment confirmation
-
-### Best Practices
-
-1. **Regular Reviews:** Check order history monthly
-2. **Save Invoices:** Download and store important invoices
-3. **Verify Charges:** Confirm all charges are accurate
-4. **Report Issues:** Contact support for discrepancies immediately
-5. **Export Records:** Backup financial data annually
-
-## 12.11 Integration with Billing
-
-### Billing Information
-- Order history uses your saved billing information
-- Invoices reflect current billing details
-- Address changes affect future orders only
-- Historical invoices remain unchanged
-
-### Tax Calculations
-- VAT applied based on billing address
-- Tax rates determined by jurisdiction
-- Business VAT ID enables reverse charge
-- Tax-exempt status reflected in orders
-
-### Payment Processing
-- PayPal provides primary payment processing
-- Wallet funds used as preferred method
-- Failed payments trigger retry attempts
-- Payment confirmations sent via email
-
-## 12.12 Data Management
-
-### Data Retention
-- Order history preserved indefinitely
-- Legal compliance with financial record requirements
-- Invoice storage for tax purposes
-- Historical data for reporting
-
-### Data Security
-- Encrypted storage of financial data
-- Secure access controls
-- Regular security audits
-- Compliance with financial regulations
-
-### Data Export
-- Complete order history available for export
-- Multiple format options
-- Custom date range exports
-- Support for accounting software import
-
-**Screenshot Description:** *The complete Order History page showing the full interface with filters applied, multiple orders displayed, and various status indicators, demonstrating all features working together.*
+---

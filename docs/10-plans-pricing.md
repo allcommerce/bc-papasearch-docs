@@ -1,292 +1,330 @@
 # Chapter 10: Plans & Pricing
 
-The Plans & Pricing page is your central hub for managing your subscription, upgrading or downgrading plans, managing add-ons, and topping up your wallet balance. This comprehensive billing management center helps you optimize your costs and ensure uninterrupted service.
+Manage your subscription, billing, and add-ons to optimize costs and ensure uninterrupted service.
 
-## 10.1 Accessing Plans & Pricing
+![Plans & Pricing Interface](../assets/images/pricing-page.jpg)
 
-### From Dashboard
-1. Click the **"💳 Plans & Pricing"** button on the main dashboard
-2. The system will load your current subscription information
+---
 
-### Direct Navigation
-- The Plans & Pricing page can also be accessed from the subscription information in the header
-- Click on the **"💳 Plans & Pricing"** link in the top navigation bar
+## Overview
 
-**Screenshot Description:** *The dashboard showing the yellow gradient "💳 Plans & Pricing" button with wallet icon, positioned among the 9 main action buttons.*
+The Pricing & Billing page helps you manage your subscription plan, monitor add-on usage, top up your wallet, and switch between different plans as your store grows.
 
-## 10.2 Page Layout Overview
+**Main Functions:**
+
+- View current subscription status and billing information
+- Monitor add-on usage and costs
+- Top up wallet balance for additional services
+- Compare and switch between pricing plans
+- Manage add-on limits and spending caps
+
+---
+
+## Interface Elements
 
 ### Header Section
-The page header contains:
-- **Page Title:** "Pricing & Billing"
-- **Back to Dashboard Button:** Returns you to the main dashboard
-- **Wallet Top-up Section:** Quick access to add funds to your account
 
-### Main Content Areas
-1. **Current Subscription Card** - Your active plan details
-2. **Pricing Plans Table** - Available plans comparison
-3. **Add-ons Section** - Optional features and usage limits
+**Navigation:**
 
-**Screenshot Description:** *The complete Plans & Pricing page layout showing the header with back button and wallet top-up controls, current subscription card with plan details, and the pricing plans comparison table below.*
+- **← Back to Dashboard** - Return to main dashboard
+- **💳 Top-up Wallet** - Add funds to your account ($ amount input)
+- **Pay with PayPal** - Complete wallet top-up
 
-## 10.3 Current Subscription Information
+### Current Subscription Card
 
-### Plan Overview
-Your current subscription card displays:
-- **Current Plan:** Plan name with status badges
-- **Monthly/Annual Fee:** Your recurring charge
-- **Next Billing Date:** When your next payment is due
-- **Wallet Balance:** Available prepaid funds
+**Subscription Information:**
 
-### Trial Status
-If you're on trial:
-- **Trial Badge:** Yellow "Trial" indicator
-- **Trial End Date:** When trial expires
-- **Automatic Conversion:** Plan will continue after trial
+- **Current Plan**: Plan name with status badge (e.g., "Starter AI" with "TRIAL" and "ACTIVE" badges)
+- **Annual Fee**: Yearly subscription cost (e.g., "$39/year")
+- **Next Billing**: Next payment date (e.g., "Jun 13, 2026")
+- **Wallet Balance**: Available prepaid funds (e.g., "$280.00")
 
-### Plan Changes
-If you have pending plan changes:
-- **Next Billing Plan:** Shows upcoming plan change
-- **Effective Date:** When the change takes effect
-- **Badge Indicator:** "Next billing" warning badge
+---
 
-**Screenshot Description:** *Current subscription card showing a "Starter AI" plan with trial badge, annual billing at $39/year, next billing date of Feb 15, 2025, and wallet balance of $125.50.*
+## Add-ons Usage & Costs
 
-## 10.4 Add-ons Usage & Costs
+### Current Add-ons Overview
 
-### Usage Statistics
-For each active add-on, you'll see:
-- **Usage Progress Bar:** Visual representation of consumption
-- **Usage Percentage:** Current usage vs. total allocation
-- **Usage Numbers:** Used, Total, and Remaining counts
-- **Current Cost:** Amount charged this billing period
+**Three Main Add-ons:**
 
-### Color-Coded Progress
-- **Green:** 0-60% usage (healthy)
-- **Yellow:** 61-80% usage (monitor)
-- **Red:** 81-100% usage (consider upgrade)
+**Embed Add-on** ($10/month):
 
-### Cost Breakdown
-- **Price Per Unit:** Rate for each event
-- **Current Period Cost:** Total charges so far
-- **Monthly Limit:** Maximum spending cap (if set)
+- **Usage**: 0% (0 Used / 33,333 Total / 33,333 Remaining)
+- **Current Cost**: $0.00
+- **Rate**: $0.00030 per embed
+- **Status**: ACTIVE
 
-**Screenshot Description:** *Add-ons usage section showing three add-ons (Search, Index, Embed) with progress bars, usage statistics, and current costs. Search Add-on shows 70% usage with green progress bar.*
+**Index Add-on** ($10/month):
 
-## 10.5 Wallet Top-up
+- **Usage**: 0% (0 Used / 111,111 Total / 111,111 Remaining)
+- **Current Cost**: $0.00
+- **Rate**: $0.00009 per index
+- **Status**: ACTIVE
 
-### Quick Top-up
-Located in the page header:
-1. **Amount Field:** Enter dollar amount ($5-$1000)
-2. **Increment Validation:** Must be in $5 increments
-3. **PayPal Button:** Secure payment processing
-4. **Suggested Amount:** Auto-calculated based on your usage
+**Search Add-on** ($10/month):
 
-### Top-up Process
-1. Enter desired amount in the dollar field
-2. Amount must be between $5 and $1000
-3. Must be in $5 increments (e.g., $15, $20, $25)
-4. Click the PayPal button to proceed
-5. Complete payment through PayPal
-6. Funds are immediately added to your wallet
+- **Usage**: 0% (0 Used / 249,999 Total / 249,999 Remaining)
+- **Current Cost**: $0.00
+- **Rate**: $0.00004 per search
+- **Status**: ACTIVE
 
-### Automatic Suggestions
-The system automatically suggests top-up amounts based on:
-- Your current plan's monthly fee
-- Active add-on monthly limits
-- Rounded up to the nearest $5
-- Minimum $5, maximum $1000
+### Total Add-ons Cost
 
-**Screenshot Description:** *Wallet top-up section in the header showing a dollar input field with $50 entered, and a PayPal payment button. The amount field shows validation for $5 increments.*
+- **Current billing period**: $0.00
+- **Note**: Costs will be added to your next invoice
 
-## 10.6 Plans Comparison
+**Purpose:**
 
-### Billing Cycle Toggle
-Switch between viewing:
-- **Monthly Pricing:** Standard monthly rates
-- **Annual Pricing:** Discounted yearly rates with 17% savings
-- **Toggle Control:** Interactive switch in the plans header
+- Monitor usage of additional services beyond your base plan
+- Track spending on variable usage features
+- Set limits to control costs
 
-### Plan Features
-Each plan shows:
-- **Plan Name:** With popularity/premium badges
-- **Product Limits:** Number of products supported
-- **Search Limits:** Monthly search allowance
-- **Index Limits:** Indexing operations included
-- **AI Features:** Semantic search capabilities
-- **Embed Limits:** AI embedding operations (where applicable)
+---
 
-### Plan Status Indicators
-- **Current Badge:** Green "Current" badge for active plan
-- **Next Plan Badge:** Yellow "Next (cycle)" for pending changes
-- **Popular Badge:** Yellow "Popular" on recommended plans
-- **Premium Badge:** Blue "Premium" on advanced plans
+## Pricing Plans
 
-**Screenshot Description:** *Pricing plans table showing 6 different plans from Free to Ultra AI, with a billing cycle toggle showing "Annual" selected and "Save 17%" indicator. Current plan has green badge.*
+![Pricing Plans Interface](../assets/images/pricing-page-plans.jpg)
 
-## 10.7 Plan Management
+### Billing Toggle
 
-### Upgrading Plans
-To upgrade your plan:
-1. Review plan features and pricing
-2. Click **"Upgrade Plan"** on desired plan
-3. Confirm the change
-4. Payment will be processed automatically
+- **Monthly/Annual Toggle**: Switch between billing frequencies
+- **Annual Savings**: "Save 17%" indicator for yearly billing
 
-### Downgrading Plans
-To downgrade your plan:
-1. Select a lower-tier plan
-2. Click **"Downgrade Plan"**
-3. Change takes effect on next billing cycle
-4. No immediate charges applied
+### Available Plans
 
-### Billing Cycle Changes
-To switch between monthly and annual:
-1. Find your current plan in the table
-2. Click **"Switch to Annual"** or **"Switch to Monthly"**
-3. See savings/cost differences displayed
-4. Confirm the billing cycle change
+**Free Plan**:
 
-### Immediate vs. Next Billing
-- **Upgrades:** Usually take effect immediately
-- **Downgrades:** Take effect on next billing cycle
-- **Billing Cycle Changes:** Applied to next billing period
-- **Prorated Charges:** Applied for immediate upgrades
+- **Features**: 1,000 products • 10,000 searches • 10,000 indexes
+- **Description**: Perfect for small stores starting with basic search functionality
+- **Price**: Free
+- **Action**: Downgrade Plan
 
-**Screenshot Description:** *Plan action buttons showing different states: "Active" with checkmark for current plan, "Upgrade Plan" button for higher tiers, and "Switch to Annual" button with savings percentage.*
+**Starter Plan**:
 
-## 10.8 Add-ons Management
+- **Features**: 10,000 products • 100,000 searches • 120,000 indexes
+- **Description**: Great for growing businesses with traditional keyword search needs
+- **Price**: $29/month (Save 9% annually)
+- **Action**: Downgrade Plan
+
+**Starter AI Plan** (CURRENT):
+
+- **Features**: 10,000 products • 100,000 searches • 120,000 indexes • AI Search • 20,000 embeds
+- **Description**: Most popular! AI search understands customer intent and finds relevant products
+- **Price**: $39/month (Save 9% annually)
+- **Status**: ✓ Active / Switch to Monthly (+10% more expensive)
+
+**Growth AI Plan**:
+
+- **Features**: 25,000 products • 300,000 searches • 300,000 indexes • AI Search • 50,000 embeds
+- **Description**: Perfect for established stores with large catalogs and high search volume
+- **Price**: $69/month (Save 16% annually)
+- **Action**: Upgrade Plan
+
+**Scale AI Plan**:
+
+- **Features**: 100,000 products • 700,000 searches • 1,200,000 indexes • AI Search • 300,000 embeds
+- **Description**: Designed for high-volume stores with extensive product catalogs
+- **Price**: $109/month (Save 18% annually)
+- **Action**: Upgrade Plan
+
+**Ultra AI Plan** (PREMIUM):
+
+- **Features**: Unlimited products • 1,400,000 searches • 3,000,000 indexes • AI Search • 300,000 embeds
+- **Description**: Enterprise solution for large stores with unlimited products
+- **Price**: $159/month (Save 20% annually)
+- **Action**: Upgrade Plan
+
+---
+
+## Add-ons Management
+
+![Add-ons Management Interface](../assets/images/pricing-page-addons.jpg)
+
+### Add-ons Configuration Table
+
+**Columns:**
+
+- **Add-on**: Service name and description
+- **Pricing**: Cost per unit and minimum purchase
+- **Usage & Quota**: Current usage vs available quota
+- **Current Cost**: Charges for current billing period
+- **Monthly Limit**: Spending cap setting
+- **Status**: Enable/disable toggle
 
 ### Available Add-ons
-Common add-ons include:
-- **Search Add-on:** Additional search operations
-- **Index Add-on:** Extra indexing capacity
-- **Embed Add-on:** AI embedding operations
 
-### Add-on Configuration
-For each add-on:
-- **Enable/Disable Toggle:** Turn features on/off
-- **Monthly Limit:** Set spending caps
-- **Usage Monitoring:** Track consumption
-- **Cost Calculations:** View current charges
+**Search Add-on**:
+
+- **Pricing**: \$0.00004 per search, Min: 10K ($0.4)
+- **Usage**: 0 / 250K / 250K (Used/Total/Remaining)
+- **Current Cost**: $0.00 this period
+- **Monthly Limit**: $10/month
+- **Status**: 🔵 ENABLED
+- **Description**: Purchase in multiples of 10,000 events
+
+**Index Add-on**:
+
+- **Pricing**: \$0.00009 per index, Min: 10K ($0.9)
+- **Usage**: 0 / 111K / 111K (Used/Total/Remaining)
+- **Current Cost**: $0.00 this period
+- **Monthly Limit**: $10/month
+- **Status**: 🔵 ENABLED
+- **Description**: Purchase in multiples of 10,000 events
+
+**Embed Add-on**:
+
+- **Pricing**: \$0.00030 per embed, Min: 5K ($1.5)
+- **Usage**: 0 / 33K / 33K (Used/Total/Remaining)
+- **Current Cost**: $0.00 this period
+- **Monthly Limit**: $10/month
+- **Status**: 🔵 ENABLED
+- **Description**: Purchase in multiples of 5,000 events
+
+### Total Add-ons Cost
+
+- **Summary**: $0.00 per period
+- **Note**: Current billing period usage • Costs will be added to your next invoice
+
+---
+
+## Wallet Management
+
+### Top-up Process
+1. Enter amount in the **$ amount** field (minimum $5, increments of $5)
+2. Click **Pay with PayPal** button
+3. Complete payment through PayPal
+4. Funds are immediately added to your wallet
+
+### Wallet Balance
+- **Current Balance**: Displayed in Current Subscription section
+- **Usage**: Wallet funds are used for all charges and add-on costs
+- **Manual Top-up Required**: You must manually top up wallet from PayPal when balance is low
+
+!!! tip "💰 Wallet Top-up"
+    Keep sufficient wallet balance to cover your monthly add-on usage. You need to manually top up your wallet from PayPal when the balance gets low. The system will not automatically charge PayPal.
+
+---
+
+## Plan Operations
+
+### Upgrading Plans
+1. Find the desired plan in the Pricing Plans section
+2. Click **Upgrade Plan** button
+3. Confirm the upgrade
+4. Changes take effect immediately
+5. Prorated charges will be applied
+
+### Downgrading Plans
+1. Select a lower-tier plan
+2. Click **Downgrade Plan** button
+3. Confirm the downgrade
+4. Changes take effect on next billing cycle
+5. No immediate charges
+
+### Switching Billing Frequency
+1. Toggle between **Monthly** and **Annual** at the top
+2. See savings percentage for annual plans
+3. For current plan, click **Switch to Monthly/Annual**
+4. Billing frequency changes on next cycle
+
+!!! warning "⚠️ Plan Changes"
+    **Upgrades**: Take effect immediately with prorated charges
+    **Downgrades**: Take effect on your next billing cycle
+
+---
+
+## Add-on Management
+
+### Enabling Add-ons
+1. Find the add-on in the Add-ons table
+2. Toggle the **Status** switch to enable
+3. Set a **Monthly Limit** to control spending
+4. Monitor usage throughout the billing period
 
 ### Setting Monthly Limits
-1. Enable the desired add-on
-2. Set a monthly spending limit (optional)
-3. System calculates unit allocation
-4. Monitor usage throughout the month
-5. Adjust limits as needed
+- **Purpose**: Control maximum spending on variable usage
+- **Recommendation**: Set based on expected usage patterns
+- **Overage Protection**: Service stops when limit is reached
+- **Adjustment**: Can be changed anytime during billing period
 
-### Cost Control
-- **Spending Caps:** Prevent overage charges
-- **Usage Alerts:** Monitor consumption levels
-- **Flexible Limits:** Adjust monthly caps anytime
-- **Overage Protection:** Service stops at limit
+### Usage Monitoring
+- **Real-time Tracking**: Usage updates in real-time
+- **Quota Display**: Shows used/total/remaining for each add-on
+- **Cost Tracking**: Current period charges displayed
+- **Monthly Reset**: Usage resets each billing cycle
 
-**Screenshot Description:** *Add-ons section showing three add-ons with enable/disable toggles, monthly limit input fields, and current usage statistics. Search Add-on shows $50/month limit with current usage at $35.*
+---
 
-## 10.9 Billing Information
+## Billing Information
 
-### Payment Methods
-- **Primary Method:** PayPal integration
-- **Wallet Balance:** Prepaid account funds
-- **Automatic Billing:** Recurring charges
-- **Payment History:** Transaction records
+### Payment Process
+1. **Wallet Balance**: All charges deducted from wallet balance
+2. **Manual Top-up**: You must top up wallet from PayPal when balance is low
+3. **No Auto-charge**: System does not automatically charge PayPal when wallet is empty
 
-### Billing Cycle Management
-- **Monthly Billing:** Charged every month
-- **Annual Billing:** Charged yearly (17% discount)
-- **Proration:** Partial charges for upgrades
-- **Credits:** Applied for downgrades
+### Next Billing
+- **Date**: Shown in Current Subscription card
+- **Amount**: Base plan fee plus any add-on overages
+- **Payment Source**: Deducted from wallet balance only
 
-### Balance Management
-- **Wallet Priority:** Prepaid funds used first
-- **Low Balance Alerts:** Warnings when funds are low
-- **Auto Top-up:** Manual replenishment required
-- **Insufficient Funds:** Service limitations may apply
+### Cost Optimization Tips
 
-**Screenshot Description:** *Billing information showing wallet balance of $125.50 with green color indicating sufficient funds, next billing date, and payment method showing PayPal integration.*
+**Plan Selection:**
 
-## 10.10 Cost Optimization
+- Start with basic plans and upgrade as needed
+- Choose annual billing for 17% savings
+- Monitor usage to select appropriate tier
 
-### Plan Selection Tips
-- **Start Small:** Begin with basic plans and upgrade as needed
-- **Annual Savings:** Save 17% with annual billing
-- **Usage Monitoring:** Track consumption to optimize plan choice
-- **Feature Requirements:** Pay only for features you use
+**Add-on Management:**
 
-### Add-on Optimization
-- **Set Realistic Limits:** Based on historical usage
-- **Monitor Regularly:** Check usage progress weekly
-- **Adjust Seasonally:** Increase limits during busy periods
-- **Cost vs. Performance:** Balance features with budget
+- Set realistic monthly limits based on usage history
+- Enable only needed add-ons
+- Monitor usage weekly to avoid surprise charges
 
-### Wallet Strategy
-- **Maintain Buffer:** Keep sufficient balance for monthly costs
-- **Top-up Timing:** Add funds before low balance alerts
-- **Estimated Costs:** Use suggested amounts for planning
-- **Usage Forecasting:** Plan for growth and seasonal changes
+**Wallet Strategy:**
 
-## 10.11 Troubleshooting
+- Maintain sufficient balance for monthly add-on costs
+- Top up before balance gets too low
+- Use suggested amounts for planning
+
+---
+
+## Troubleshooting
 
 ### Common Issues
 
-**Plan Change Not Reflected**
-- **Cause:** Changes may take effect on next billing cycle
-- **Solution:** Check "Next Plan" indicators in subscription info
-- **Timeline:** Immediate for upgrades, next cycle for downgrades
+**Plan Upgrade Not Showing**
 
-**Payment Failures**
-- **Cause:** Insufficient wallet balance or PayPal issues
-- **Solution:** Top up wallet or update PayPal account
-- **Prevention:** Monitor balance and set up alerts
+- **Problem**: Upgraded plan not reflected immediately
+- **Solution**: Upgrades are immediate, check Current Subscription card
+- **Check**: Verify wallet balance was sufficient for upgrade
 
-**Add-on Limits Exceeded**
-- **Cause:** Usage surpassed monthly spending limits
-- **Solution:** Increase monthly limits or upgrade plan
-- **Prevention:** Monitor usage regularly and set appropriate limits
+**Add-on Limit Reached**
 
-### Error Messages
+- **Problem**: Service stopped due to monthly limit
+- **Solution**: Increase monthly limit in Add-ons table
+- **Prevention**: Monitor usage regularly and set appropriate limits
 
-**"Insufficient Wallet Balance"**
-- Top up your wallet with sufficient funds
-- Ensure PayPal payment method is valid
-- Contact support if payment issues persist
+**Wallet Top-up Failed**
 
-**"Invalid Amount"**
-- Enter amounts between $5-$1000
-- Use $5 increments only
-- Check for decimal point errors
+- **Problem**: PayPal payment failed or amount rejected
+- **Solution**: Check amount is $5+ in $5 increments, verify PayPal account
+- **Contact**: Support if payment issues persist
 
-**"Plan Change Failed"**
-- Verify sufficient wallet balance
-- Check PayPal account status
-- Try again or contact support
+### Payment Issues
 
-### Best Practices
+**Insufficient Wallet Balance**
 
-1. **Regular Monitoring:** Check usage weekly
-2. **Sufficient Balance:** Maintain 1-2 months of estimated costs
-3. **Limit Setting:** Set realistic monthly caps on add-ons
-4. **Plan Reviews:** Evaluate plan fit quarterly
-5. **Annual Savings:** Consider annual billing for stable usage
+- Manually top up wallet using PayPal before services are suspended
+- Ensure sufficient funds for plan + estimated add-on costs
+- System will not automatically charge PayPal when wallet is empty
 
-## 10.12 Integration with Other Features
+**Invalid Top-up Amount**
 
-### Dashboard Integration
-- Subscription info displayed in header
-- Plan status affects feature availability
-- Usage limits impact service functionality
+- Minimum $5, maximum $1,000
+- Must be in \$5 increments ($5, $10, $15, etc.)
+- No decimal amounts allowed
 
-### Settings Configuration
-- Plan features determine available options
-- Add-on limits affect performance settings
-- Billing preferences sync across app
+---
 
-### Usage Reporting
-- Real-time usage tracking
-- Historical consumption data
-- Cost forecasting and alerts
-- Performance optimization recommendations
-
-**Screenshot Description:** *Dashboard header showing subscription information integration with plan name, billing date, wallet balance, and low balance warning indicator when applicable.*
+**Next Chapter**: [Billing Information](./11-billing-information.md) - View detailed billing history and manage payment methods.
