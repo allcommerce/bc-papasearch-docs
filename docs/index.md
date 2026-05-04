@@ -90,7 +90,7 @@ Get help when you need it.
 ## What's New
 
 !!! info "Latest Updates"
-    This documentation covers the latest version of the app. Check the [changelog](https://github.com/papathemes/bc-semantic-search/releases) for recent updates and new features.
+    This documentation covers the latest version of the app. Check the [changelog](changelog.md) for recent updates and new features.
 
 ---
 
