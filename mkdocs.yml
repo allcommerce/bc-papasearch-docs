@@ -172,6 +172,7 @@ nav:
     - Order History: 12-order-history.md
   - Support:
     - Troubleshooting: 13-support-troubleshooting.md
+  - Changelog: changelog.md
 
 # Custom CSS
 extra_css:
