@@ -797,13 +797,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#120-2026-05-04" class="md-nav__link">
+  <a href="#130-2026-05-25" class="md-nav__link">
     <span class="md-ellipsis">
-      [1.2.0] - 2026-05-04
+      [1.3.0] - 2026-05-25
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="[1.2.0] - 2026-05-04">
+    <nav class="md-nav" aria-label="[1.3.0] - 2026-05-25">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -839,13 +839,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#110-2026-04-23" class="md-nav__link">
+  <a href="#120-2026-05-04" class="md-nav__link">
     <span class="md-ellipsis">
-      [1.1.0] - 2026-04-23
+      [1.2.0] - 2026-05-04
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="[1.1.0] - 2026-04-23">
+    <nav class="md-nav" aria-label="[1.2.0] - 2026-05-04">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -881,13 +881,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#100-2026-04-10" class="md-nav__link">
+  <a href="#110-2026-04-23" class="md-nav__link">
     <span class="md-ellipsis">
-      [1.0.0] - 2026-04-10
+      [1.1.0] - 2026-04-23
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="[1.0.0] - 2026-04-10">
+    <nav class="md-nav" aria-label="[1.1.0] - 2026-04-23">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -910,6 +910,48 @@
         
           <li class="md-nav__item">
   <a href="#fixed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100-2026-04-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      [1.0.0] - 2026-04-10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.0.0] - 2026-04-10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
     <span class="md-ellipsis">
       Fixed
     </span>
@@ -969,32 +1011,50 @@
 <h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h3>
 <h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">&para;</a></h3>
 <h3 id="fixed">Fixed<a class="headerlink" href="#fixed" title="Permanent link">&para;</a></h3>
-<h2 id="120-2026-05-04">[1.2.0] - 2026-05-04<a class="headerlink" href="#120-2026-05-04" title="Permanent link">&para;</a></h2>
+<h2 id="130-2026-05-25">[1.3.0] - 2026-05-25<a class="headerlink" href="#130-2026-05-25" title="Permanent link">&para;</a></h2>
 <h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Default checked values per filter, with the stock filter as the first supported case.</li>
+<li>Filter indexed products by when they were last modified, with quick presets for the last 1 day, 3 days, 1 week, 1 month, or since your last full sync.</li>
+<li>Custom modified date range (From / To) on Manage Indexes for pinpointing exactly which products to review.</li>
+<li>One-click "Re-index all products matching the current filter", with a confirmation step so you can re-index a targeted set instead of your entire catalog.</li>
 </ul>
 <h3 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Faster inventory updates.</li>
+<li>The custom date range now applies only when you click Apply, so the list no longer reloads while you are still picking dates.</li>
+<li>The modified date range is pre-filled with a sensible default so you can get started without typing.</li>
 </ul>
 <h3 id="fixed_1">Fixed<a class="headerlink" href="#fixed_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Re-indexing a filtered set of products no longer changes your store's last full-sync timestamp, keeping "Index new &amp; modified products" and the scheduled auto-index accurate.</li>
+<li>Re-indexing one or a few products no longer skips older outdated products on the next incremental sync.</li>
+<li>The product list now keeps your active search and filter after re-indexing or deleting, instead of resetting to all products.</li>
+</ul>
+<h2 id="120-2026-05-04">[1.2.0] - 2026-05-04<a class="headerlink" href="#120-2026-05-04" title="Permanent link">&para;</a></h2>
+<h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Default checked values per filter, with the stock filter as the first supported case.</li>
+</ul>
+<h3 id="changed_2">Changed<a class="headerlink" href="#changed_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Faster inventory updates.</li>
+</ul>
+<h3 id="fixed_2">Fixed<a class="headerlink" href="#fixed_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Fixed PayPal top-up validation edge case.</li>
 <li>Removed an empty left column shown in the search popup zero state.</li>
 <li>Various stability improvements.</li>
 </ul>
 <h2 id="110-2026-04-23">[1.1.0] - 2026-04-23<a class="headerlink" href="#110-2026-04-23" title="Permanent link">&para;</a></h2>
-<h3 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h3>
+<h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Plan quota enforcement with a soft cap and a hard stop.</li>
 <li>Usage statistics now reset cleanly at the start of each billing cycle.</li>
 </ul>
-<h3 id="changed_2">Changed<a class="headerlink" href="#changed_2" title="Permanent link">&para;</a></h3>
+<h3 id="changed_3">Changed<a class="headerlink" href="#changed_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Various performance improvements.</li>
 </ul>
-<h3 id="fixed_2">Fixed<a class="headerlink" href="#fixed_2" title="Permanent link">&para;</a></h3>
+<h3 id="fixed_3">Fixed<a class="headerlink" href="#fixed_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Reactivating a subscription via PayPal top-up now correctly applies the next billing plan.</li>
 <li>Search quota now expires at the end of the billing date instead of the start.</li>
@@ -1002,7 +1062,7 @@
 <li>More reliable search filter behavior across category selections.</li>
 </ul>
 <h2 id="100-2026-04-10">[1.0.0] - 2026-04-10<a class="headerlink" href="#100-2026-04-10" title="Permanent link">&para;</a></h2>
-<h3 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h3>
+<h3 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Semantic search that understands shopper intent and combines meaning-based matching with keywords for better relevance.</li>
 <li>BigCommerce product sync to keep search results aligned with the store catalog.</li>
@@ -1044,7 +1104,7 @@
 <li>Excluded query parameters setting to keep tracking parameters out of search URLs.</li>
 <li>Custom domain setup for the merchant and search experience.</li>
 </ul>
-<h3 id="changed_3">Changed<a class="headerlink" href="#changed_3" title="Permanent link">&para;</a></h3>
+<h3 id="changed_4">Changed<a class="headerlink" href="#changed_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Faster product indexing.</li>
 <li>Hid BigCommerce content flash on storefront search using preloads and loading overlays.</li>
@@ -1053,7 +1113,7 @@
 <li>Faster filter handling and improved search relevance.</li>
 <li>Storefront search styles are now scoped to prevent conflicts with theme styles.</li>
 </ul>
-<h3 id="fixed_3">Fixed<a class="headerlink" href="#fixed_3" title="Permanent link">&para;</a></h3>
+<h3 id="fixed_4">Fixed<a class="headerlink" href="#fixed_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Prevented duplicate products in search results during sync.</li>
 <li>Faster category tree loading.</li>
