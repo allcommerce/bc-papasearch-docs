@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [1.3.0] - 2026-05-25
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+  <iframe src="https://www.youtube.com/embed/YLTUnc0tmok" title="PapaSearch v1.3.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
 ### Added
 
 - Filter indexed products by when they were last modified, with quick presets for the last 1 day, 3 days, 1 week, 1 month, or since your last full sync.
