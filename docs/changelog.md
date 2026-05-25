@@ -12,6 +12,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.3.0] - 2026-05-25
+
+### Added
+
+- Filter indexed products by when they were last modified, with quick presets for the last 1 day, 3 days, 1 week, 1 month, or since your last full sync.
+- Custom modified date range (From / To) on Manage Indexes for pinpointing exactly which products to review.
+- One-click "Re-index all products matching the current filter", with a confirmation step so you can re-index a targeted set instead of your entire catalog.
+
+### Changed
+
+- The custom date range now applies only when you click Apply, so the list no longer reloads while you are still picking dates.
+- The modified date range is pre-filled with a sensible default so you can get started without typing.
+
+### Fixed
+
+- Re-indexing a filtered set of products no longer changes your store's last full-sync timestamp, keeping "Index new & modified products" and the scheduled auto-index accurate.
+- Re-indexing one or a few products no longer skips older outdated products on the next incremental sync.
+- The product list now keeps your active search and filter after re-indexing or deleting, instead of resetting to all products.
+
 ## [1.2.0] - 2026-05-04
 
 ### Added
