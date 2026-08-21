@@ -1310,33 +1310,68 @@
 <hr />
 <h2 id="search-section">Search Section<a class="headerlink" href="#search-section" title="Permanent link">&para;</a></h2>
 <h3 id="search-configuration">Search Configuration<a class="headerlink" href="#search-configuration" title="Permanent link">&para;</a></h3>
+<p><strong>⬜ Disable Search:</strong></p>
+<ul>
+<li><strong>Checkbox</strong>: Turn off PapaSearch on the storefront</li>
+<li><strong>Purpose</strong>: Return your store to BigCommerce's original search behavior without uninstalling the app</li>
+</ul>
 <p><strong>Default products per page limit:</strong></p>
 <ul>
 <li><strong>Field</strong>: Numeric input (default: 24)</li>
-<li><strong>Purpose</strong>: Number of products shown per page in search results</li>
+<li><strong>Purpose</strong>: Number of products shown per page in search results and category listings</li>
 </ul>
-<p><strong>Default sort:</strong></p>
+<p><strong>Product listing default sort:</strong></p>
 <ul>
 <li><strong>Dropdown</strong>: Sort order options</li>
-<li><strong>Selected</strong>: "Relevance"</li>
-<li><strong>Options</strong>: Relevance, Price Low-High, Price High-Low, Newest, Name A-Z, Name Z-A</li>
-<li><strong>Purpose</strong>: Default sorting method for search results</li>
+<li><strong>Default</strong>: "Relevance"</li>
+<li><strong>Options</strong>: Relevance, Best Selling, Newest, Oldest, Price: Low to High, Price: High to Low, Name: A to Z, Name: Z to A</li>
+<li><strong>Purpose</strong>: How products are ordered when shoppers browse category or brand pages <strong>without</strong> a search query</li>
 </ul>
-<p><strong>Search lowest score (only works when semantic search enabled):</strong></p>
+<p><strong>Search results default sort:</strong></p>
+<ul>
+<li><strong>Dropdown</strong>: Same options as above</li>
+<li><strong>Default</strong>: "Relevance"</li>
+<li><strong>Purpose</strong>: How products are ordered when shoppers <strong>do</strong> enter a search query, on any page</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">📝 Two separate sort settings</p>
+<p>Browsing and searching are configured independently. A common setup is <strong>Best Selling</strong> for
+category browsing and <strong>Relevance</strong> for search results.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">📊 About Best Selling</p>
+<p>Best Selling uses each product's lifetime total sold, refreshed periodically. It may lag very
+recent orders and does not account for refunds.</p>
+</div>
+<p><strong>Semantic match threshold (only works when semantic search enabled):</strong></p>
 <ul>
 <li><strong>Field</strong>: Numeric input (default: 1.5)</li>
-<li><strong>Purpose</strong>: Minimum relevance threshold for displaying results</li>
-<li><strong>Range</strong>: 0.0 (show all) to 2.0 (very strict)</li>
+<li><strong>Range</strong>: 0.1 to 3.0</li>
+<li><strong>Purpose</strong>: How closely a product must match the <strong>meaning</strong> of a search to be included on that basis alone</li>
+<li><strong>Lower values</strong>: Add more loosely related products</li>
+<li><strong>Higher values</strong>: Add only very close matches</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">⚠️ This setting only affects meaning-based matching</p>
+<p>Products found by keyword, SKU or brand are <strong>never</strong> removed by this setting. Raising the
+threshold narrows the extra products that semantic search contributes; it does not hide
+products that matched the words the shopper typed.</p>
+</div>
 <p><strong>Checkbox Options:</strong></p>
 <ul>
-<li><strong>⬜ Redirect search page</strong> - When searching from quick search box, redirect to dedicated search results page instead of showing results via AJAX on current page</li>
-<li><strong>⬜ Suggest products when searching</strong> - Show instant search suggestions</li>
+<li><strong>⬜ Redirect search page</strong> - Redirect shoppers from BigCommerce's default search page to the PapaSearch results interface, so every search uses the enhanced results</li>
+<li><strong>⬜ Suggest products when searching</strong> - Show instant product suggestions and autocomplete as shoppers type</li>
+</ul>
+<p><strong>Excluded query parameters:</strong></p>
+<ul>
+<li><strong>Field</strong>: Comma-separated list of parameter names</li>
+<li><strong>Purpose</strong>: Strip tracking and unrelated URL parameters before they reach search and filter requests</li>
+<li><strong>Example</strong>: <code>section,setCurrencyId,utm_source,utm_medium,utm_campaign,utm_content,utm_term</code></li>
 </ul>
 <p><strong>Purpose:</strong></p>
 <ul>
-<li>Control search result display and behavior</li>
-<li>Set relevance filtering for semantic search</li>
+<li>Control search result display and ordering</li>
+<li>Tune how much meaning-based matching contributes</li>
 <li>Enable additional search features like suggestions</li>
 </ul>
 <hr />
@@ -1359,7 +1394,7 @@
 </ul>
 </div>
 <h3 id="webhook-management">Webhook Management<a class="headerlink" href="#webhook-management" title="Permanent link">&para;</a></h3>
-<p><strong>Enable hooks to update when products/categories change:</strong></p>
+<p><strong>Enable hooks to update when products/categories change (includes inventory updates):</strong></p>
 <ul>
 <li><strong>⬜ Checkbox</strong>: Automatic sync when BigCommerce data changes</li>
 <li><strong>Description</strong>: "Creates 15 webhooks: 5 for products (including inventory), 6 for categories (global + channel-specific), and 4 for product assignments. Click 'Save Settings' to install webhooks automatically."</li>
@@ -1393,10 +1428,16 @@
 <p><strong>Auto check update interval:</strong></p>
 <ul>
 <li><strong>Dropdown</strong>: Update frequency options</li>
-<li><strong>Selected</strong>: "3 hours"</li>
-<li><strong>Options</strong>: Real-time, 5 minutes, 15 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours</li>
-<li><strong>Purpose</strong>: How often to check for product changes when webhooks are not available</li>
+<li><strong>Default</strong>: "1 hour"</li>
+<li><strong>Options</strong>: Disabled, 5 minutes, 10 minutes, 15 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, 1 day</li>
+<li><strong>Purpose</strong>: How often the app checks BigCommerce for products changed since the last sync</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">⚠️ 'Disabled' turns off scheduled checking</p>
+<p><strong>Disabled</strong> is the first option in the list, not the fastest one. Choosing it means the app
+only updates when a webhook arrives. If a webhook is ever missed, those products stay stale
+until you re-index manually. Leave webhooks enabled if you select <strong>Disabled</strong>.</p>
+</div>
 <p><strong>Purpose:</strong></p>
 <ul>
 <li>Enable automatic product and category synchronization</li>
@@ -1435,8 +1476,9 @@
 <ul>
 <li><strong>Enable semantic search</strong>: ✅ For better search understanding</li>
 <li><strong>Products per page</strong>: 24 (good balance)</li>
-<li><strong>Default sort</strong>: Relevance</li>
-<li><strong>Search lowest score</strong>: 1.5 (balanced relevance)</li>
+<li><strong>Product listing default sort</strong>: Best Selling</li>
+<li><strong>Search results default sort</strong>: Relevance</li>
+<li><strong>Semantic match threshold</strong>: 1.5 (balanced relevance)</li>
 <li><strong>Enable webhooks</strong>: ✅ For automatic updates</li>
 </ul>
 <h3 id="high-traffic-stores">High-Traffic Stores:<a class="headerlink" href="#high-traffic-stores" title="Permanent link">&para;</a></h3>
@@ -1444,14 +1486,15 @@
 <li><strong>Enable webhooks</strong>: ✅ For real-time updates</li>
 <li><strong>Auto check interval</strong>: 1-3 hours</li>
 <li><strong>Products per page</strong>: 12-18 (faster loading)</li>
-<li><strong>Search lowest score</strong>: 1.0-1.2 (more results)</li>
+<li><strong>Semantic match threshold</strong>: 1.0-1.2 (more loosely related products)</li>
 </ul>
 <h3 id="b2b-stores">B2B Stores:<a class="headerlink" href="#b2b-stores" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Show both tax and non-tax price</strong>: ✅</li>
 <li><strong>Customer groups</strong>: Configure for wholesale vs retail</li>
 <li><strong>Products per page</strong>: 24-48 (comparison shopping)</li>
-<li><strong>Default sort</strong>: Relevance or Name A-Z</li>
+<li><strong>Product listing default sort</strong>: Name: A to Z</li>
+<li><strong>Search results default sort</strong>: Relevance</li>
 </ul>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
