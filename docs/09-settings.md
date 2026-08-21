@@ -165,33 +165,65 @@ The Settings page allows you to configure core search behavior, product display 
 
 ### Search Configuration
 
+**⬜ Disable Search:**
+
+- **Checkbox**: Turn off PapaSearch on the storefront
+- **Purpose**: Return your store to BigCommerce's original search behavior without uninstalling the app
+
 **Default products per page limit:**
 
 - **Field**: Numeric input (default: 24)
-- **Purpose**: Number of products shown per page in search results
+- **Purpose**: Number of products shown per page in search results and category listings
 
-**Default sort:**
+**Product listing default sort:**
 
 - **Dropdown**: Sort order options
-- **Selected**: "Relevance"
-- **Options**: Relevance, Price Low-High, Price High-Low, Newest, Name A-Z, Name Z-A
-- **Purpose**: Default sorting method for search results
+- **Default**: "Relevance"
+- **Options**: Relevance, Best Selling, Newest, Oldest, Price: Low to High, Price: High to Low, Name: A to Z, Name: Z to A
+- **Purpose**: How products are ordered when shoppers browse category or brand pages **without** a search query
 
-**Search lowest score (only works when semantic search enabled):**
+**Search results default sort:**
+
+- **Dropdown**: Same options as above
+- **Default**: "Relevance"
+- **Purpose**: How products are ordered when shoppers **do** enter a search query, on any page
+
+!!! note "📝 Two separate sort settings"
+    Browsing and searching are configured independently. A common setup is **Best Selling** for
+    category browsing and **Relevance** for search results.
+
+!!! info "📊 About Best Selling"
+    Best Selling uses each product's lifetime total sold, refreshed periodically. It may lag very
+    recent orders and does not account for refunds.
+
+**Semantic match threshold (only works when semantic search enabled):**
 
 - **Field**: Numeric input (default: 1.5)
-- **Purpose**: Minimum relevance threshold for displaying results
-- **Range**: 0.0 (show all) to 2.0 (very strict)
+- **Range**: 0.1 to 3.0
+- **Purpose**: How closely a product must match the **meaning** of a search to be included on that basis alone
+- **Lower values**: Add more loosely related products
+- **Higher values**: Add only very close matches
+
+!!! warning "⚠️ This setting only affects meaning-based matching"
+    Products found by keyword, SKU or brand are **never** removed by this setting. Raising the
+    threshold narrows the extra products that semantic search contributes; it does not hide
+    products that matched the words the shopper typed.
 
 **Checkbox Options:**
 
-- **⬜ Redirect search page** - When searching from quick search box, redirect to dedicated search results page instead of showing results via AJAX on current page
-- **⬜ Suggest products when searching** - Show instant search suggestions
+- **⬜ Redirect search page** - Redirect shoppers from BigCommerce's default search page to the PapaSearch results interface, so every search uses the enhanced results
+- **⬜ Suggest products when searching** - Show instant product suggestions and autocomplete as shoppers type
+
+**Excluded query parameters:**
+
+- **Field**: Comma-separated list of parameter names
+- **Purpose**: Strip tracking and unrelated URL parameters before they reach search and filter requests
+- **Example**: `section,setCurrencyId,utm_source,utm_medium,utm_campaign,utm_content,utm_term`
 
 **Purpose:**
 
-- Control search result display and behavior
-- Set relevance filtering for semantic search
+- Control search result display and ordering
+- Tune how much meaning-based matching contributes
 - Enable additional search features like suggestions
 
 ---
@@ -215,7 +247,7 @@ The Settings page allows you to configure core search behavior, product display 
 
 ### Webhook Management
 
-**Enable hooks to update when products/categories change:**
+**Enable hooks to update when products/categories change (includes inventory updates):**
 
 - **⬜ Checkbox**: Automatic sync when BigCommerce data changes
 - **Description**: "Creates 15 webhooks: 5 for products (including inventory), 6 for categories (global + channel-specific), and 4 for product assignments. Click 'Save Settings' to install webhooks automatically."
@@ -251,9 +283,14 @@ The Settings page allows you to configure core search behavior, product display 
 **Auto check update interval:**
 
 - **Dropdown**: Update frequency options
-- **Selected**: "3 hours"
-- **Options**: Real-time, 5 minutes, 15 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours
-- **Purpose**: How often to check for product changes when webhooks are not available
+- **Default**: "1 hour"
+- **Options**: Disabled, 5 minutes, 10 minutes, 15 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, 1 day
+- **Purpose**: How often the app checks BigCommerce for products changed since the last sync
+
+!!! warning "⚠️ 'Disabled' turns off scheduled checking"
+    **Disabled** is the first option in the list, not the fastest one. Choosing it means the app
+    only updates when a webhook arrives. If a webhook is ever missed, those products stay stale
+    until you re-index manually. Leave webhooks enabled if you select **Disabled**.
 
 **Purpose:**
 
@@ -295,21 +332,23 @@ The Settings page allows you to configure core search behavior, product display 
 ### New Store Setup:
 - **Enable semantic search**: ✅ For better search understanding
 - **Products per page**: 24 (good balance)
-- **Default sort**: Relevance
-- **Search lowest score**: 1.5 (balanced relevance)
+- **Product listing default sort**: Best Selling
+- **Search results default sort**: Relevance
+- **Semantic match threshold**: 1.5 (balanced relevance)
 - **Enable webhooks**: ✅ For automatic updates
 
 ### High-Traffic Stores:
 - **Enable webhooks**: ✅ For real-time updates
 - **Auto check interval**: 1-3 hours
 - **Products per page**: 12-18 (faster loading)
-- **Search lowest score**: 1.0-1.2 (more results)
+- **Semantic match threshold**: 1.0-1.2 (more loosely related products)
 
 ### B2B Stores:
 - **Show both tax and non-tax price**: ✅
 - **Customer groups**: Configure for wholesale vs retail
 - **Products per page**: 24-48 (comparison shopping)
-- **Default sort**: Relevance or Name A-Z
+- **Product listing default sort**: Name: A to Z
+- **Search results default sort**: Relevance
 
 ---
 

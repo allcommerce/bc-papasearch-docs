@@ -12,6 +12,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.4.0] - 2026-08-21
+
+### Added
+
+- Search now matches partial words and tolerates typos in product names and brands. Searching `Noodl` finds "Noodle Boxes", `Never` finds "NeverLeak", and `Loomas` finds the brand "Looma's" — previously only an exact word match worked.
+- Search by SKU, MPN, UPC and GTIN, including the SKUs of individual product variants. Identifiers containing hyphens, such as `LP1516-BZ`, now match correctly.
+- **Best Selling** sort option on the storefront and in both default-sort settings, based on each product's lifetime total sold.
+- Searches that return no products now still show brand suggestions, so shoppers have somewhere to go instead of an empty page.
+
+### Changed
+
+- Semantic search was rebuilt so that meaning-based matching and keyword matching no longer compete with each other. Searches return noticeably more of the relevant catalog: on a live store, `chocolate cake` went from 287 to 424 products and `coffee cups` from 73 to 128, with the closest matches still ranked first.
+- **Search lowest score** is now called **Semantic match threshold**, and it applies only to meaning-based matching. Products found by keyword, SKU or brand are never removed by this setting. The valid range is 0.1 to 3.0, and the recommended value remains 1.5.
+- Storefront results now scroll back to the top when shoppers change page, filter or sort, instead of leaving them at the bottom of the previous page. Screen readers announce the new page and result count.
+- Plan usage now counts the products actually indexed for your store rather than estimating from catalog size, so the number shown on Plans & Pricing matches what is searchable.
+
+### Fixed
+
+- The storefront script is no longer removed when a settings save fails part-way. Previously this could silently uninstall search and filters from a live storefront, leaving BigCommerce's built-in search in their place.
+- Filter values now keep the order you set by drag-and-drop in Edit Filters. Previously the saved order was ignored and values were shown by product count. Filters you have never reordered are unchanged.
+- Products no longer disappear from search when they are removed from a channel and added back, or when a bulk product edit touches channel assignments.
+- **Flush by type** in Cache Manager now also clears cached filter values. Previously only Flush All Cache cleared them, so filter changes could appear to have no effect.
+- Product sync no longer skips a block of products when one page of a catalog fetch fails.
+- Subscription and billing notification emails are no longer sent repeatedly for the same event.
+
+### Security
+
+- Settings validation errors are no longer returned before the caller is authenticated.
+
 ## [1.3.0] - 2026-05-25
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">

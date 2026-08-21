@@ -31,6 +31,27 @@ This comprehensive troubleshooting guide helps you resolve common issues, unders
     3. Check browser console for JavaScript errors
     4. Re-install script if necessary
 
+**Issue: Search results look like BigCommerce's built-in search**
+
+- **Symptom:** Searches still return products, so nothing looks broken — but results reload the
+  whole page, PapaSearch filters are missing, and partial words or brand names with apostrophes
+  do not match.
+- **Cause:** The storefront script is not loading. BigCommerce's own search silently takes over,
+  which is why the page still appears to work.
+- **How to confirm:** Open your storefront, search for a partial word such as the first five
+  letters of a product name. PapaSearch matches it; BigCommerce's built-in search usually does not.
+- **Solution:**
+    1. Open the app and check the Dashboard button. If it reads **"Install Storefront Script"**,
+       the script is not installed.
+    2. Confirm the **Channel** dropdown is set to the storefront you are testing.
+    3. Click **Install Storefront Script**.
+    4. Reload your storefront and search again. Results should update without a full page reload.
+
+!!! note "📝 If you use a theme with PapaSearch built in"
+    Some themes embed PapaSearch directly. On those stores the Dashboard may show no installed
+    script even though search works correctly. Use the partial-word test above to tell the
+    difference.
+
 **Issue: Search not working after installation**
 
 - **Cause:** Products not indexed or script conflicts
