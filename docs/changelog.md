@@ -12,6 +12,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.5.0] - 2026-09-10
+
+### Added
+
+- **Protected words** — a per-store list of words that search must never treat as common filler. Brand and product names that are also everyday words, such as "NeverLeak", "On" and "All", are now findable. Set it under Settings; no re-index needed.
+- Your catalog is indexed automatically the first time you open the Dashboard after installing. Search works on your storefront straight away instead of waiting for you to find and press **Index products**.
+- Installing the app now also connects it to BigCommerce's product notifications, so later catalog edits reach search on their own. Installing the storefront script on an additional channel connects that channel too.
+
+### Changed
+
+- Searches of several words now require a product to match most of them. Searching `over the top` no longer returns products that happen to contain only "top".
+- Result ordering was rebuilt so the ranking rules actually decide it. An exact product-name match is no longer pushed below a product whose long description merely mentions the same words.
+- The **Price range** filter now uses the price shoppers actually see. A product reduced to $49.90 is correctly excluded from a $50–$100 range even though its regular price is $51.50.
+- Changes to **Semantic search** and **Hide out of stock products** now take effect within a minute. Previously a change could take up to an hour to reach the storefront.
+
+### Fixed
+
+- Products deleted in BigCommerce are now removed from search on every channel, not just the one they were deleted from.
+- Products that no longer exist in your catalog are now cleared out of search results automatically, instead of lingering until the next full re-index.
+- Products you edit while a sync is running are no longer skipped. Previously such an edit could stay missing from search until you changed the product again or ran a full re-index.
+- A single damaged product option set no longer stops the rest of your catalog from indexing.
+- Large catalogs now finish indexing. Syncs wait for BigCommerce's rate limit and resume, instead of stopping part-way through your catalog.
+- Your saved settings are no longer replaced with defaults when they cannot be read.
+- Reinstalling the app no longer resets your Indexing settings to their defaults.
+- On a store whose subscription has lapsed, shoppers no longer see filter groups with product counts next to an empty product grid.
+- Upgrading a plan using your wallet balance is now recorded in billing history with the amount paid.
+- On trial accounts, a top-up made between the end of the trial and the first billing date is now applied to your balance.
+- Every figure shown around **Next Billing** on the Dashboard now comes from the same charge, so they agree with each other.
+- All messages shown to shoppers and merchants are in English.
+
+### Security
+
+- Maintenance endpoints used only by PapaSearch's own background jobs now require a credential. No action is needed on your side.
+
 ## [1.4.0] - 2026-08-21
 
 ### Added
