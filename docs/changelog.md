@@ -12,6 +12,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.1] - 2026-09-15
+
+### Changed
+
+- Search now keeps serving your storefront while a subscription lapses, instead of switching off the moment it expires. Your shoppers are not the ones who should notice a billing gap.
+
+### Fixed
+
+- When search is unavailable for a store, the storefront now falls back to BigCommerce's own search and filters instead of showing an empty product grid with a technical error message. Previously a shopper could land on a search page that reported no products even though the catalog had matches.
+
 ## [1.6.0] - 2026-09-15
 
 ### Changed
