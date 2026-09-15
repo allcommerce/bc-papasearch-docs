@@ -12,6 +12,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.0] - 2026-09-15
+
+### Changed
+
+- **Filter counts now follow what a shopper has already picked.** Each count shows how many products remain once the current selection is applied, so the number next to a value matches the grid a shopper gets when they tick it. Previously a value could read `DW (302)` and return 71 products.
+- A filter group a shopper is currently using keeps counting as if that group were open. Ticking **In Stock** no longer drives **Out of Stock** to zero, so the other choices in the same group stay usable and a shopper can always step back.
+- Values that no longer match anything are hidden, and a value a shopper has ticked always stays visible even when its count reaches zero — so a selection can always be undone.
+
+### Fixed
+
+- Choosing several brands at once now works. Previously it could leave the filter panel frozen on the previous numbers.
+- The filter panel no longer briefly shows the previous numbers after a shopper ticks a value while the page is still loading.
+- Filters on mobile now match the desktop panel exactly, including which values are ticked.
+
 ## [1.5.0] - 2026-09-10
 
 ### Added
