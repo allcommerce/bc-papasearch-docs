@@ -12,6 +12,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.3] - 2026-09-16
+
+### Fixed
+
+- The search page no longer flickers when it opens. Until now a shopper landing on search saw your old product list appear for about a second and then vanish before the search results arrived. Search now puts up its own loading frame the moment the page opens and goes straight to the results, so there is no flicker in between.
+- The search page also appears sooner: the search frame now shows up in well under half a second to about a second, instead of three to four seconds.
+- Your theme's own filter panel no longer flashes into view while the page is still loading on some stores.
+- If a shopper's connection stalls and search cannot load, the storefront now hands the page back to BigCommerce's own search results instead of leaving them in front of a spinner that never finishes.
+
 ## [1.6.2] - 2026-09-16
 
 ### Fixed
