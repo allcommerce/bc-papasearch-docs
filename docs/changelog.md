@@ -12,6 +12,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.2] - 2026-09-16
+
+### Fixed
+
+- Filter links written by your theme's own navigation work again. Some themes build filter links in a format search could not read, so a shopper arriving from one of those links got no products — sometimes an empty page — even when the category had matches. Those links now return the filtered set, with the matching boxes ticked in the filter panel.
+- A search page with no results no longer goes blank. When search has nothing to show for a keyword, the storefront hands the page back to BigCommerce's own search results instead of leaving an empty area between your header and footer.
+- When a shopper's own filter choice returns nothing, the page now says so and keeps their selection visible, instead of quietly showing an unfiltered list.
+
 ## [1.6.1] - 2026-09-15
 
 ### Changed
