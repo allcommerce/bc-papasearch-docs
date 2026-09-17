@@ -12,6 +12,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.6] - 2026-09-17
+
+### Fixed
+
+- Search now finds a brand however shoppers write its spaces, hyphens or dots. Typing "vicfirth", "RayBan" or "zman" now shows Vic Firth, Ray-Ban or Z-Man products, where before shoppers got no results. It also works the other way round: a brand saved as "fabdog" is found when a shopper types "Fab Dog".
+- Brands saved with a curly apostrophe (’) are now found when shoppers type a regular one ('). Searching "Arnott's" now shows Arnott’s products first, where before it showed products from unrelated brands.
+- Shoppers can type the start of a longer brand name without spaces: "FisherPrice" now finds "Fisher-Price Power Wheels".
+- Searches that already found products still find them.
+
 ## [1.6.5] - 2026-09-17
 
 ### Fixed
