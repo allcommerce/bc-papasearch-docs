@@ -12,6 +12,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.4] - 2026-09-17
+
+### Fixed
+
+- Error messages in the PapaSearch app no longer show technical details. When something goes wrong — saving settings, managing filters, keywords or your subscription — you now see a short, clear message instead of internal system text.
+- If connecting your store to PapaSearch fails, the error page now simply asks you to try again, without technical wording.
+- On the Settings page, if setting up automatic product updates does not finish, the notice now simply asks you to save the setting again.
+
 ## [1.6.3] - 2026-09-16
 
 ### Fixed
