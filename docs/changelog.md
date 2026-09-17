@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Fixed
 
 - Filters no longer get stuck on a loading screen when a shopper's connection drops. Until now, if a filter click never got an answer, the loading overlay stayed over the old products for good. Now the storefront stops waiting after 30 seconds and shows "Error loading products. Please try again." so the shopper can simply click again.
-- If the filter panel is slow to refresh after a shopper picks a filter, the updated product list still appears instead of waiting on the panel.
+- If the filter panel cannot refresh after a shopper picks a filter, the updated product list now still appears after the same 30-second wait. Before, the new products never showed up.
 - When search results fail to load, shoppers are no longer told "No products found". A filter click shows the error message above, and a page that is just opening falls back to your store's own product list.
 - The quick search popup can always be closed by clicking outside it. Before, if suggested keywords failed to load when a shopper clicked into the search box, the popup could not be dismissed until the page was reloaded.
 
