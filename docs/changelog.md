@@ -12,6 +12,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.7] - 2026-09-18
+
+### Fixed
+
+- If you turned off product suggestions in the quick search popup, the popup no longer tells shoppers "No results found" and "Check your spelling" when they type a full product name. It now offers a "Search for …" link that opens your search results page. The same link also replaces the empty popup that could appear when a shopper clicked back into a search box that already had text in it.
+- With product suggestions turned off, screen readers no longer announce "0 products found" in the quick search popup. They now announce only the number of suggestions shown.
+- Stores that show product suggestions in the popup are not affected.
+
 ## [1.6.6] - 2026-09-17
 
 ### Fixed
