@@ -12,6 +12,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.8] - 2026-09-21
+
+### Fixed
+
+- Products you set to **Hide price** in BigCommerce now look the same in PapaSearch as on your own product cards. PapaSearch shows your price label (for example "Call for pricing") where the price would be, or leaves the space empty if you did not set a label. This applies to search results, filtered results and the quick search popup. Until now PapaSearch still showed the price.
+- Products with a hidden price no longer turn up when shoppers filter by a price range, and they are listed after priced products when shoppers sort by price. This way the hidden price cannot be worked out from the results.
+- Products set to **This product cannot be purchased in my online store** no longer show an Add to Cart button in PapaSearch results, matching your store's own product cards. Other buttons, such as a quote request button, stay where they are. Pre-order products can still be added to the cart.
+
 ## [1.6.7] - 2026-09-18
 
 ### Fixed
