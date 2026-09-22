@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.7.2] - 2026-09-22
+
+### Fixed
+
+- When shoppers see in-stock products only (you turned on **Hide out of stock products**, or the shopper ticked **In Stock**), filtering by an option such as **Size** now shows only products where that size is still in stock. Previously a product appeared under **Size 14** even when size 14 had sold out, as long as another size was still available. The counts next to each option value now match the results. This applies to products that track inventory by variant.
+
 ## [1.7.1] - 2026-09-22
 
 ### Fixed
