@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.7.0] - 2026-09-22
+
+### Changed
+
+- In search results sorted by **Relevance**, products that sell more now appear earlier among products that match the search equally well. How well a product matches still comes first, so a best seller never moves above a product that matches the search terms more closely. PapaSearch uses the sales count BigCommerce keeps for each product, and turns this on once it has that count for nearly all of your visible products. Other sort options, and category pages without a search term, are unchanged.
+
 ## [1.6.9] - 2026-09-22
 
 ### Added
