@@ -12,6 +12,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.6.9] - 2026-09-22
+
+### Added
+
+- New **Show product price** setting under **Settings → Products**. Turn it off to hide prices in PapaSearch results for every shopper, the same as turning off product prices in your BigCommerce display settings. It is on by default, so nothing changes until you turn it off.
+
+### Fixed
+
+- **Sync from BigCommerce** no longer resets your other PapaSearch settings. Until now, syncing and then saving turned settings you had set yourself, such as the FAST QUOTE button, search and filter options, and colors, back to their defaults. The sync now only updates the settings that come from BigCommerce: currencies, customer groups, tax display, and price and Add to Cart display.
+- **Sync from BigCommerce** now picks up your price and Add to Cart display settings correctly when a storefront uses your store-wide values. Before, **Hide price from guests** could be synced as off even when it was on in BigCommerce.
+
 ## [1.6.8] - 2026-09-21
 
 ### Fixed
