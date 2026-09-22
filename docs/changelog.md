@@ -12,6 +12,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+## [1.7.1] - 2026-09-22
+
+### Fixed
+
+- If your PapaSearch plan has expired, PapaSearch no longer reads your BigCommerce catalogue every day. This daily check used part of your store's BigCommerce API limit, which your other apps share, even though PapaSearch makes no changes to an inactive plan's search results. The check starts again after you renew.
+
 ## [1.7.0] - 2026-09-22
 
 ### Changed
