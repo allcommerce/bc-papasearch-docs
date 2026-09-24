@@ -14,6 +14,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Stock levels for individual variants now update in PapaSearch when shoppers buy them, not only when you edit stock in your BigCommerce control panel. Before this, a size or colour that sold out through an order could still be offered under **Size** or **Colour** until the next full sync. This matters most if you show in-stock products only and track inventory by variant.
 
+## [1.7.4] - 2026-09-24
+
+### Fixed
+
+- Filtering by an option value now shows only products that have exactly that value. Before this, choosing **S** under **Size** also showed products that only come in **XS**, **2XS** or **Small**, and choosing **0 mg** also showed **50 mg** and **20 mg** products, so the result count was higher than the number next to the value. The count next to each value now matches the products you see. This applies to product options, custom fields and modifiers.
+
 ## [1.7.3] - 2026-09-23
 
 ### Fixed
