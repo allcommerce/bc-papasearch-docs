@@ -14,6 +14,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Stock levels for individual variants now update in PapaSearch when shoppers buy them, not only when you edit stock in your BigCommerce control panel. Before this, a size or colour that sold out through an order could still be offered under **Size** or **Colour** until the next full sync. This matters most if you show in-stock products only and track inventory by variant.
 
+## [1.8.0] - 2026-09-30
+
+### Added
+
+- **Vehicle fitment (Year / Make / Model).** Upload a CSV that lists which vehicles each SKU fits, and shoppers can pick their vehicle to see only the parts that fit it — in search results, category pages and filter counts. See [Vehicle Fitment](14-vehicle-fitment.md) for the file format and setup.
+  - Import from the new **Vehicle Fitment** page, or set a **Source URL** in Settings and PapaSearch fetches your file once a day.
+  - Choose where the vehicle selector appears: above the product list, at the top of the filter sidebar, or both.
+  - Shoppers can save up to 5 vehicles and switch between them; the selected vehicle stays applied as they browse and is included in the page link.
+  - Place a vehicle selector on any page (for example your home page) with a Page Builder HTML block.
+  - Vehicle fitment is off until you turn it on in **Settings → Vehicle fitment**; stores that don't use it see no change.
+
 ## [1.7.5] - 2026-09-25
 
 ### Fixed
