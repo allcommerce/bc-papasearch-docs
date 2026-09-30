@@ -2,6 +2,12 @@
 
 Let shoppers pick their vehicle and instantly see only the parts and accessories that fit it. Vehicle Fitment adds a Year/Make/Model-style vehicle selector to your storefront and filters search results to match the vehicle a shopper has selected.
 
+Watch the step-by-step video (2.5 minutes), then read on for the details.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+  <iframe src="https://www.youtube.com/embed/DO_bBfWWrbI" title="Vehicle Fitment for BigCommerce: step-by-step" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
 ---
 
 ## What Vehicle Fitment Does

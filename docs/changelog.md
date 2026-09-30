@@ -22,6 +22,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [1.8.0] - 2026-09-30
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+  <iframe src="https://www.youtube.com/embed/DO_bBfWWrbI" title="Vehicle Fitment for BigCommerce: step-by-step" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
 ### Added
 
 - **Vehicle fitment (Year / Make / Model).** Upload a CSV that lists which vehicles each SKU fits, and shoppers can pick their vehicle to see only the parts that fit it — in search results, category pages and filter counts. See [Vehicle Fitment](14-vehicle-fitment.md) for the file format and setup.
