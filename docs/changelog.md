@@ -14,6 +14,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Stock levels for individual variants now update in PapaSearch when shoppers buy them, not only when you edit stock in your BigCommerce control panel. Before this, a size or colour that sold out through an order could still be offered under **Size** or **Colour** until the next full sync. This matters most if you show in-stock products only and track inventory by variant.
 
+## [1.8.1] - 2026-09-30
+
+### Fixed
+
+- Clicking **Install Storefront Script** on the dashboard now installs the script with the settings you saved for that channel. Before this, the script was installed with default settings, so colours, currencies, container selectors and the vehicle selector reverted until you saved Settings again.
+
 ## [1.8.0] - 2026-09-30
 
 ### Added
