@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.9.1] - 2026-10-01
+
+### Added
+
+- **Column picker on search and category pages.** On stores using a PapaThemes theme with a grid **Products display type**, shoppers can switch the product grid between 2, 3, 4, 5 and 6 columns from the PapaSearch toolbar, using the column icons next to the Grid / List buttons. This replaces the theme's own column switcher, which is not shown once PapaSearch takes over the product list. The grid starts with the layout you chose in Theme Editor, and the shopper's choice is remembered on their browser. The picker appears on screens 1261px wide and up, where the theme shows more than 2 columns.
+
 ## [1.9.0] - 2026-10-01
 
 ### Added
