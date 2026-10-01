@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-10-01
+
+### Added
+
+- **Show out-of-stock products last.** A new option in **Settings → Products → Stock** lists in-stock products first in search results and category pages, followed by out-of-stock products. Each group keeps the sort order the shopper chose, such as relevance, price or name, and paging works across both groups. It is off by default, and it has no effect while **Hide out-of-stock products from search results** is on.
+
 ## [1.8.2] - 2026-10-01
 
 ### Changed

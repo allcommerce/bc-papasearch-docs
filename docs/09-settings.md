@@ -45,6 +45,8 @@ The Settings page allows you to configure core search behavior, product display 
 - **✅ Show both tax and non-tax price** - Display both tax-inclusive and tax-exclusive prices
 - **✅ Show retail price** - Display manufacturer's suggested retail price (MSRP)
 - **✅ Show out of stock badge** - Mark out-of-stock products with badges
+- **⬜ Hide out-of-stock products from search results** - Remove out-of-stock products from search results and category pages; the Stock filter is hidden too
+- **⬜ Show out-of-stock products last** - List in-stock products first, then out-of-stock products, each group in the sort order the shopper chose. Not used while out-of-stock products are hidden
 - **✅ Show add to cart button** - Include "Add to Cart" buttons in search results
 - **⬜ Show compare button** - Enable product comparison functionality
 - **⬜ Show quick view button** - Add quick preview buttons for products
