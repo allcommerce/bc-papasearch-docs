@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- Search results, filters and the PapaSearch dashboard now load noticeably faster on slower connections. Data is sent compressed, so pages such as **Customize Filters** download about 85% less.
+
 ### Fixed
 
 - Stock levels for individual variants now update in PapaSearch when shoppers buy them, not only when you edit stock in your BigCommerce control panel. Before this, a size or colour that sold out through an order could still be offered under **Size** or **Colour** until the next full sync. This matters most if you show in-stock products only and track inventory by variant.
