@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
-### Added
+## [1.8.2] - 2026-10-01
 
 ### Changed
 
@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Fixed
 
 - Stock levels for individual variants now update in PapaSearch when shoppers buy them, not only when you edit stock in your BigCommerce control panel. Before this, a size or colour that sold out through an order could still be offered under **Size** or **Colour** until the next full sync. This matters most if you show in-stock products only and track inventory by variant.
+- The **Vehicle Fitment** page no longer says the PapaSearch script is not installed after you have installed it. Before this, the message stayed until your next fitment import.
 
 ### Security
 
