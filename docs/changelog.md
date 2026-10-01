@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.9.2] - 2026-10-01
+
+### Added
+
+- **Sort the Product Indexes list.** On **Manage Indexes**, click a column heading to sort your products by **Name**, **SKU**, **Price**, **Date Created** or **Date Modified**; click again to reverse the order. Sorting covers your whole catalog, not just the current page, and stays in place as you page through the list or re-index. A new **Date Created** column shows when each product was added. The list still opens with the newest products first.
+
 ## [1.9.1] - 2026-10-01
 
 ### Added

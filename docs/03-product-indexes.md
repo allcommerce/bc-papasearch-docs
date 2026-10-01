@@ -118,7 +118,7 @@ This table shows all products in your search index. You can see their current st
 
 **Name**: The product name exactly as it appears in your BigCommerce store. Click the header to sort alphabetically.
 
-**SKU**: Product identifier. Useful for finding specific products quickly.
+**SKU**: Product identifier. Useful for finding specific products quickly. Click the header to sort by SKU.
 
 **Price**: Current product price with currency symbol. Click header to sort by price.
 
@@ -128,9 +128,13 @@ This table shows all products in your search index. You can see their current st
 - 🟡 **OUTDATED** - Product was changed and needs to be re-indexed
 - ⚪ **NOT IN CHANNEL** - Product not available in current sales channel
 
-**Date Modified**: When the product was last updated in BigCommerce
+**Date Created**: When the product was added to your store. Click the header to list the oldest or newest products first. The list opens with the newest products first.
+
+**Date Modified**: When the product was last updated in BigCommerce. Click the header to see recently changed products first.
 
 **Last Indexed**: When the product was last added to search index
+
+Sorting applies to your whole catalog, not just the page you are looking at, and it stays in place as you move between pages. **Status** and **Last Indexed** cannot be sorted.
 
 **Actions**: Contains a "Re-index" button to update individual products
 
