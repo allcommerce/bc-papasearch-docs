@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.10.0] - 2026-10-05
+
+### Added
+
+- **Merchandising rules.** A new **Merchandising** page lets you boost, bury or hide products for a search keyword or for a specific category page. Pick products, brands or categories, choose **High** (always on top or at the end), **Medium** or **Low** (a nudge among equally relevant results) or **Hide** (removed from results and filter counts), and check the effect with a side-by-side **Preview** before saving. For example, a High boost for "gearbox" on "Spacer tube 45 mm" moves it from outside the top 24 to first place. When shoppers sort by price or best-selling, boosted products come first among products with the same price or sales. Up to 200 rules per channel. See [Merchandising](15-merchandising.md).
+
 ## [1.9.2] - 2026-10-01
 
 ### Added
