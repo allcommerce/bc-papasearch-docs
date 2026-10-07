@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.11.1] - 2026-10-07
+
+### Fixed
+
+- **Filter counts for the values you selected now match the product count.** On broad searches the label of a selected filter value could be lower than the results shown next to it, for example **In Stock (3088)** beside **3134 items**. A selected value now shows the number of products in the list you are looking at. When several values of the same filter are selected on a very broad search, the count is shown with a **+** (for example **Sagaform (383+)**), meaning *at least this many*.
+
 ## [1.11.0] - 2026-10-07
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
