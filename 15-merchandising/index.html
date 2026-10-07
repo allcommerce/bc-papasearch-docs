@@ -786,6 +786,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#choosing-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#what-each-strength-does" class="md-nav__link">
     <span class="md-ellipsis">
       What each strength does
@@ -1068,10 +1077,16 @@
 <p>Decide which products shoppers see first. Merchandising rules let you <strong>boost</strong>, <strong>bury</strong> or <strong>hide</strong> products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, or keep a product out of results for a search where it does not belong.</p>
 <hr />
 <h2 id="open-the-merchandising-page">Open the Merchandising Page<a class="headerlink" href="#open-the-merchandising-page" title="Permanent link">&para;</a></h2>
-<p>From your Dashboard, click the <strong>Merchandising</strong> button. The page lists your rules with their trigger, action, target and an on/off switch. You can have up to <strong>200 rules</strong> per storefront channel. Use <strong>Filter by trigger</strong> to find a rule by keyword or category name.</p>
+<p>From your Dashboard, click the <strong>Merchandising</strong> button. The page lists your rules. Each row describes in one sentence what the rule does, with its trigger, action, target, last update and an on/off switch. You can have up to <strong>200 rules</strong> per storefront channel; the counter above the list shows how many you use.</p>
+<ul>
+<li>Type in <strong>Search rules</strong> to find a rule by name, keyword or category.</li>
+<li>Use the <strong>Trigger</strong>, <strong>Action</strong> and <strong>Status</strong> filters to narrow the list.</li>
+<li>Tick several rules to <strong>Activate</strong>, <strong>Pause</strong> or <strong>Delete</strong> them together.</li>
+<li>The <strong>How rules combine</strong> note at the top explains what happens when several rules apply to one product. Close it once you have read it.</li>
+</ul>
 <hr />
 <h2 id="create-a-rule">Create a Rule<a class="headerlink" href="#create-a-rule" title="Permanent link">&para;</a></h2>
-<p>Click <strong>Add rule</strong> and fill in:</p>
+<p>Click <strong>Add rule</strong>. The rule editor opens as its own page, with a live <strong>Preview</strong> on the right. Fill in:</p>
 <table>
 <thead>
 <tr>
@@ -1081,12 +1096,12 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Name</strong></td>
+<td><strong>Rule name</strong></td>
 <td>Your own label, shown in the rules list.</td>
 </tr>
 <tr>
 <td><strong>When</strong></td>
-<td><strong>Search keyword</strong> — the rule applies to searches. <strong>Category page</strong> — the rule applies when shoppers browse one specific category.</td>
+<td><strong>Search keyword</strong> — the rule applies to searches. <strong>Category page</strong> — the rule applies when shoppers open one specific category page.</td>
 </tr>
 <tr>
 <td><strong>Keyword</strong> / <strong>Match</strong></td>
@@ -1101,37 +1116,47 @@
 <td>For Boost and Bury: <strong>High</strong>, <strong>Medium</strong> or <strong>Low</strong> (see below).</td>
 </tr>
 <tr>
-<td><strong>Target</strong></td>
-<td>The products the rule acts on: up to 100 <strong>Products</strong> (search by name or SKU), or whole <strong>Brands</strong>, or <strong>Categories</strong>.</td>
+<td><strong>Which products</strong></td>
+<td>Up to 100 <strong>Products</strong> (search by name or SKU), or whole <strong>Brands</strong>, or <strong>Categories</strong>.</td>
 </tr>
 </tbody>
 </table>
-<p>Click <strong>Save</strong>. Changes reach your storefront within a few minutes.</p>
+<p>A sentence at the top of the editor sums up the rule as you build it, for example <em>When a search contains "gearbox", show 1 product above all other results.</em> Click <strong>Save rule</strong>. Changes reach your storefront within a few minutes. If you leave the page with unsaved changes, PapaSearch asks before discarding them.</p>
+<p>A category page rule applies only when shoppers browse that category. When a shopper searches for a keyword and then filters by that category, only keyword rules apply.</p>
+<h3 id="choosing-categories">Choosing categories<a class="headerlink" href="#choosing-categories" title="Permanent link">&para;</a></h3>
+<p>Under <strong>Which products → Categories</strong>, each category has a box you click to cycle through three choices:</p>
+<ul>
+<li><strong>Whole branch</strong> (filled box) — the category and all of its subcategories. The chip shows how many subcategories are included, for example <strong>Shop All +20</strong>.</li>
+<li><strong>This category only</strong> (outlined box) — only products assigned directly to that category, not to its subcategories.</li>
+<li><strong>Not selected</strong>.</li>
+</ul>
+<p>Categories without subcategories are simply selected or not. A dash on a parent means some of its subcategories are picked. Subcategories inside a whole-branch parent stay clickable: untick one to leave it out, and the parent switches to <strong>This category only</strong> while its other subcategories stay selected. Tick it again and the branch folds back into one choice. Use the arrows to expand or collapse a branch; when you open a rule, only the branches you picked part of are expanded. <strong>Clear all</strong> removes every choice.</p>
 <h3 id="what-each-strength-does">What each strength does<a class="headerlink" href="#what-each-strength-does" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>High</strong> — boosted products are shown above all other results; buried products are shown below all other results.</li>
 <li><strong>Medium</strong> and <strong>Low</strong> — a nudge up or down among results that are about equally relevant. A product that does not match the search well will not jump to the top.</li>
-<li><strong>Hide</strong> — the product is removed from the results <strong>and</strong> from the filter counts, whatever sort the shopper picks.</li>
+<li><strong>Hide</strong> — the product is removed from the results <strong>and</strong> from the filter counts, whatever sort the shopper picks. If a Hide rule removes every result, shoppers see <strong>No products found</strong> instead of the products you hid.</li>
 </ul>
-<p>If several rules apply to the same product, the strongest one wins — rules do not add up. A boost beats a bury of the same strength.</p>
+<p>If several rules apply to the same product, they do not add up: a boost always beats a bury, whatever their strengths, and between two boosts (or two buries) the stronger one wins.</p>
 <h3 id="when-shoppers-change-the-sort">When shoppers change the sort<a class="headerlink" href="#when-shoppers-change-the-sort" title="Permanent link">&para;</a></h3>
 <p>Boosts and buries follow the default <strong>Relevance</strong> order. When a shopper sorts by <strong>Price</strong> or <strong>Best Selling</strong>, the shopper's sort comes first; a boosted product is moved ahead only of products with the same price (or the same sales), and a buried one behind them. Sorting by <strong>Name</strong> or by date ignores boosts and buries. Hidden products stay hidden under every sort. If <strong>Show out-of-stock products last</strong> is on, out-of-stock products stay at the end even when boosted.</p>
 <h3 id="order-within-a-rule">Order within a rule<a class="headerlink" href="#order-within-a-rule" title="Permanent link">&para;</a></h3>
 <p>When one rule boosts several products, they all move into the top group together, and inside that group they keep their usual relevance order. The order in which you added them to the rule does not matter.</p>
 <hr />
 <h2 id="preview-before-you-save">Preview Before You Save<a class="headerlink" href="#preview-before-you-save" title="Permanent link">&para;</a></h2>
-<p>In the rule editor, type a search under <strong>Preview search</strong> and click <strong>Preview</strong>. Two columns compare the top 24 results <strong>Without rules</strong> and <strong>With rules</strong>, so you can see each product's position change (for example "New in top 24 → 1") and which products a Hide rule removes. The preview includes your saved rules plus the draft you are editing. If a rule cannot be applied at that moment, the preview says so.</p>
+<p>The <strong>Preview</strong> panel shows the top 24 results with your saved rules plus the draft you are editing. For a search rule it uses your keyword (you can type another search); for a category page rule it shows that category page. Tiles count how many products moved up, are new in the top 24, moved down or are hidden. Switch between <strong>All</strong> and <strong>Changed</strong> to see every result or only the ones that moved, each with its previous position and the rule that moved it. Products hidden from beyond the top 24 are listed too, for example <em>"Test Product 156 — was outside the top 24 · by Demo gearbox hide"</em>.</p>
 <hr />
 <h2 id="turn-rules-on-and-off-edit-or-delete">Turn Rules On and Off, Edit or Delete<a class="headerlink" href="#turn-rules-on-and-off-edit-or-delete" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use the switch in the <strong>Status</strong> column to turn a rule off without deleting it. You can always turn a rule off, even if one of its target products has since been deleted.</li>
-<li>Click <strong>Edit</strong> to change a rule, or <strong>Delete</strong> to remove it.</li>
+<li>Use the switch in the <strong>Active</strong> column to turn a rule off without deleting it. You can always turn a rule off, even if one of its target products has since been deleted.</li>
+<li>Click the pencil to edit a rule. The <strong>⋯</strong> menu offers <strong>Duplicate</strong>, <strong>Pause</strong> / <strong>Activate</strong> and <strong>Delete</strong>. Before deleting, PapaSearch shows a summary of the rule and offers <strong>Pause the rule instead</strong>.</li>
 </ul>
 <hr />
 <h2 id="good-to-know">Good to Know<a class="headerlink" href="#good-to-know" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Rules apply to the storefront channel you are managing.</li>
-<li>A category target includes that category's subcategories. Products added while your category list could not be read may not be picked up by a parent-category rule until they are re-indexed — use <strong>Product Indexes</strong> to re-index them.</li>
+<li><strong>Whole branch</strong> includes subcategories. Products added while your category list could not be read may not be picked up by a whole-branch rule until they are re-indexed — use <strong>Product Indexes</strong> to re-index them.</li>
+<li>Many stores assign products to a parent category as well as to its subcategories. In that case <strong>This category only</strong> and <strong>Whole branch</strong> reach the same products.</li>
 <li>A product must be in your product index to be used as a target.</li>
 </ul>
 
