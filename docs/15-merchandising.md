@@ -42,7 +42,7 @@ A sentence at the top of the editor sums up the rule as you build it, for exampl
 
 A category page rule applies only when shoppers browse that category. When a shopper searches for a keyword and then filters by that category, only keyword rules apply.
 
-![A category page rule for Gearbox Spare Parts: the Preview shows the category page with the boosted product first](assets/images/merch-category-page-rule.jpg)
+![A category page rule: When is set to Category page, Gearbox Spare Parts, and the Preview shows that page with the boosted product first](assets/images/merch-category-page-rule.jpg)
 
 ![The Gearbox Spare Parts category page on the storefront, led by the boosted product](assets/images/merch-storefront-category.jpg)
 
@@ -64,7 +64,7 @@ Categories without subcategories are simply selected or not. A dash on a parent 
 - **Medium** and **Low** — a nudge up or down among results that are about equally relevant. A product that does not match the search well will not jump to the top.
 - **Hide** — the product is removed from the results **and** from the filter counts, whatever sort the shopper picks. If a Hide rule removes every result, shoppers see **No products found** instead of the products you hid.
 
-![Do and Strength: Boost, Bury or Hide, with High, Medium and Low](assets/images/merch-editor-preview.jpg)
+![When, Do and Strength: Boost, Bury or Hide, with High, Medium and Low](assets/images/merch-editor-preview.jpg)
 
 ![The storefront shows No products found when a Hide rule removes every result](assets/images/merch-storefront-hidden.jpg)
 
@@ -92,6 +92,8 @@ The **Preview** panel shows the top 24 results with your saved rules plus the dr
 
 - Use the switch in the **Active** column to turn a rule off without deleting it. You can always turn a rule off, even if one of its target products has since been deleted.
 - Click the pencil to edit a rule. The **⋯** menu offers **Duplicate**, **Pause** / **Activate** and **Delete**. Before deleting, PapaSearch shows a summary of the rule and offers **Pause the rule instead**.
+
+![Delete dialog: a summary of the rule, Pause the rule instead, and Cancel focused by default](assets/images/merch-delete-dialog.jpg)
 
 ---
 
