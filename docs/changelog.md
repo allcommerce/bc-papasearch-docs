@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [1.11.0] - 2026-10-07
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+  <iframe src="https://www.youtube.com/embed/UpPdfLjTL-I" title="Merchandising for BigCommerce: Boost, Bury or Hide Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+</div>
+
 ### Added
 
 - **Choose category scope in merchandising rules.** When a rule targets categories, each category box now cycles through **Whole branch** (the category and all its subcategories), **This category only** (products assigned directly to it) and not selected. Leave out a single subcategory of a whole branch with one click, see at a glance which branches are partly picked, expand or collapse branches, and clear every pick with **Clear all**. Existing rules keep targeting whole branches. See [Choosing categories](15-merchandising.md#choosing-categories).
