@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.11.0] - 2026-10-07
+
+### Added
+
+- **Choose category scope in merchandising rules.** When a rule targets categories, each category box now cycles through **Whole branch** (the category and all its subcategories), **This category only** (products assigned directly to it) and not selected. Leave out a single subcategory of a whole branch with one click, see at a glance which branches are partly picked, expand or collapse branches, and clear every pick with **Clear all**. Existing rules keep targeting whole branches. See [Choosing categories](15-merchandising.md#choosing-categories).
+
+### Changed
+
+- **Redesigned Merchandising pages.** The rules list now describes each rule in one sentence and adds search, **Trigger** / **Action** / **Status** filters and bulk **Activate**, **Pause** and **Delete**. The rule editor opens as its own page with a summary sentence, a live **Preview** that shows moved, new and hidden products, and a check before you leave with unsaved changes. Deleting a rule now offers **Pause the rule instead**.
+- **Category page rules apply only to category pages.** When a shopper searches for a keyword and then filters by a category, only keyword rules apply; category page rules stay on the category page itself.
+
+### Fixed
+
+- When a **Hide** rule removed every result for a search, shoppers could see the theme's own search page, including the products you hid. They now see **No products found**. The same applies on slow connections: if PapaSearch's results arrive late, it replaces the theme's page instead of leaving hidden products on screen.
+- Search results load faster on repeat visits for stores without default filter selections: the product list and the filters are now fetched at the same time.
+- **Preview** now counts and lists products a Hide rule removes from beyond the top 24 results.
+- Fixed the category picker freezing when you filtered the list, and losing ticked categories that were hidden by the filter.
+- Fixed the editor's breadcrumb alignment and ticking several rules quickly in the list.
+
 ## [1.10.0] - 2026-10-05
 
 ### Added
