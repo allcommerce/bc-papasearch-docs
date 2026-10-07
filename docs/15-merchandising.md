@@ -2,6 +2,8 @@
 
 Decide which products shoppers see first. Merchandising rules let you **boost**, **bury** or **hide** products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, or keep a product out of results for a search where it does not belong.
 
+![A search for gearbox on the storefront: the boosted bevel gear is first and a hidden product is gone](assets/images/merch-storefront-search.jpg)
+
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
   <iframe src="https://www.youtube.com/embed/UpPdfLjTL-I" title="Merchandising for BigCommerce: Boost, Bury or Hide Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
@@ -16,6 +18,8 @@ From your Dashboard, click the **Merchandising** button. The page lists your rul
 - Use the **Trigger**, **Action** and **Status** filters to narrow the list.
 - Tick several rules to **Activate**, **Pause** or **Delete** them together.
 - The **How rules combine** note at the top explains what happens when several rules apply to one product. Close it once you have read it.
+
+![The Merchandising rules list with search, filters and bulk Activate, Pause and Delete](assets/images/merch-rules-list.jpg)
 
 ---
 
@@ -34,7 +38,13 @@ Click **Add rule**. The rule editor opens as its own page, with a live **Preview
 
 A sentence at the top of the editor sums up the rule as you build it, for example *When a search contains "gearbox", show 1 product above all other results.* Click **Save rule**. Changes reach your storefront within a few minutes. If you leave the page with unsaved changes, PapaSearch asks before discarding them.
 
+![The rule editor: keyword gearbox, the summary sentence at the top and the live Preview on the right](assets/images/merch-editor-keyword.jpg)
+
 A category page rule applies only when shoppers browse that category. When a shopper searches for a keyword and then filters by that category, only keyword rules apply.
+
+![A category page rule for Gearbox Spare Parts: the Preview shows the category page with the boosted product first](assets/images/merch-category-page-rule.jpg)
+
+![The Gearbox Spare Parts category page on the storefront, led by the boosted product](assets/images/merch-storefront-category.jpg)
 
 ### Choosing categories
 
@@ -46,11 +56,17 @@ Under **Which products → Categories**, each category has a box you click to cy
 
 Categories without subcategories are simply selected or not. A dash on a parent means some of its subcategories are picked. Subcategories inside a whole-branch parent stay clickable: untick one to leave it out, and the parent switches to **This category only** while its other subcategories stay selected. Tick it again and the branch folds back into one choice. Use the arrows to expand or collapse a branch; when you open a rule, only the branches you picked part of are expanded. **Clear all** removes every choice.
 
+![The category picker: Shop All selected as a whole branch, with its subcategories ticked and a +20 chip](assets/images/merch-category-scope.jpg)
+
 ### What each strength does
 
 - **High** — boosted products are shown above all other results; buried products are shown below all other results.
 - **Medium** and **Low** — a nudge up or down among results that are about equally relevant. A product that does not match the search well will not jump to the top.
 - **Hide** — the product is removed from the results **and** from the filter counts, whatever sort the shopper picks. If a Hide rule removes every result, shoppers see **No products found** instead of the products you hid.
+
+![Do and Strength: Boost, Bury or Hide, with High, Medium and Low](assets/images/merch-editor-preview.jpg)
+
+![The storefront shows No products found when a Hide rule removes every result](assets/images/merch-storefront-hidden.jpg)
 
 If several rules apply to the same product, they do not add up: a boost always beats a bury, whatever their strengths, and between two boosts (or two buries) the stronger one wins.
 
@@ -67,6 +83,8 @@ When one rule boosts several products, they all move into the top group together
 ## Preview Before You Save
 
 The **Preview** panel shows the top 24 results with your saved rules plus the draft you are editing. For a search rule it uses your keyword (you can type another search); for a category page rule it shows that category page. Tiles count how many products moved up, are new in the top 24, moved down or are hidden. Switch between **All** and **Changed** to see every result or only the ones that moved, each with its previous position and the rule that moved it. Products hidden from beyond the top 24 are listed too, for example *"Test Product 156 — was outside the top 24 · by Demo gearbox hide"*.
+
+![The Preview of a Hide rule: moved up, moved down and hidden counts, with the hidden product listed under Hidden by rules](assets/images/merch-preview-hidden.jpg)
 
 ---
 
