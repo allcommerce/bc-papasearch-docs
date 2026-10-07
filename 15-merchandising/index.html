@@ -1075,6 +1075,7 @@
 
 <h1 id="chapter-15-merchandising">Chapter 15: Merchandising<a class="headerlink" href="#chapter-15-merchandising" title="Permanent link">&para;</a></h1>
 <p>Decide which products shoppers see first. Merchandising rules let you <strong>boost</strong>, <strong>bury</strong> or <strong>hide</strong> products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, or keep a product out of results for a search where it does not belong.</p>
+<p><img alt="A search for gearbox on the storefront: the boosted bevel gear is first and a hidden product is gone" src="../assets/images/merch-storefront-search.jpg" /></p>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
   <iframe src="https://www.youtube.com/embed/UpPdfLjTL-I" title="Merchandising for BigCommerce: Boost, Bury or Hide Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
@@ -1088,6 +1089,7 @@
 <li>Tick several rules to <strong>Activate</strong>, <strong>Pause</strong> or <strong>Delete</strong> them together.</li>
 <li>The <strong>How rules combine</strong> note at the top explains what happens when several rules apply to one product. Close it once you have read it.</li>
 </ul>
+<p><img alt="The Merchandising rules list with search, filters and bulk Activate, Pause and Delete" src="../assets/images/merch-rules-list.jpg" /></p>
 <hr />
 <h2 id="create-a-rule">Create a Rule<a class="headerlink" href="#create-a-rule" title="Permanent link">&para;</a></h2>
 <p>Click <strong>Add rule</strong>. The rule editor opens as its own page, with a live <strong>Preview</strong> on the right. Fill in:</p>
@@ -1126,7 +1128,10 @@
 </tbody>
 </table>
 <p>A sentence at the top of the editor sums up the rule as you build it, for example <em>When a search contains "gearbox", show 1 product above all other results.</em> Click <strong>Save rule</strong>. Changes reach your storefront within a few minutes. If you leave the page with unsaved changes, PapaSearch asks before discarding them.</p>
+<p><img alt="The rule editor: keyword gearbox, the summary sentence at the top and the live Preview on the right" src="../assets/images/merch-editor-keyword.jpg" /></p>
 <p>A category page rule applies only when shoppers browse that category. When a shopper searches for a keyword and then filters by that category, only keyword rules apply.</p>
+<p><img alt="A category page rule for Gearbox Spare Parts: the Preview shows the category page with the boosted product first" src="../assets/images/merch-category-page-rule.jpg" /></p>
+<p><img alt="The Gearbox Spare Parts category page on the storefront, led by the boosted product" src="../assets/images/merch-storefront-category.jpg" /></p>
 <h3 id="choosing-categories">Choosing categories<a class="headerlink" href="#choosing-categories" title="Permanent link">&para;</a></h3>
 <p>Under <strong>Which products → Categories</strong>, each category has a box you click to cycle through three choices:</p>
 <ul>
@@ -1135,12 +1140,15 @@
 <li><strong>Not selected</strong>.</li>
 </ul>
 <p>Categories without subcategories are simply selected or not. A dash on a parent means some of its subcategories are picked. Subcategories inside a whole-branch parent stay clickable: untick one to leave it out, and the parent switches to <strong>This category only</strong> while its other subcategories stay selected. Tick it again and the branch folds back into one choice. Use the arrows to expand or collapse a branch; when you open a rule, only the branches you picked part of are expanded. <strong>Clear all</strong> removes every choice.</p>
+<p><img alt="The category picker: Shop All selected as a whole branch, with its subcategories ticked and a +20 chip" src="../assets/images/merch-category-scope.jpg" /></p>
 <h3 id="what-each-strength-does">What each strength does<a class="headerlink" href="#what-each-strength-does" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>High</strong> — boosted products are shown above all other results; buried products are shown below all other results.</li>
 <li><strong>Medium</strong> and <strong>Low</strong> — a nudge up or down among results that are about equally relevant. A product that does not match the search well will not jump to the top.</li>
 <li><strong>Hide</strong> — the product is removed from the results <strong>and</strong> from the filter counts, whatever sort the shopper picks. If a Hide rule removes every result, shoppers see <strong>No products found</strong> instead of the products you hid.</li>
 </ul>
+<p><img alt="Do and Strength: Boost, Bury or Hide, with High, Medium and Low" src="../assets/images/merch-editor-preview.jpg" /></p>
+<p><img alt="The storefront shows No products found when a Hide rule removes every result" src="../assets/images/merch-storefront-hidden.jpg" /></p>
 <p>If several rules apply to the same product, they do not add up: a boost always beats a bury, whatever their strengths, and between two boosts (or two buries) the stronger one wins.</p>
 <h3 id="when-shoppers-change-the-sort">When shoppers change the sort<a class="headerlink" href="#when-shoppers-change-the-sort" title="Permanent link">&para;</a></h3>
 <p>Boosts and buries follow the default <strong>Relevance</strong> order. When a shopper sorts by <strong>Price</strong> or <strong>Best Selling</strong>, the shopper's sort comes first; a boosted product is moved ahead only of products with the same price (or the same sales), and a buried one behind them. Sorting by <strong>Name</strong> or by date ignores boosts and buries. Hidden products stay hidden under every sort. If <strong>Show out-of-stock products last</strong> is on, out-of-stock products stay at the end even when boosted.</p>
@@ -1149,6 +1157,7 @@
 <hr />
 <h2 id="preview-before-you-save">Preview Before You Save<a class="headerlink" href="#preview-before-you-save" title="Permanent link">&para;</a></h2>
 <p>The <strong>Preview</strong> panel shows the top 24 results with your saved rules plus the draft you are editing. For a search rule it uses your keyword (you can type another search); for a category page rule it shows that category page. Tiles count how many products moved up, are new in the top 24, moved down or are hidden. Switch between <strong>All</strong> and <strong>Changed</strong> to see every result or only the ones that moved, each with its previous position and the rule that moved it. Products hidden from beyond the top 24 are listed too, for example <em>"Test Product 156 — was outside the top 24 · by Demo gearbox hide"</em>.</p>
+<p><img alt="The Preview of a Hide rule: moved up, moved down and hidden counts, with the hidden product listed under Hidden by rules" src="../assets/images/merch-preview-hidden.jpg" /></p>
 <hr />
 <h2 id="turn-rules-on-and-off-edit-or-delete">Turn Rules On and Off, Edit or Delete<a class="headerlink" href="#turn-rules-on-and-off-edit-or-delete" title="Permanent link">&para;</a></h2>
 <ul>
