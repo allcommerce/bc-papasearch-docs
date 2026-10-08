@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.11.2] - 2026-10-08
+
+### Changed
+
+- Searches and filters that are not already cached respond faster: our servers now spend about 10–30% less time preparing each result.
+
+### Fixed
+
+- **Switching to annual billing on the same plan now shows your annual plan after you top up.** If your subscription had expired and you switched from monthly to annual billing on the same plan, paying for the year could leave the app showing the monthly price (for example **$43.00/month** after paying **$468.00** for the year) and a usage cycle dated a year ahead. Your plan, price and usage cycle now match what you paid.
+
 ## [1.11.1] - 2026-10-07
 
 ### Fixed
