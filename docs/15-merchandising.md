@@ -78,6 +78,12 @@ Boosts and buries follow the default **Relevance** order. When a shopper sorts b
 
 When one rule boosts several products, they all move into the top group together, and inside that group they keep their usual relevance order. The order in which you added them to the rule does not matter.
 
+### Keep this order
+
+To show boosted products in an exact order — for example a hero product first, then two accessories — tick **Keep this order** under the product list. It appears for **Boost** rules with strength **High** that target **Products**. The list is numbered: drag a product by its handle, or use the up and down arrows, to set the order. The summary sentence ends with *in the order listed*.
+
+On the storefront these products are shown at the very top, in your order, above other High boosts. If several rules with **Keep this order** apply to the same search, the rule created first comes first; a product that appears in two of them takes its place from the older rule. Like other boosts, the order applies to the default **Relevance** sort; when a shopper picks another sort, that sort comes first. The **Preview** shows the order before you save.
+
 ---
 
 ## Preview Before You Save

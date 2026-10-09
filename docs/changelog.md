@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.13.0] - 2026-10-09
+
+### Added
+
+- **Keep this order for boosted products.** A **Boost** rule with strength **High** that targets **Products** now has a **Keep this order** option. Tick it, then drag the products (or use the arrows) into the order you want: shoppers see them at the top of the results in exactly that order. If several such rules apply to one search, the rule created first comes first. See [Merchandising](15-merchandising.md#keep-this-order).
+
 ## [1.12.0] - 2026-10-09
 
 ### Added
