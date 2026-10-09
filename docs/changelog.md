@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.12.0] - 2026-10-09
+
+### Added
+
+- **Top Rated sorting.** Shoppers can now choose **Top Rated** in the **Sort by** menu on search and category pages to see the best-reviewed products first. Products with the same rating are ordered by sales, and products without reviews appear last. You can also pick **Top Rated** as the default sort in **Settings → Search**. See [Settings](09-settings.md).
+
 ## [1.11.3] - 2026-10-09
 
 ### Fixed

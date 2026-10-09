@@ -72,7 +72,7 @@ If several rules apply to the same product, they do not add up: a boost always b
 
 ### When shoppers change the sort
 
-Boosts and buries follow the default **Relevance** order. When a shopper sorts by **Price** or **Best Selling**, the shopper's sort comes first; a boosted product is moved ahead only of products with the same price (or the same sales), and a buried one behind them. Sorting by **Name** or by date ignores boosts and buries. Hidden products stay hidden under every sort. If **Show out-of-stock products last** is on, out-of-stock products stay at the end even when boosted.
+Boosts and buries follow the default **Relevance** order. When a shopper sorts by **Price**, **Best Selling** or **Top Rated**, the shopper's sort comes first; a boosted product is moved ahead only of products with the same price (or the same sales, or the same star rating), and a buried one behind them. Sorting by **Name** or by date ignores boosts and buries. Hidden products stay hidden under every sort. If **Show out-of-stock products last** is on, out-of-stock products stay at the end even when boosted.
 
 ### Order within a rule
 

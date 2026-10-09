@@ -181,7 +181,7 @@ The Settings page allows you to configure core search behavior, product display 
 
 - **Dropdown**: Sort order options
 - **Default**: "Relevance"
-- **Options**: Relevance, Best Selling, Newest, Oldest, Price: Low to High, Price: High to Low, Name: A to Z, Name: Z to A
+- **Options**: Relevance, Best Selling, Top Rated, Newest, Oldest, Price: Low to High, Price: High to Low, Name: A to Z, Name: Z to A
 - **Purpose**: How products are ordered when shoppers browse category or brand pages **without** a search query
 
 **Search results default sort:**
@@ -197,6 +197,11 @@ The Settings page allows you to configure core search behavior, product display 
 !!! info "📊 About Best Selling"
     Best Selling uses each product's lifetime total sold, refreshed periodically. It may lag very
     recent orders and does not account for refunds.
+
+!!! info "⭐ About Top Rated"
+    Top Rated puts the products with the highest average star rating first. When two products have
+    the same rating, the one that has sold more comes first. Products with no reviews yet appear at
+    the end. Ratings come from your BigCommerce product reviews and update when products sync.
 
 **Semantic match threshold (only works when semantic search enabled):**
 
