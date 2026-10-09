@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.11.3] - 2026-10-09
+
+### Fixed
+
+- **Plans & Pricing now shows your real subscription status.** The badge next to your plan name always said **Active**, even when the top of the app said **Subscription expired**. It now shows **Active**, **Expired**, **Cancelled** or **Suspended** to match your subscription, and the **Trial** badge only appears while your trial is running.
+- The status at the top of the app now says **Subscription cancelled** or **Subscription suspended** when that applies, instead of showing a next billing date.
+- After a wallet top-up reactivates your subscription, the page updates right away, without a reload.
+
 ## [1.11.2] - 2026-10-08
 
 ### Changed
