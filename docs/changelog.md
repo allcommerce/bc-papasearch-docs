@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.13.1] - 2026-10-13
+
+### Changed
+
+- Category pages load faster. Shoppers opening a category that was viewed in the last hour no longer wait for its display setting to be looked up again, which saves up to a quarter of a second on less visited categories.
+
+### Fixed
+
+- Changing **Display Products** for a category in **Customize Filters**, or turning **Inherit from parent** on or off, now takes effect on your storefront right away.
+- Moving, adding or deleting a category in BigCommerce now updates which category's filter settings the storefront uses right away.
+
 ## [1.13.0] - 2026-10-09
 
 ### Added
