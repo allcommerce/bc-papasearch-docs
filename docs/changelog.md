@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.13.3] - 2026-10-13
+
+### Fixed
+
+- Saving **Display Products** for a category in **Customize Filters**, or turning **Inherit from parent** on or off, now shows on your storefront right away for new visitors. A shopper who already had that category page open may keep seeing the previous products for up to 5 minutes, until their browser refreshes its copy.
+
 ## [1.13.2] - 2026-10-13
 
 ### Fixed
@@ -24,7 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
-- Changing **Display Products** for a category in **Customize Filters**, or turning **Inherit from parent** on or off, now takes effect on your storefront right away.
+- Changing **Display Products** for a category in **Customize Filters**, or turning **Inherit from parent** on or off, now reaches your storefront within 5 minutes instead of up to 10. Version 1.13.3 makes it immediate for new visitors.
 - Moving, adding or deleting a category in BigCommerce now updates which category's filter settings the storefront uses right away.
 
 ## [1.13.0] - 2026-10-09
