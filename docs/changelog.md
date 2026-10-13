@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.13.2] - 2026-10-13
+
+### Fixed
+
+- Moving, adding or deleting a category in BigCommerce now reliably updates your storefront's category pages. In rare cases, a change made while the storefront was refreshing its category list could take up to an hour to appear.
+
+### Security
+
+- Updated third-party components used by the app and the search service to versions with the latest security fixes.
+
 ## [1.13.1] - 2026-10-13
 
 ### Changed
