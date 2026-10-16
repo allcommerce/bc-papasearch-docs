@@ -830,6 +830,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pin-products-at-fixed-positions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin products at fixed positions
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1083,7 +1092,7 @@
 
 
 <h1 id="chapter-15-merchandising">Chapter 15: Merchandising<a class="headerlink" href="#chapter-15-merchandising" title="Permanent link">&para;</a></h1>
-<p>Decide which products shoppers see first. Merchandising rules let you <strong>boost</strong>, <strong>bury</strong> or <strong>hide</strong> products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, or keep a product out of results for a search where it does not belong.</p>
+<p>Decide which products shoppers see first. Merchandising rules let you <strong>boost</strong>, <strong>bury</strong>, <strong>hide</strong> or <strong>pin</strong> products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, keep a product out of results for a search where it does not belong, or pin a product to an exact position such as <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/papathemes/bc-semantic-search/issues/1" title="GitHub Issue: papathemes/bc-semantic-search #1">#1</a>.</p>
 <p><img alt="A search for gearbox on the storefront: the boosted bevel gear is first and a hidden product is gone" src="../assets/images/merch-storefront-search.jpg" /></p>
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
   <iframe src="https://www.youtube.com/embed/UpPdfLjTL-I" title="Merchandising for BigCommerce: Boost, Bury or Hide Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
@@ -1094,7 +1103,7 @@
 <p>From your Dashboard, click the <strong>Merchandising</strong> button. The page lists your rules. Each row describes in one sentence what the rule does, with its trigger, action, target, last update and an on/off switch. You can have up to <strong>200 rules</strong> per storefront channel; the counter above the list shows how many you use.</p>
 <ul>
 <li>Type in <strong>Search rules</strong> to find a rule by name, keyword or category.</li>
-<li>Use the <strong>Trigger</strong>, <strong>Action</strong> and <strong>Status</strong> filters to narrow the list.</li>
+<li>Use the <strong>Trigger</strong>, <strong>Action</strong> (Boost, Bury, Hide or Pin) and <strong>Status</strong> filters to narrow the list.</li>
 <li>Tick several rules to <strong>Activate</strong>, <strong>Pause</strong> or <strong>Delete</strong> them together.</li>
 <li>The <strong>How rules combine</strong> note at the top explains what happens when several rules apply to one product. Close it once you have read it.</li>
 </ul>
@@ -1124,7 +1133,7 @@
 </tr>
 <tr>
 <td><strong>Do</strong></td>
-<td><strong>Boost</strong>, <strong>Bury</strong> or <strong>Hide</strong>.</td>
+<td><strong>Boost</strong>, <strong>Bury</strong>, <strong>Hide</strong> or <strong>Pin</strong>.</td>
 </tr>
 <tr>
 <td><strong>Strength</strong></td>
@@ -1132,7 +1141,7 @@
 </tr>
 <tr>
 <td><strong>Which products</strong></td>
-<td>Up to 100 <strong>Products</strong> (search by name or SKU), or whole <strong>Brands</strong>, or <strong>Categories</strong>.</td>
+<td>Up to 100 <strong>Products</strong> (search by name or SKU), or whole <strong>Brands</strong>, or <strong>Categories</strong>. Pin rules take up to 20 products, each with a position.</td>
 </tr>
 </tbody>
 </table>
@@ -1166,6 +1175,18 @@
 <h3 id="keep-this-order">Keep this order<a class="headerlink" href="#keep-this-order" title="Permanent link">&para;</a></h3>
 <p>To show boosted products in an exact order — for example a hero product first, then two accessories — tick <strong>Keep this order</strong> under the product list. It appears for <strong>Boost</strong> rules with strength <strong>High</strong> that target <strong>Products</strong>. The list is numbered: drag a product by its handle, or use the up and down arrows, to set the order. The summary sentence ends with <em>in the order listed</em>.</p>
 <p>On the storefront these products are shown at the very top, in your order, above other High boosts. If several rules with <strong>Keep this order</strong> apply to the same search, the rule created first comes first; a product that appears in two of them takes its place from the older rule. Like other boosts, the order applies to the default <strong>Relevance</strong> sort; when a shopper picks another sort, that sort comes first. The <strong>Preview</strong> shows the order before you save.</p>
+<h3 id="pin-products-at-fixed-positions">Pin products at fixed positions<a class="headerlink" href="#pin-products-at-fixed-positions" title="Permanent link">&para;</a></h3>
+<p><strong>Pin</strong> puts a product at an exact position in the results — for example a hero product at <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/papathemes/bc-semantic-search/issues/1" title="GitHub Issue: papathemes/bc-semantic-search #1">#1</a> and an accessory at <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/papathemes/bc-semantic-search/issues/3" title="GitHub Issue: papathemes/bc-semantic-search #3">#3</a> — while every other result keeps its usual order around them. Choose <strong>Pin</strong> under <strong>Do</strong>, then add up to <strong>20 products</strong> under <strong>Which products</strong>. Each product gets a <strong>Position</strong> box (1 to 100); a new product gets the lowest free position, and you can type another one. Two products in the same rule cannot share a position. The summary sentence reads, for example, <em>When a search contains "gift", pin Psalm 91 Shield Pendant at <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/papathemes/bc-semantic-search/issues/1" title="GitHub Issue: papathemes/bc-semantic-search #1">#1</a> and Romans 8:37 Weight Plate at <a class="magiclink magiclink-github magiclink-issue" href="https://github.com/papathemes/bc-semantic-search/issues/3" title="GitHub Issue: papathemes/bc-semantic-search #3">#3</a>.</em></p>
+<p><img alt="The rule editor with Pin selected: two products with positions 1 and 3, and the Preview showing Pinned at #1 and Pinned at #3" src="../assets/images/merch-pin-editor.jpg" /></p>
+<ul>
+<li>Pin rules target <strong>Products</strong> only, and have no strength.</li>
+<li>A pinned product does not need to match the search, but it must pass everything else the shopper sees: the category, the filters they picked, visibility and your stock settings. If it does not, its position goes to the next normal result. A <strong>Hide</strong> rule always wins over a pin.</li>
+<li>Pins apply to the default <strong>Relevance</strong> sort, on search and category pages. When a shopper picks another sort, pins are not applied.</li>
+<li>If <strong>Show out-of-stock products last</strong> is on, an out-of-stock pinned product is not pinned.</li>
+<li>If two pin rules claim the same position, the rule created first keeps it and the other product moves to the next free position. A position beyond the last result puts the product at the end of the list.</li>
+<li>Each page still shows the usual number of products, and paging through the results never shows a pinned product twice. Filter counts do not include pins.</li>
+</ul>
+<p>The <strong>Preview</strong> marks pinned products with <strong>Pinned at #N</strong>. Pinned products that do not reach the top 24 are listed below it, with their position or the reason they are not shown, for example <em>Doesn’t match the current filters or category</em> or <em>Not in the search index yet</em>.</p>
 <hr />
 <h2 id="preview-before-you-save">Preview Before You Save<a class="headerlink" href="#preview-before-you-save" title="Permanent link">&para;</a></h2>
 <p>The <strong>Preview</strong> panel shows the top 24 results with your saved rules plus the draft you are editing. For a search rule it uses your keyword (you can type another search); for a category page rule it shows that category page. Tiles count how many products moved up, are new in the top 24, moved down or are hidden. Switch between <strong>All</strong> and <strong>Changed</strong> to see every result or only the ones that moved, each with its previous position and the rule that moved it. Products hidden from beyond the top 24 are listed too, for example <em>"Test Product 156 — was outside the top 24 · by Demo gearbox hide"</em>.</p>

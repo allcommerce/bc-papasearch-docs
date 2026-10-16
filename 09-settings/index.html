@@ -1377,8 +1377,9 @@ products that matched the words the shopper typed.</p>
 <p><strong>Excluded query parameters:</strong></p>
 <ul>
 <li><strong>Field</strong>: Comma-separated list of parameter names</li>
-<li><strong>Purpose</strong>: Strip tracking and unrelated URL parameters before they reach search and filter requests</li>
-<li><strong>Example</strong>: <code>section,setCurrencyId,utm_source,utm_medium,utm_campaign,utm_content,utm_term</code></li>
+<li><strong>Purpose</strong>: Strip unrelated URL parameters before they reach search and filter requests, so they are not read as filters. Applies from the first page a shopper opens.</li>
+<li><strong>Already handled for you</strong>: common tracking parameters are always ignored, so you do not need to list them — <code>utm_</code> parameters, <code>srsltid</code>, <code>gclid</code>, <code>gclsrc</code>, <code>gbraid</code>, <code>wbraid</code>, <code>dclid</code>, <code>gad_source</code>, <code>gad_campaignid</code>, <code>fbclid</code>, <code>msclkid</code>, <code>ttclid</code>, <code>twclid</code>, <code>li_fat_id</code>, <code>igshid</code>, <code>yclid</code>, <code>mc_cid</code>, <code>mc_eid</code>, <code>_ga</code>, <code>_gl</code>, <code>_hsenc</code>, <code>_hsmi</code>, <code>hsCtaTracking</code></li>
+<li><strong>Add your own</strong>: list any other parameter your links carry that is not a filter, for example <code>section,partner,ref</code></li>
 </ul>
 <p><strong>Purpose:</strong></p>
 <ul>
