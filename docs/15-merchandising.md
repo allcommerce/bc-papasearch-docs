@@ -1,6 +1,6 @@
 # Chapter 15: Merchandising
 
-Decide which products shoppers see first. Merchandising rules let you **boost**, **bury** or **hide** products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, or keep a product out of results for a search where it does not belong.
+Decide which products shoppers see first. Merchandising rules let you **boost**, **bury**, **hide** or **pin** products whenever a shopper searches for a keyword or opens a category page — for example, put this season's best seller on top for "jacket", push discontinued items to the end, keep a product out of results for a search where it does not belong, or pin a product to an exact position such as #1.
 
 ![A search for gearbox on the storefront: the boosted bevel gear is first and a hidden product is gone](assets/images/merch-storefront-search.jpg)
 
@@ -15,7 +15,7 @@ Decide which products shoppers see first. Merchandising rules let you **boost**,
 From your Dashboard, click the **Merchandising** button. The page lists your rules. Each row describes in one sentence what the rule does, with its trigger, action, target, last update and an on/off switch. You can have up to **200 rules** per storefront channel; the counter above the list shows how many you use.
 
 - Type in **Search rules** to find a rule by name, keyword or category.
-- Use the **Trigger**, **Action** and **Status** filters to narrow the list.
+- Use the **Trigger**, **Action** (Boost, Bury, Hide or Pin) and **Status** filters to narrow the list.
 - Tick several rules to **Activate**, **Pause** or **Delete** them together.
 - The **How rules combine** note at the top explains what happens when several rules apply to one product. Close it once you have read it.
 
@@ -32,9 +32,9 @@ Click **Add rule**. The rule editor opens as its own page, with a live **Preview
 | **Rule name** | Your own label, shown in the rules list. |
 | **When** | **Search keyword** — the rule applies to searches. **Category page** — the rule applies when shoppers open one specific category page. |
 | **Keyword** / **Match** | For a search rule. **Contains** applies to any search that includes the keyword (a rule for `light` also applies to "led light bar"). **Exact** applies only when the whole search is the keyword. |
-| **Do** | **Boost**, **Bury** or **Hide**. |
+| **Do** | **Boost**, **Bury**, **Hide** or **Pin**. |
 | **Strength** | For Boost and Bury: **High**, **Medium** or **Low** (see below). |
-| **Which products** | Up to 100 **Products** (search by name or SKU), or whole **Brands**, or **Categories**. |
+| **Which products** | Up to 100 **Products** (search by name or SKU), or whole **Brands**, or **Categories**. Pin rules take up to 20 products, each with a position. |
 
 A sentence at the top of the editor sums up the rule as you build it, for example *When a search contains "gearbox", show 1 product above all other results.* Click **Save rule**. Changes reach your storefront within a few minutes. If you leave the page with unsaved changes, PapaSearch asks before discarding them.
 
@@ -83,6 +83,21 @@ When one rule boosts several products, they all move into the top group together
 To show boosted products in an exact order — for example a hero product first, then two accessories — tick **Keep this order** under the product list. It appears for **Boost** rules with strength **High** that target **Products**. The list is numbered: drag a product by its handle, or use the up and down arrows, to set the order. The summary sentence ends with *in the order listed*.
 
 On the storefront these products are shown at the very top, in your order, above other High boosts. If several rules with **Keep this order** apply to the same search, the rule created first comes first; a product that appears in two of them takes its place from the older rule. Like other boosts, the order applies to the default **Relevance** sort; when a shopper picks another sort, that sort comes first. The **Preview** shows the order before you save.
+
+### Pin products at fixed positions
+
+**Pin** puts a product at an exact position in the results — for example a hero product at #1 and an accessory at #3 — while every other result keeps its usual order around them. Choose **Pin** under **Do**, then add up to **20 products** under **Which products**. Each product gets a **Position** box (1 to 100); a new product gets the lowest free position, and you can type another one. Two products in the same rule cannot share a position. The summary sentence reads, for example, *When a search contains "gift", pin Psalm 91 Shield Pendant at #1 and Romans 8:37 Weight Plate at #3.*
+
+![The rule editor with Pin selected: two products with positions 1 and 3, and the Preview showing Pinned at #1 and Pinned at #3](assets/images/merch-pin-editor.jpg)
+
+- Pin rules target **Products** only, and have no strength.
+- A pinned product does not need to match the search, but it must pass everything else the shopper sees: the category, the filters they picked, visibility and your stock settings. If it does not, its position goes to the next normal result. A **Hide** rule always wins over a pin.
+- Pins apply to the default **Relevance** sort, on search and category pages. When a shopper picks another sort, pins are not applied.
+- If **Show out-of-stock products last** is on, an out-of-stock pinned product is not pinned.
+- If two pin rules claim the same position, the rule created first keeps it and the other product moves to the next free position. A position beyond the last result puts the product at the end of the list.
+- Each page still shows the usual number of products, and paging through the results never shows a pinned product twice. Filter counts do not include pins.
+
+The **Preview** marks pinned products with **Pinned at #N**. Pinned products that do not reach the top 24 are listed below it, with their position or the reason they are not shown, for example *Doesn’t match the current filters or category* or *Not in the search index yet*.
 
 ---
 

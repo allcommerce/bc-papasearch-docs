@@ -224,8 +224,9 @@ The Settings page allows you to configure core search behavior, product display 
 **Excluded query parameters:**
 
 - **Field**: Comma-separated list of parameter names
-- **Purpose**: Strip tracking and unrelated URL parameters before they reach search and filter requests
-- **Example**: `section,setCurrencyId,utm_source,utm_medium,utm_campaign,utm_content,utm_term`
+- **Purpose**: Strip unrelated URL parameters before they reach search and filter requests, so they are not read as filters. Applies from the first page a shopper opens.
+- **Already handled for you**: common tracking parameters are always ignored, so you do not need to list them — `utm_` parameters, `srsltid`, `gclid`, `gclsrc`, `gbraid`, `wbraid`, `dclid`, `gad_source`, `gad_campaignid`, `fbclid`, `msclkid`, `ttclid`, `twclid`, `li_fat_id`, `igshid`, `yclid`, `mc_cid`, `mc_eid`, `_ga`, `_gl`, `_hsenc`, `_hsmi`, `hsCtaTracking`
+- **Add your own**: list any other parameter your links carry that is not a filter, for example `section,partner,ref`
 
 **Purpose:**
 

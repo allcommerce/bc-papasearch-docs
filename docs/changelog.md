@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.14.0] - 2026-10-16
+
+### Added
+
+- **Pin products at fixed positions.** Merchandising rules have a new **Pin** action: choose up to 20 products and give each a position, for example a hero product at #1 and an accessory at #3. The rest of the results keep their usual order around them, every page still shows the usual number of products, and the **Preview** marks each pinned product with **Pinned at #N**. A pinned product still has to pass the shopper's filters, Hide rules win over pins, and pins apply to the default Relevance sort. See [Merchandising](15-merchandising.md#pin-products-at-fixed-positions).
+
+### Fixed
+
+- Shoppers arriving from Google, Google Ads, Facebook, Microsoft Ads, TikTok or an email campaign no longer see **No products found**. Tracking parameters these services add to links (`srsltid`, `gclid`, `fbclid`, `utm_source` and other `utm_` parameters, and similar) were read as filters; they are now ignored, and stay in the address bar for your analytics.
+- Parameters you list under **Settings → Excluded query parameters** now apply from the first page a shopper opens, not only after they change a filter.
+
 ## [1.13.3] - 2026-10-13
 
 ### Fixed
