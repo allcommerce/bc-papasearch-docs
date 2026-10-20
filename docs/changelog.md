@@ -6,9 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.15.0] - 2026-10-20
+
 ### Added
 
+- **Turn PapaSearch off on some page types.** Three new checkboxes in **Settings → Filters** — **Disable PapaSearch on category pages**, **on brand pages** and **on the search results page** — let you keep PapaSearch filters where you want them and show your theme's own listing elsewhere, for example PapaSearch on search results but the theme's listing on category pages. Search suggestions keep working. Available since October 17. See [Settings](09-settings.md#turn-papasearch-off-on-some-pages).
+
 - **Schedule merchandising rules.** A new **Schedule** card in the rule editor lets you set an optional **Start** and **End** date and time, in your time zone, so a rule runs only for a sale, a holiday or a launch week. The rule turns on and off on your storefront on time by itself. The rules list shows **Starts** and **Ended** next to scheduled rules, with a new **Status** filter, and the **Preview** still shows a rule that is not running yet. See [Merchandising](15-merchandising.md#schedule-a-rule).
+
+### Fixed
+
+- **Suggested Keywords** no longer stays empty on stores where the first keyword was added by hand right after installing PapaSearch. Existing stores in that state are repaired automatically the next time a keyword is added or extracted, without losing keywords. If the keyword list cannot be loaded, the page now shows an error instead of *No keywords found*.
+- After you save **Settings**, a category's filters or **Display Products**, or run a fitment import, a search that was running at that moment can no longer bring the previous results back for up to 5 minutes. Your changes now reach new visitors right away.
+
+### Security
+
+- Strengthened the removal of credentials and tokens from our service logs.
 
 ## [1.14.0] - 2026-10-16
 

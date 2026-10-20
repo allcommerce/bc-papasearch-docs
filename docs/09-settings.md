@@ -131,6 +131,20 @@ The Settings page allows you to configure core search behavior, product display 
 
 ## Filters Section
 
+### Turn PapaSearch Off on Some Pages
+
+**⬜ Disable Filters:** hides the PapaSearch filter panel and faceted filtering on every page of your storefront.
+
+To keep PapaSearch on some pages only, leave **Disable Filters** off and tick one or more of:
+
+| Checkbox | What shoppers see |
+|---|---|
+| **Disable PapaSearch on category pages** | Category pages show your theme's own product listing and filters. |
+| **Disable PapaSearch on brand pages** | Brand pages show your theme's own product listing and filters. |
+| **Disable PapaSearch on the search results page** | Pressing Enter in the search box opens BigCommerce's default search results page. |
+
+Search suggestions in the search box keep working in every case; only **Disable Search** turns them off. While **Disable Filters** is on, the three checkboxes are shown ticked and greyed out, because PapaSearch is already off everywhere. Click **Save Settings** to apply the change to your storefront.
+
 ### Filter Container Selectors
 
 **Filters container selector:**
