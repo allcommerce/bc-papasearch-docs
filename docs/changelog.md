@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Added
+
+- **Schedule merchandising rules.** A new **Schedule** card in the rule editor lets you set an optional **Start** and **End** date and time, in your time zone, so a rule runs only for a sale, a holiday or a launch week. The rule turns on and off on your storefront on time by itself. The rules list shows **Starts** and **Ended** next to scheduled rules, with a new **Status** filter, and the **Preview** still shows a rule that is not running yet. See [Merchandising](15-merchandising.md#schedule-a-rule).
+
 ## [1.14.0] - 2026-10-16
 
 ### Added

@@ -99,6 +99,23 @@ On the storefront these products are shown at the very top, in your order, above
 
 The **Preview** marks pinned products with **Pinned at #N**. Pinned products that do not reach the top 24 are listed below it, with their position or the reason they are not shown, for example *Doesn’t match the current filters or category* or *Not in the search index yet*.
 
+### Schedule a rule
+
+To run a rule only for a limited time — a Black Friday boost, a holiday pin, a launch week — fill in the **Schedule** card in the rule editor. Both fields are optional:
+
+| Field | What it does |
+|---|---|
+| **Start** | The rule turns on at this date and time. Leave empty to start right away. |
+| **End** | The rule turns off at this date and time. Leave empty to keep it running until you pause it. |
+
+Times are in your time zone, shown under the fields, for example *Times are in your time zone (America/New_York)*. Click **Clear** next to a field to remove it. **End** must be after **Start**. A time that does not exist or happens twice on the day clocks change for daylight saving is not accepted; pick a time an hour earlier or later.
+
+The summary sentence ends with the schedule, for example *When a search contains "gearbox", show 2 products above all other results, from Nov 20, 9:00 AM.* The rule starts and stops on your storefront on time, without you having to come back — no need to save or clear the cache.
+
+- A schedule works together with the **Active** switch: the rule runs only while it is switched on **and** the current time is between **Start** and **End**. A paused rule does not start on its start date; the editor says so, for example *This rule is paused. It won’t start on Nov 20, 2026, 9:00 AM unless you turn it on.*
+- When the end has passed, the editor shows *This rule has already ended and won’t run on your storefront.* Change or clear **End** to run it again.
+- The **Preview** shows a rule that is not running right now as if it were running, with the note *This rule isn’t running right now (see Schedule)*, so you can check a rule before its start date.
+
 ---
 
 ## Preview Before You Save
@@ -112,6 +129,7 @@ The **Preview** panel shows the top 24 results with your saved rules plus the dr
 ## Turn Rules On and Off, Edit or Delete
 
 - Use the switch in the **Active** column to turn a rule off without deleting it. You can always turn a rule off, even if one of its target products has since been deleted.
+- A scheduled rule shows its next change next to its name: **Starts Nov 20** before it begins, **Ended Nov 30** after it ends (hover for the full date and time). Use the **Status** filter — **Active**, **Scheduled**, **Ended** or **Paused** — to list only those rules.
 - Click the pencil to edit a rule. The **⋯** menu offers **Duplicate**, **Pause** / **Activate** and **Delete**. Before deleting, PapaSearch shows a summary of the rule and offers **Pause the rule instead**.
 
 ![Delete dialog: a summary of the rule, Pause the rule instead, and Cancel focused by default](assets/images/merch-delete-dialog.jpg)
