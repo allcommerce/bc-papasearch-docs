@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.15.1] - 2026-10-20
+
+### Fixed
+
+- **Suggested Keywords** stays correct even when you delete all keywords while a keyword extraction or a new search is being recorded at the same moment. A keyword extraction that runs while the keyword list is being repaired now waits and finishes instead of failing.
+- **Cache Manager** now tells you when a flush or delete did not fully take effect and asks you to try again, instead of reporting success while outdated search results could still be served for a few minutes.
+
 ## [1.15.0] - 2026-10-20
 
 ### Added
