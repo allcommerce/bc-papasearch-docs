@@ -839,6 +839,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#schedule-a-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schedule a rule
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1187,6 +1196,33 @@
 <li>Each page still shows the usual number of products, and paging through the results never shows a pinned product twice. Filter counts do not include pins.</li>
 </ul>
 <p>The <strong>Preview</strong> marks pinned products with <strong>Pinned at #N</strong>. Pinned products that do not reach the top 24 are listed below it, with their position or the reason they are not shown, for example <em>Doesn’t match the current filters or category</em> or <em>Not in the search index yet</em>.</p>
+<h3 id="schedule-a-rule">Schedule a rule<a class="headerlink" href="#schedule-a-rule" title="Permanent link">&para;</a></h3>
+<p>To run a rule only for a limited time — a Black Friday boost, a holiday pin, a launch week — fill in the <strong>Schedule</strong> card in the rule editor. Both fields are optional:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start</strong></td>
+<td>The rule turns on at this date and time. Leave empty to start right away.</td>
+</tr>
+<tr>
+<td><strong>End</strong></td>
+<td>The rule turns off at this date and time. Leave empty to keep it running until you pause it.</td>
+</tr>
+</tbody>
+</table>
+<p>Times are in your time zone, shown under the fields, for example <em>Times are in your time zone (America/New_York)</em>. Click <strong>Clear</strong> next to a field to remove it. <strong>End</strong> must be after <strong>Start</strong>. A time that does not exist or happens twice on the day clocks change for daylight saving is not accepted; pick a time an hour earlier or later.</p>
+<p>The summary sentence ends with the schedule, for example <em>When a search contains "gearbox", show 2 products above all other results, from Nov 20, 9:00 AM.</em> The rule starts and stops on your storefront on time, without you having to come back — no need to save or clear the cache.</p>
+<ul>
+<li>A schedule works together with the <strong>Active</strong> switch: the rule runs only while it is switched on <strong>and</strong> the current time is between <strong>Start</strong> and <strong>End</strong>. A paused rule does not start on its start date; the editor says so, for example <em>This rule is paused. It won’t start on Nov 20, 2026, 9:00 AM unless you turn it on.</em></li>
+<li>When the end has passed, the editor shows <em>This rule has already ended and won’t run on your storefront.</em> Change or clear <strong>End</strong> to run it again.</li>
+<li>The <strong>Preview</strong> shows a rule that is not running right now as if it were running, with the note <em>This rule isn’t running right now (see Schedule)</em>, so you can check a rule before its start date.</li>
+</ul>
 <hr />
 <h2 id="preview-before-you-save">Preview Before You Save<a class="headerlink" href="#preview-before-you-save" title="Permanent link">&para;</a></h2>
 <p>The <strong>Preview</strong> panel shows the top 24 results with your saved rules plus the draft you are editing. For a search rule it uses your keyword (you can type another search); for a category page rule it shows that category page. Tiles count how many products moved up, are new in the top 24, moved down or are hidden. Switch between <strong>All</strong> and <strong>Changed</strong> to see every result or only the ones that moved, each with its previous position and the rule that moved it. Products hidden from beyond the top 24 are listed too, for example <em>"Test Product 156 — was outside the top 24 · by Demo gearbox hide"</em>.</p>
@@ -1195,6 +1231,7 @@
 <h2 id="turn-rules-on-and-off-edit-or-delete">Turn Rules On and Off, Edit or Delete<a class="headerlink" href="#turn-rules-on-and-off-edit-or-delete" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Use the switch in the <strong>Active</strong> column to turn a rule off without deleting it. You can always turn a rule off, even if one of its target products has since been deleted.</li>
+<li>A scheduled rule shows its next change next to its name: <strong>Starts Nov 20</strong> before it begins, <strong>Ended Nov 30</strong> after it ends (hover for the full date and time). Use the <strong>Status</strong> filter — <strong>Active</strong>, <strong>Scheduled</strong>, <strong>Ended</strong> or <strong>Paused</strong> — to list only those rules.</li>
 <li>Click the pencil to edit a rule. The <strong>⋯</strong> menu offers <strong>Duplicate</strong>, <strong>Pause</strong> / <strong>Activate</strong> and <strong>Delete</strong>. Before deleting, PapaSearch shows a summary of the rule and offers <strong>Pause the rule instead</strong>.</li>
 </ul>
 <p><img alt="Delete dialog: a summary of the rule, Pause the rule instead, and Cancel focused by default" src="../assets/images/merch-delete-dialog.jpg" /></p>
