@@ -24,7 +24,7 @@ Every merchandising rule has an optional **Schedule** card with two fields:
 
 The details that matter for a sale:
 
-- **Times are in your store's time zone**, shown under the fields, for example *Times are in your time zone (America/New_York)*.
+- **Times are in the time zone of the computer you are using**, shown under the fields, for example *Times are in your time zone (America/New_York)*. If you manage the store from another time zone, convert your sale times to the zone shown there.
 - **End must be after Start.** A time that does not exist, or happens twice, on the day clocks change for daylight saving is not accepted; pick a time an hour earlier or later.
 - **It runs on time without you.** The rule starts and stops on your storefront by itself. There is no need to save again or clear the cache.
 - **The Active switch still counts.** A rule runs only while it is switched on **and** the current time is between Start and End. A paused rule does not start on its start date, and the editor warns you, for example *This rule is paused. It won’t start on Nov 20, 2026, 9:00 AM unless you turn it on.*
@@ -38,7 +38,7 @@ Work through these steps early enough to preview every rule, then check the stor
 2. **Create a Boost rule for each key search.** In **Merchandising → Add rule**, choose **Search keyword**, enter the keyword (for example `gift`), choose **Boost** with strength **High**, and add the sale products. Tick **Keep this order** if you want them in a set order.
 3. **Pin your hero products.** For a product that must be #1 on a search or category page, use a **Pin** rule with up to 20 products and a position for each.
 4. **Bury or hide what should not compete.** Use **Bury** for items you do not want on top that weekend, or **Hide** for products that should not appear at all.
-5. **Set the Schedule.** For a rule covering the whole weekend, set **Start** to Friday, November 27, 2026 and **End** after Cyber Monday, November 30, 2026, at the times you choose in your store's time zone. For separate Black Friday and Cyber Monday offers, make two rules with their own dates; **Duplicate** in the **⋯** menu saves time.
+5. **Set the Schedule.** For a rule covering the whole weekend, set **Start** to Friday, November 27, 2026 and **End** after Cyber Monday, November 30, 2026, at the times you choose, in the time zone shown under the fields. For separate Black Friday and Cyber Monday offers, make two rules with their own dates; **Duplicate** in the **⋯** menu saves time.
 6. **Check that each rule is switched on.** A scheduled rule that is paused will not start.
 7. **Preview every rule.** Open each rule and read the Preview with the not-running note. Confirm pinned products show **Pinned at #N**, or read the reason they are not shown.
 8. **Check the rules list.** Scheduled rules show **Starts Nov 27** next to their name. Use the **Status** filter (**Active**, **Scheduled**, **Ended**, **Paused**) to review them together.
@@ -69,7 +69,7 @@ Since version 1.14.0, tracking parameters added to links, such as `gclid`, `fbcl
 
 ### What time zone does the Schedule use?
 
-Your store's time zone. It is shown under the Start and End fields in the rule editor.
+The time zone of the computer or browser you are using, shown under the Start and End fields in the rule editor. If your sale follows the store's local time and you are elsewhere, convert the times first: for a store in New York, 9:00 AM New York time is 8:00 AM if you are in Chicago.
 
 ### Do I need to be online when the sale starts?
 
