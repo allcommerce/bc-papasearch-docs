@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.16.0] - 2026-10-27
+
+### Added
+
+- **Global rules for merchandising.** A new **Global rules** tab on the **Merchandising** page has three switches that apply to every search and category page: **Bury products without images**, **Hide products with a zero price** and **Hide products above a price** (you choose the amount). Each switch shows how many products it affects. Products with a hidden price are never hidden by the price switches, and a product you boost with a rule stays up even without an image. All switches are off until you turn them on. See [Merchandising](15-merchandising.md#global-rules).
+- **Change history.** A new **Change history** tab shows every merchandising change from the last 30 days: who made it, when, and what changed, for example *Updated rule “Summer boost”: strength high → low*. See [Merchandising](15-merchandising.md#change-history).
+
 ## [1.15.1] - 2026-10-20
 
 ### Fixed

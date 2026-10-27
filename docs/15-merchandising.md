@@ -136,6 +136,36 @@ The **Preview** panel shows the top 24 results with your saved rules plus the dr
 
 ---
 
+## Global Rules
+
+The **Global rules** tab holds three switches that apply to every search and category page of the channel, whatever the shopper types. They are all off until you turn them on.
+
+| Switch | What it does |
+|---|---|
+| **Bury products without images** | Products with no image move to the end of the results, like a Bury High rule. A product you boost with a rule still stays up. In-stock products without an image still come before out-of-stock products. |
+| **Hide products with a zero price** | Products whose price is 0 no longer appear in search results, category pages or filter counts. Products whose price is hidden on BigCommerce are not affected. |
+| **Hide products above a price** | Turn it on and enter an amount: products priced above it are hidden. A product priced exactly at the amount stays. The amount uses your store's default currency. |
+
+Under each switch, PapaSearch shows how many products it affects, for example *1,248 products have no image*. Click **Save** to apply; changes reach your storefront within a few minutes. Hiding out-of-stock products, or moving them to the end, stays in **Settings → Products**.
+
+The price used is the one shoppers see: the sale price when there is one, otherwise the calculated price, otherwise the regular price.
+
+![The Global rules tab: Bury products without images, Hide products with a zero price, and Hide products above a price with an amount of 500](assets/images/merch-global-rules.jpg)
+
+---
+
+## Change History
+
+The **Change history** tab lists every change to your merchandising in the last 30 days, newest first: when it happened, who made it (the email of the BigCommerce user), and what changed. It records creating, editing, pausing, activating and deleting rules, and every save of the global rules, for example:
+
+- *Paused rule “Clearance bury”*
+- *Updated rule “Summer boost”: strength high → low; targets 3 items → 5 items*
+- *Changed global rules: Hide products above a price 500 → 300*
+
+Click **Load more** to see older changes. Changes older than 30 days are removed automatically.
+
+---
+
 ## Good to Know
 
 - Rules apply to the storefront channel you are managing.
