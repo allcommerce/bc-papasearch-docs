@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.16.1] - 2026-10-28
+
+### Fixed
+
+- **Broken product images fix themselves.** When you replace a product image in BigCommerce, the old image file is removed but the product is not marked as changed, so search results could keep showing the old, broken image. Now, when a product image fails to load on your storefront, PapaSearch shows the *No Image* placeholder right away, checks the image, and re-indexes that product within a few minutes so the new image appears.
+
 ## [1.16.0] - 2026-10-27
 
 ### Added
