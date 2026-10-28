@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.16.2] - 2026-10-28
+
+### Fixed
+
+- **Merchandising Preview explains global rules.** Products moved down by **Bury products without images** are now labelled *Global rule: no image* in the Preview. A pinned product that a global price rule hides now says *Hidden by a global price rule* instead of leaving you to guess why it is missing, and the **Hidden** count no longer includes products that a global rule already hides.
+- Saving **Global rules** without changing anything no longer warns that changes may take up to 10 minutes to reach your storefront.
+
 ## [1.16.1] - 2026-10-28
 
 ### Fixed
