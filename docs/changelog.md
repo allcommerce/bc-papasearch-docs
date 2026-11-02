@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.16.3] - 2026-11-02
+
+### Improved
+
+- **Faster search box on your storefront.** PapaSearch now loads one file fewer and about 40% less data the first time a shopper visits your store, so search is ready sooner, especially on mobile.
+
 ## [1.16.2] - 2026-10-28
 
 ### Fixed
