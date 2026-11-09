@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.17.0] - 2026-11-09
+
+### Added
+
+- **Show the vehicle selector only in the categories you choose.** A new **Show the selector on** option in **Settings → Vehicle fitment** lets you pick **Only these categories**: the vehicle selector appears only in those categories (and their subcategories), and a vehicle a shopper has chosen no longer filters other categories down to zero products. For example, a store that sells door closers and cabinet glass can show the closer selector on closer categories only, while glass categories list every product. The shopper's vehicle stays saved and applies again when they return to a selected category. **All search and category pages** stays the default, so nothing changes until you turn it on. See [Vehicle Fitment](14-vehicle-fitment.md#choosing-where-the-selector-appears).
+
 ## [1.16.3] - 2026-11-02
 
 ### Improved

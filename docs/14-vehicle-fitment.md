@@ -98,8 +98,25 @@ Go to **Settings** and open the **Vehicle fitment** panel:
     - **Above product list** (default) — a vehicle bar above the sort and view controls.
     - **Top of filter sidebar** — a vehicle block at the top of the filters, styled like a filter group. On phones the filter sidebar lives in the filter drawer, so a vehicle bar is still shown above the product list.
     - **Both** — the bar above the product list and the block in the filter sidebar.
+- **Show the selector on** — on which pages the vehicle selector appears and the shopper's vehicle filters products. See [Choosing where the selector appears](#choosing-where-the-selector-appears).
 - **Source URL** — see [Keeping Fitment Data Up To Date Automatically](#keeping-fitment-data-up-to-date-automatically).
 - **Storefront text** — customize the wording shoppers see (selector prompt, "Find parts" button, garage label, and so on).
+
+---
+
+## Choosing Where the Selector Appears
+
+If only part of your catalog is vehicle-specific, you can limit the vehicle selector to the categories where it makes sense. In the **Vehicle fitment** panel, under **Show the selector on**:
+
+- **All search and category pages** (default) — the selector appears on every search and category page, and a chosen vehicle filters every page.
+- **Only these categories** — pick categories in the tree. Click a box once to include the whole branch (the category and all its subcategories, including ones you add later), click again to include **this category only**, and a third time to clear it.
+    - **Also show on the search results page** — tick this to keep the selector (and vehicle filtering) on your search results page and brand pages as well.
+
+On a page outside your selection, the selector is not shown and the shopper's vehicle does not filter the products, so shoppers never see a list filtered by a vehicle they can't see or clear. The vehicle stays saved in their garage and applies again as soon as they open a selected category.
+
+If your **Landing page** is the search results page but **Also show on the search results page** is not ticked, the panel shows a warning: shoppers who pick a vehicle in the [selector widget](#adding-the-vehicle-selector-widget-to-a-page) would land on a page without vehicle filtering. Tick the box, or set the landing page to one of your selected categories.
+
+Changes can take a few minutes to reach your storefront after you save.
 
 ---
 
