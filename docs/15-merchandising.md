@@ -5,7 +5,7 @@ Decide which products shoppers see first. Merchandising rules let you **boost**,
 ![A search for gearbox on the storefront: the boosted bevel gear is first and a hidden product is gone](assets/images/merch-storefront-search.jpg)
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
-  <iframe src="https://www.youtube.com/embed/UpPdfLjTL-I" title="Merchandising for BigCommerce: Boost, Bury or Hide Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  <iframe src="https://www.youtube.com/embed/FCzL-AUC6Bk" title="PapaSearch Merchandising Rules: Pin, Boost, Bury, Hide and Schedule" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 </div>
 
 ---
