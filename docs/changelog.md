@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.18.0] - YYYY-MM-DD
+
+### Added
+
+- **AI Shopping Assistant.** On AI plans, an **Ask AI** button in your storefront search box opens a chat where shoppers ask questions in their own words, compare products and add them to the cart. Answers come from your catalog and always show a note that AI can be wrong. Turn it on in **Settings → AI Shopping Assistant**, where you can also see your token usage, buy more tokens from your wallet ($5, $10 or $25; purchased tokens never expire), set the greeting and example questions, and lower message limits. See [Settings](09-settings.md#ai-shopping-assistant-section).
+
 ## [1.17.0] - 2026-11-09
 
 ### Added
