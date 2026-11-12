@@ -10,7 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- **AI Shopping Assistant.** On AI plans, an **Ask AI** button in your storefront search box opens a chat where shoppers ask questions in their own words, compare products and add them to the cart. Answers come from your catalog and always show a note that AI can be wrong. Turn it on in **Settings → AI Shopping Assistant**, where you can also see your token usage, buy more tokens from your wallet ($5, $10 or $25; purchased tokens never expire), set the greeting and example questions, and lower message limits. See [Settings](09-settings.md#ai-shopping-assistant-section).
+- **AI Shopping Assistant.** On AI plans, an **Ask AI** button in your storefront search box opens a chat where shoppers ask questions in their own words, compare products and add them to the cart. Answers come from your catalog and always show a note that AI can be wrong. Click **AI Shopping Assistant** on the Dashboard to turn it on, see your token usage, set the greeting and example questions, and lower message limits. See [AI Shopping Assistant](16-ai-shopping-assistant.md).
+- **AI Token Add-on.** When your plan's monthly AI tokens run out, the assistant can keep answering on pay-as-you-go: $0.75 per 1M tokens, charged to your wallet like the other add-ons and capped by a Monthly Limit you set in **Plans & Pricing › Add-ons**.
+- **AI usage statistics.** AI messages and tokens now appear in **Usage Statistics**, on the Dashboard under **This month's usage**, and month by month on the AI Shopping Assistant page.
 
 ## [1.17.0] - 2026-11-09
 

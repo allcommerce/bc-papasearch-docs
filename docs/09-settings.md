@@ -18,7 +18,6 @@ The Settings page allows you to configure core search behavior, product display 
 - Configure filter selectors and behavior
 - Adjust search parameters and sorting
 - Enable semantic search and automatic indexing
-- Turn on the AI Shopping Assistant and manage AI tokens
 
 ---
 
@@ -253,63 +252,7 @@ Search suggestions in the search box keep working in every case; only **Disable 
 
 ## AI Shopping Assistant Section
 
-The AI Shopping Assistant adds an **Ask AI** button to the search box on your storefront. Shoppers can ask questions in their own words, such as *"gears under $10"* or *"which one is cheaper?"*, and get a short answer with product cards from your catalog. They can compare products, ask follow-up questions, and add a product to the cart from the chat.
-
-The assistant is available on AI plans (Starter AI, Growth AI, Scale AI and Ultra AI).
-
-### Turn It On or Off
-
-Check **Enable AI Shopping Assistant** and click **Save Settings**. The setting applies to the channel selected at the top of the page. Uncheck it at any time to remove the **Ask AI** button from your storefront.
-
-The assistant also pauses on its own when your plan is no longer active or your AI tokens run out.
-
-### Chat Usage
-
-| Field | What it shows |
-|---|---|
-| **Tokens used this cycle** | AI tokens the assistant has used across your store in the current billing cycle |
-| **Token allowance** | Monthly tokens included in your plan |
-| **Tokens remaining** | Monthly tokens left this cycle |
-| **Purchased balance** | Tokens you bought; they never expire |
-| **Estimated messages left** | About how many more messages you can answer (one message uses about 2,700 tokens) |
-| **Resets on** | When your monthly tokens start again |
-
-Monthly tokens included in each plan:
-
-| Plan | Monthly AI tokens | About |
-|---|---|---|
-| Starter AI | 5,400,000 | 2,000 messages |
-| Growth AI | 16,000,000 | 5,900 messages |
-| Scale AI | 40,000,000 | 14,800 messages |
-| Ultra AI | 80,000,000 | 29,600 messages |
-
-Your monthly tokens are used first, then your purchased balance.
-
-### Buy More Tokens
-
-Click **Buy $5**, **Buy $10** or **Buy $25**, then confirm. Tokens cost $0.75 per 1M tokens, are paid from your wallet balance, and are added right away. Purchased tokens never expire and carry over between billing cycles. Purchases are non-refundable.
-
-If your wallet balance is too low, you are not charged; click **Top up wallet** and try again.
-
-### Suggested Prompts and Greeting
-
-- **Suggested prompts 1–3**: example questions shown when a shopper opens the chat. Leave a box empty to use the default example.
-- **Greeting message**: the first message shoppers see. Leave it empty to use *"Hi! What are you looking for today?"*.
-
-### Rate Limits
-
-Optionally lower how many messages the assistant accepts on this channel:
-
-- **Messages per shopper per 10 minutes** (system maximum 60)
-- **Messages per store per hour** (system maximum 600)
-
-You can only go below the limits set by the app.
-
-### Good to Know
-
-- Answers are written by AI and can be wrong. The chat window always shows *"AI-generated answers may be inaccurate. Please check the product page before buying."*
-- The assistant only answers from your catalog: product names, prices, descriptions, SKUs and stock status. It does not see orders, carts or customer accounts.
-- See our [Privacy Policy](https://papathemes.com/privacy-policy/) for what the assistant processes and how long it is kept.
+The AI Shopping Assistant now has its own page: click **AI Shopping Assistant** on the Dashboard. See [AI Shopping Assistant](16-ai-shopping-assistant.md).
 
 ## Indexing Section
 

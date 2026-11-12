@@ -180,6 +180,14 @@ The Pricing & Billing page helps you manage your subscription plan, monitor add-
 - **Status**: 🔵 ENABLED
 - **Description**: Purchase in multiples of 5,000 events
 
+**AI Token Add-on** (AI plans):
+
+- **Pricing**: \$0.00075 per 1K tokens, Min: 1M tokens ($0.75)
+- **Usage**: Used / Paid / Limit in tokens
+- **Current Cost**: AI token charges this period
+- **Monthly Limit**: $10/month by default
+- **Description**: Keeps the AI Shopping Assistant answering after your plan's monthly AI tokens run out. When the next 1M-token block would go over the Monthly Limit, the assistant stops answering. See [AI Shopping Assistant](16-ai-shopping-assistant.md#pay-as-you-go-ai-token-add-on).
+
 ### Total Add-ons Cost
 
 - **Summary**: $0.00 per period

@@ -84,6 +84,10 @@ The Dashboard contains two rows of large, colorful buttons organized by function
 - **Function**: Opens cache management for performance optimization
 - **When to use**: To clear cache or monitor performance
 
+#### AI Shopping Assistant
+- **Function**: Opens the AI Shopping Assistant page (AI plans)
+- **When to use**: To turn the Ask AI chat on or off, check token usage and pay-as-you-go, and set the greeting, example questions and message limits. See [AI Shopping Assistant](16-ai-shopping-assistant.md).
+
 ### Bottom Row - Account Management
 
 #### 6. Settings
